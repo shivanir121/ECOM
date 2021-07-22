@@ -1,0 +1,251 @@
+/* global  */
+
+body {
+    color: #04102c;
+}
+
+.container-fluid {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.text-p4lBlue {
+    color: #04102c;
+}
+
+.text-p4lGold {
+    color: #b98b43;
+}
+
+.form-control, .custom-select {
+    border: 1px solid #b98b4345;
+}
+
+.form-control:hover, .custom-select:hover {
+    border: 1px solid #b98b43;
+}
+
+/* global  */
+
+/* Your order section  */
+
+.listBox {
+    /* border: 1px solid; */
+    box-shadow: 0 14px 22px 5px rgba(38, 38, 38, 0.06);
+}
+
+.list {
+    border: none;
+}
+
+.paymentBox, .bilingBox {
+    padding: 36px 28px;
+    box-shadow: 0 14px 22px 5px rgba(38, 38, 38, 0.06);
+}
+
+.paymentBox {
+    padding: 0px;
+    border: 1px solid lightgrey;
+    border-radius: 9px;
+}
+
+.paymentTitle {
+    display: inline-block;
+    padding-left: 37px;
+    padding-top: 14px;
+}
+
+.allPaymentContainer {
+    display: inline-block;
+    float: right;
+    padding-right: 37px;
+    padding-top: 14px;
+}
+
+.paymentIcon {
+    font-size: 26px!important;
+    padding-right: 10px;
+}
+
+.razorContainer {
+    background: #FAFAFA;
+    padding: 25px;
+    border-bottom-left-radius: 9px;
+    border-bottom-right-radius: 9px;
+    border-top: 1px solid lightgray;
+}
+
+.razorImg {
+    width: 198px;
+    margin-bottom: 18px;
+}
+
+.sub {
+    width: 23px;
+    border: none;
+    background: #b98b431a;
+    color: #b98b43;
+    border-radius: 15px;
+}
+
+/* .listBox>li:hover {
+    background: #b98b431a;
+} */
+
+.quant {
+    width: 40px;
+    text-align: center;
+    color: #b98b43;
+    border: none;
+    border-bottom: 1px solid #b98b43;
+}
+
+.listBox:hover .quality {
+    background: #b98b431a;
+    color: #b98b43;
+}
+
+.listBox:hover .sub {
+    background: white;
+}
+
+.listBox:hover #quant {
+    border-bottom: 1px solid #b98b43;
+}
+
+.listBox:hover .quant {
+    border: none;
+    background: transparent;
+}
+
+.orderRow {
+    width: 100%;
+    margin-right: 0px;
+    margin-left: 0px;
+}
+
+.mrp4l-3 {
+    margin-right: 0.5vw;
+}
+
+.mlp4l-3 {
+    margin-left: 0.5vw;
+}
+
+.orderImage {
+    width: 65px;
+    height: 85px;
+    margin-left: -6px;
+}
+
+.progress {
+    width: 100%;
+    margin-top: 22px;
+    height: 0.2rem;
+}
+
+.ticketAvailableText {
+    font-size: 13px;
+}
+
+.ticketAvailableValue {
+    font-size: 13px;
+    color: #f8ed8d;
+}
+
+.progress-bar {
+    background-color: #b98b43;
+}
+
+.orderName {
+    padding-bottom: 100px;
+}
+
+input, textarea, select, a, .form-control:focus, input:focus, .form-control {
+    outline: none!important;
+    box-shadow: none!important;
+}
+
+input:focus, input:active {
+    background: #b98b431a!important;
+}
+
+/* WebKit, Blink, Edge */
+
+/* .form-control::-moz-placeholder {
+    color: #bfbfbf;
+}
+
+.form-control:-ms-input-placeholder {
+    color: #bfbfbf;
+}
+
+.form-control::-webkit-input-placeholder {
+    color: #bfbfbf;
+} 
+
+/* ============================== */
+
+/* Firefox < 19 */
+
+input:-moz-placeholder {
+    color: #646464;
+}
+
+input:focus:-moz-placeholder {
+    color: #bfbfbf;
+}
+
+/* Firefox > 19 */
+
+input::-moz-placeholder {
+    color: #646464;
+}
+
+input:focus::-moz-placeholder {
+    color: #bfbfbf;
+}
+
+/* Internet Explorer 10 */
+
+input:-ms-input-placeholder {
+    color: #646464;
+}
+
+input:focus:-ms-input-placeholder {
+    color: #bfbfbf;
+}
+
+/* checkout page */
+
+.checkoutBtn {
+    background: linear-gradient(90deg, rgba(4, 16, 44, 1) 0%, rgba(16, 32, 84, 1) 50%, rgba(4, 16, 44, 1) 100%);
+}
+
+.btn-secondary:not([disabled]):not(.disabled):active, .btn-secondary:not([disabled]):not(.disabled).active, .show>.btn-secondary.dropdown-toggle {
+    background-color: #b98b43 !important;
+}
+
+.btn-secondary {
+    color: #fff;
+    background-color: #b98b43 !important;
+}
+
+.btn-secondary:hover {
+    color: #fff;
+    background-color: #b98b43;
+}
+
+.redeemBtn {
+    padding: .63rem 2.14rem;
+}
+
+/* checkout page */
+
+@media (min-width:320px) and (max-width: 767px) {
+    .paymentIcon {
+        font-size: 20px!important;
+        padding-right: 0px;
+        padding-top: 3px;
+    }
+}

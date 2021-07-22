@@ -1,0 +1,2256 @@
+@charset "UTF-8";
+/**
+ * [Table of contents]
+ *   1 Page layout
+ *   2 Reset Styles
+ *   3 Utilities custom
+ *   4 Grid modules
+ *   5 Links
+ *   6 Typography
+ *   7 Novi
+ *   8 Lightgallery
+ *   9 Material Parallax
+ *   10 Panel custom
+ *   11 Google Map
+ */
+
+/** @section Page layout */
+
+.page {
+	position: relative;
+	overflow: hidden;
+	min-height: 100vh !important;
+}
+
+.bg-gradient.bg-secondary, .bg-secondary.bg-gradient-1, .bg-secondary.bg-gradient-2, .bg-secondary.bg-gradient-3 {
+	background-image: -moz-linear-gradient(left, #ed1c94 0%, #6d0eb1 100%);
+	/* FF3.6-15 */
+	background-image: -webkit-linear-gradient(left, #ed1c94 0%, #6d0eb1 100%);
+	/* Chrome10-25,Safari5.1-6 */
+	background-image: linear-gradient(to right, #ed1c94 0%, #6d0eb1 100%);
+	/* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ed1c94', endColorstr='#6d0eb1', GradientType=1);
+	/* IE6-9 */
+}
+
+.bg-gradient.bg-secondary-2, .bg-secondary-2.bg-gradient-1, .bg-secondary-2.bg-gradient-2, .bg-secondary-2.bg-gradient-3 {
+	background-image: -moz-linear-gradient(-39deg, #6d0eb1 59%, #080ab4 100%);
+	/* FF3.6-15 */
+	background-image: -webkit-linear-gradient(-39deg, #6d0eb1 59%, #080ab4 100%);
+	/* Chrome10-25,Safari5.1-6 */
+	background-image: linear-gradient(135deg, #6d0eb1 59%, #080ab4 100%);
+	/* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#6d0eb1', endColorstr='#080ab4', GradientType=1);
+}
+
+/**
+* 2.2  Backgrounds
+*/
+
+.context-dark, .box-scrim-example, .bg-gray-darker, .bg-additional-gray-darker .bg-additional-item, .bg-image, .bg-additional-image .bg-additional-item, .bg-gradient, .bg-gradient-1, .bg-gradient-2, .bg-gradient-3, .bg-accent, .bg-accent-accent, .bg-secondary-2, .breadcrumbs-custom-light {
+	color: #ffffff;
+}
+
+.context-dark h1, .box-scrim-example h1, .bg-gray-darker h1, .bg-additional-gray-darker .bg-additional-item h1, .bg-image h1, .bg-additional-image .bg-additional-item h1, .bg-gradient h1, .bg-gradient-1 h1, .bg-gradient-2 h1, .bg-gradient-3 h1, .bg-accent h1, .bg-accent-accent h1, .bg-secondary-2 h1, .breadcrumbs-custom-light h1, .context-dark h2, .box-scrim-example h2, .bg-gray-darker h2, .bg-additional-gray-darker .bg-additional-item h2, .bg-image h2, .bg-additional-image .bg-additional-item h2, .bg-gradient h2, .bg-gradient-1 h2, .bg-gradient-2 h2, .bg-gradient-3 h2, .bg-accent h2, .bg-accent-accent h2, .bg-secondary-2 h2, .breadcrumbs-custom-light h2, .context-dark h3, .box-scrim-example h3, .bg-gray-darker h3, .bg-additional-gray-darker .bg-additional-item h3, .bg-image h3, .bg-additional-image .bg-additional-item h3, .bg-gradient h3, .bg-gradient-1 h3, .bg-gradient-2 h3, .bg-gradient-3 h3, .bg-accent h3, .bg-accent-accent h3, .bg-secondary-2 h3, .breadcrumbs-custom-light h3, .context-dark h4, .box-scrim-example h4, .bg-gray-darker h4, .bg-additional-gray-darker .bg-additional-item h4, .bg-image h4, .bg-additional-image .bg-additional-item h4, .bg-gradient h4, .bg-gradient-1 h4, .bg-gradient-2 h4, .bg-gradient-3 h4, .bg-accent h4, .bg-accent-accent h4, .bg-secondary-2 h4, .breadcrumbs-custom-light h4, .context-dark h5, .box-scrim-example h5, .bg-gray-darker h5, .bg-additional-gray-darker .bg-additional-item h5, .bg-image h5, .bg-additional-image .bg-additional-item h5, .bg-gradient h5, .bg-gradient-1 h5, .bg-gradient-2 h5, .bg-gradient-3 h5, .bg-accent h5, .bg-accent-accent h5, .bg-secondary-2 h5, .breadcrumbs-custom-light h5, .context-dark h6, .box-scrim-example h6, .bg-gray-darker h6, .bg-additional-gray-darker .bg-additional-item h6, .bg-image h6, .bg-additional-image .bg-additional-item h6, .bg-gradient h6, .bg-gradient-1 h6, .bg-gradient-2 h6, .bg-gradient-3 h6, .bg-accent h6, .bg-accent-accent h6, .bg-secondary-2 h6, .breadcrumbs-custom-light h6, .context-dark [class^='heading-'], .box-scrim-example [class^='heading-'], .bg-gray-darker [class^='heading-'], .bg-additional-gray-darker .bg-additional-item [class^='heading-'], .bg-image [class^='heading-'], .bg-additional-image .bg-additional-item [class^='heading-'], .bg-gradient [class^='heading-'], .bg-gradient-1 [class^='heading-'], .bg-gradient-2 [class^='heading-'], .bg-gradient-3 [class^='heading-'], .bg-accent [class^='heading-'], .bg-accent-accent [class^='heading-'], .bg-secondary-2 [class^='heading-'], .breadcrumbs-custom-light [class^='heading-'] {
+	color: #ffffff;
+}
+
+.context-dark .text-gray-light, .box-scrim-example .text-gray-light, .bg-gray-darker .text-gray-light, .bg-additional-gray-darker .bg-additional-item .text-gray-light, .bg-image .text-gray-light, .bg-additional-image .bg-additional-item .text-gray-light, .bg-gradient .text-gray-light, .bg-gradient-1 .text-gray-light, .bg-gradient-2 .text-gray-light, .bg-gradient-3 .text-gray-light, .bg-accent .text-gray-light, .bg-accent-accent .text-gray-light, .bg-secondary-2 .text-gray-light, .breadcrumbs-custom-light .text-gray-light {
+	color: #c2c2c3;
+}
+
+.context-dark .bigger, .box-scrim-example .bigger, .bg-gray-darker .bigger, .bg-additional-gray-darker .bg-additional-item .bigger, .bg-image .bigger, .bg-additional-image .bg-additional-item .bigger, .bg-gradient .bigger, .bg-gradient-1 .bigger, .bg-gradient-2 .bigger, .bg-gradient-3 .bigger, .bg-accent .bigger, .bg-accent-accent .bigger, .bg-secondary-2 .bigger, .breadcrumbs-custom-light .bigger {
+	color: #c2c2c3;
+}
+
+.context-dark .icon-primary, .box-scrim-example .icon-primary, .bg-gray-darker .icon-primary, .bg-additional-gray-darker .bg-additional-item .icon-primary, .bg-image .icon-primary, .bg-additional-image .bg-additional-item .icon-primary, .bg-gradient .icon-primary, .bg-gradient-1 .icon-primary, .bg-gradient-2 .icon-primary, .bg-gradient-3 .icon-primary, .bg-accent .icon-primary, .bg-accent-accent .icon-primary, .bg-secondary-2 .icon-primary, .breadcrumbs-custom-light .icon-primary {
+	color: #ed1c94;
+}
+
+.context-dark .breadcrumbs-custom-title::before, .box-scrim-example .breadcrumbs-custom-title::before, .bg-gray-darker .breadcrumbs-custom-title::before, .bg-additional-gray-darker .bg-additional-item .breadcrumbs-custom-title::before, .bg-image .breadcrumbs-custom-title::before, .bg-additional-image .bg-additional-item .breadcrumbs-custom-title::before, .bg-gradient .breadcrumbs-custom-title::before, .bg-gradient-1 .breadcrumbs-custom-title::before, .bg-gradient-2 .breadcrumbs-custom-title::before, .bg-gradient-3 .breadcrumbs-custom-title::before, .bg-accent .breadcrumbs-custom-title::before, .bg-accent-accent .breadcrumbs-custom-title::before, .bg-secondary-2 .breadcrumbs-custom-title::before, .breadcrumbs-custom-light .breadcrumbs-custom-title::before, .context-dark .breadcrumbs-custom-title::after, .box-scrim-example .breadcrumbs-custom-title::after, .bg-gray-darker .breadcrumbs-custom-title::after, .bg-additional-gray-darker .bg-additional-item .breadcrumbs-custom-title::after, .bg-image .breadcrumbs-custom-title::after, .bg-additional-image .bg-additional-item .breadcrumbs-custom-title::after, .bg-gradient .breadcrumbs-custom-title::after, .bg-gradient-1 .breadcrumbs-custom-title::after, .bg-gradient-2 .breadcrumbs-custom-title::after, .bg-gradient-3 .breadcrumbs-custom-title::after, .bg-accent .breadcrumbs-custom-title::after, .bg-accent-accent .breadcrumbs-custom-title::after, .bg-secondary-2 .breadcrumbs-custom-title::after, .breadcrumbs-custom-light .breadcrumbs-custom-title::after, .context-dark .heading-decorated-diamonds::before, .box-scrim-example .heading-decorated-diamonds::before, .bg-gray-darker .heading-decorated-diamonds::before, .bg-additional-gray-darker .bg-additional-item .heading-decorated-diamonds::before, .bg-image .heading-decorated-diamonds::before, .bg-additional-image .bg-additional-item .heading-decorated-diamonds::before, .bg-gradient .heading-decorated-diamonds::before, .bg-gradient-1 .heading-decorated-diamonds::before, .bg-gradient-2 .heading-decorated-diamonds::before, .bg-gradient-3 .heading-decorated-diamonds::before, .bg-accent .heading-decorated-diamonds::before, .bg-accent-accent .heading-decorated-diamonds::before, .bg-secondary-2 .heading-decorated-diamonds::before, .breadcrumbs-custom-light .heading-decorated-diamonds::before, .context-dark .heading-decorated-diamonds::after, .box-scrim-example .heading-decorated-diamonds::after, .bg-gray-darker .heading-decorated-diamonds::after, .bg-additional-gray-darker .bg-additional-item .heading-decorated-diamonds::after, .bg-image .heading-decorated-diamonds::after, .bg-additional-image .bg-additional-item .heading-decorated-diamonds::after, .bg-gradient .heading-decorated-diamonds::after, .bg-gradient-1 .heading-decorated-diamonds::after, .bg-gradient-2 .heading-decorated-diamonds::after, .bg-gradient-3 .heading-decorated-diamonds::after, .bg-accent .heading-decorated-diamonds::after, .bg-accent-accent .heading-decorated-diamonds::after, .bg-secondary-2 .heading-decorated-diamonds::after, .breadcrumbs-custom-light .heading-decorated-diamonds::after {
+	background: #ffffff;
+}
+
+.context-dark .card-corporate, .box-scrim-example .card-corporate, .bg-gray-darker .card-corporate, .bg-additional-gray-darker .bg-additional-item .card-corporate, .bg-image .card-corporate, .bg-additional-image .bg-additional-item .card-corporate, .bg-gradient .card-corporate, .bg-gradient-1 .card-corporate, .bg-gradient-2 .card-corporate, .bg-gradient-3 .card-corporate, .bg-accent .card-corporate, .bg-accent-accent .card-corporate, .bg-secondary-2 .card-corporate, .breadcrumbs-custom-light .card-corporate {
+	box-shadow: none;
+}
+
+.context-dark .box-minimal-light, .box-scrim-example .box-minimal-light, .bg-gray-darker .box-minimal-light, .bg-additional-gray-darker .bg-additional-item .box-minimal-light, .bg-image .box-minimal-light, .bg-additional-image .bg-additional-item .box-minimal-light, .bg-gradient .box-minimal-light, .bg-gradient-1 .box-minimal-light, .bg-gradient-2 .box-minimal-light, .bg-gradient-3 .box-minimal-light, .bg-accent .box-minimal-light, .bg-accent-accent .box-minimal-light, .bg-secondary-2 .box-minimal-light, .breadcrumbs-custom-light .box-minimal-light {
+	color: #ededed;
+}
+
+.context-dark .box-minimal-light .box-minimal-icon, .box-scrim-example .box-minimal-light .box-minimal-icon, .bg-gray-darker .box-minimal-light .box-minimal-icon, .bg-additional-gray-darker .bg-additional-item .box-minimal-light .box-minimal-icon, .bg-image .box-minimal-light .box-minimal-icon, .bg-additional-image .bg-additional-item .box-minimal-light .box-minimal-icon, .bg-gradient .box-minimal-light .box-minimal-icon, .bg-gradient-1 .box-minimal-light .box-minimal-icon, .bg-gradient-2 .box-minimal-light .box-minimal-icon, .bg-gradient-3 .box-minimal-light .box-minimal-icon, .bg-accent .box-minimal-light .box-minimal-icon, .bg-accent-accent .box-minimal-light .box-minimal-icon, .bg-secondary-2 .box-minimal-light .box-minimal-icon, .breadcrumbs-custom-light .box-minimal-light .box-minimal-icon {
+	color: #ffffff;
+}
+
+.context-dark .box-minimal-light h1, .box-scrim-example .box-minimal-light h1, .bg-gray-darker .box-minimal-light h1, .bg-additional-gray-darker .bg-additional-item .box-minimal-light h1, .bg-image .box-minimal-light h1, .bg-additional-image .bg-additional-item .box-minimal-light h1, .bg-gradient .box-minimal-light h1, .bg-gradient-1 .box-minimal-light h1, .bg-gradient-2 .box-minimal-light h1, .bg-gradient-3 .box-minimal-light h1, .bg-accent .box-minimal-light h1, .bg-accent-accent .box-minimal-light h1, .bg-secondary-2 .box-minimal-light h1, .breadcrumbs-custom-light .box-minimal-light h1, .context-dark .box-minimal-light h2, .box-scrim-example .box-minimal-light h2, .bg-gray-darker .box-minimal-light h2, .bg-additional-gray-darker .bg-additional-item .box-minimal-light h2, .bg-image .box-minimal-light h2, .bg-additional-image .bg-additional-item .box-minimal-light h2, .bg-gradient .box-minimal-light h2, .bg-gradient-1 .box-minimal-light h2, .bg-gradient-2 .box-minimal-light h2, .bg-gradient-3 .box-minimal-light h2, .bg-accent .box-minimal-light h2, .bg-accent-accent .box-minimal-light h2, .bg-secondary-2 .box-minimal-light h2, .breadcrumbs-custom-light .box-minimal-light h2, .context-dark .box-minimal-light h3, .box-scrim-example .box-minimal-light h3, .bg-gray-darker .box-minimal-light h3, .bg-additional-gray-darker .bg-additional-item .box-minimal-light h3, .bg-image .box-minimal-light h3, .bg-additional-image .bg-additional-item .box-minimal-light h3, .bg-gradient .box-minimal-light h3, .bg-gradient-1 .box-minimal-light h3, .bg-gradient-2 .box-minimal-light h3, .bg-gradient-3 .box-minimal-light h3, .bg-accent .box-minimal-light h3, .bg-accent-accent .box-minimal-light h3, .bg-secondary-2 .box-minimal-light h3, .breadcrumbs-custom-light .box-minimal-light h3, .context-dark .box-minimal-light h4, .box-scrim-example .box-minimal-light h4, .bg-gray-darker .box-minimal-light h4, .bg-additional-gray-darker .bg-additional-item .box-minimal-light h4, .bg-image .box-minimal-light h4, .bg-additional-image .bg-additional-item .box-minimal-light h4, .bg-gradient .box-minimal-light h4, .bg-gradient-1 .box-minimal-light h4, .bg-gradient-2 .box-minimal-light h4, .bg-gradient-3 .box-minimal-light h4, .bg-accent .box-minimal-light h4, .bg-accent-accent .box-minimal-light h4, .bg-secondary-2 .box-minimal-light h4, .breadcrumbs-custom-light .box-minimal-light h4, .context-dark .box-minimal-light h5, .box-scrim-example .box-minimal-light h5, .bg-gray-darker .box-minimal-light h5, .bg-additional-gray-darker .bg-additional-item .box-minimal-light h5, .bg-image .box-minimal-light h5, .bg-additional-image .bg-additional-item .box-minimal-light h5, .bg-gradient .box-minimal-light h5, .bg-gradient-1 .box-minimal-light h5, .bg-gradient-2 .box-minimal-light h5, .bg-gradient-3 .box-minimal-light h5, .bg-accent .box-minimal-light h5, .bg-accent-accent .box-minimal-light h5, .bg-secondary-2 .box-minimal-light h5, .breadcrumbs-custom-light .box-minimal-light h5, .context-dark .box-minimal-light h6, .box-scrim-example .box-minimal-light h6, .bg-gray-darker .box-minimal-light h6, .bg-additional-gray-darker .bg-additional-item .box-minimal-light h6, .bg-image .box-minimal-light h6, .bg-additional-image .bg-additional-item .box-minimal-light h6, .bg-gradient .box-minimal-light h6, .bg-gradient-1 .box-minimal-light h6, .bg-gradient-2 .box-minimal-light h6, .bg-gradient-3 .box-minimal-light h6, .bg-accent .box-minimal-light h6, .bg-accent-accent .box-minimal-light h6, .bg-secondary-2 .box-minimal-light h6, .breadcrumbs-custom-light .box-minimal-light h6, .context-dark .box-minimal-light [class^='heading-'], .box-scrim-example .box-minimal-light [class^='heading-'], .bg-gray-darker .box-minimal-light [class^='heading-'], .bg-additional-gray-darker .bg-additional-item .box-minimal-light [class^='heading-'], .bg-image .box-minimal-light [class^='heading-'], .bg-additional-image .bg-additional-item .box-minimal-light [class^='heading-'], .bg-gradient .box-minimal-light [class^='heading-'], .bg-gradient-1 .box-minimal-light [class^='heading-'], .bg-gradient-2 .box-minimal-light [class^='heading-'], .bg-gradient-3 .box-minimal-light [class^='heading-'], .bg-accent .box-minimal-light [class^='heading-'], .bg-accent-accent .box-minimal-light [class^='heading-'], .bg-secondary-2 .box-minimal-light [class^='heading-'], .breadcrumbs-custom-light .box-minimal-light [class^='heading-'] {
+	color: #ffec17;
+}
+
+.context-dark .box-minimal-border .box-minimal-text, .box-scrim-example .box-minimal-border .box-minimal-text, .bg-gray-darker .box-minimal-border .box-minimal-text, .bg-additional-gray-darker .bg-additional-item .box-minimal-border .box-minimal-text, .bg-image .box-minimal-border .box-minimal-text, .bg-additional-image .bg-additional-item .box-minimal-border .box-minimal-text, .bg-gradient .box-minimal-border .box-minimal-text, .bg-gradient-1 .box-minimal-border .box-minimal-text, .bg-gradient-2 .box-minimal-border .box-minimal-text, .bg-gradient-3 .box-minimal-border .box-minimal-text, .bg-accent .box-minimal-border .box-minimal-text, .bg-accent-accent .box-minimal-border .box-minimal-text, .bg-secondary-2 .box-minimal-border .box-minimal-text, .breadcrumbs-custom-light .box-minimal-border .box-minimal-text {
+	opacity: .6;
+}
+
+.context-dark .quote-minimal-text, .box-scrim-example .quote-minimal-text, .bg-gray-darker .quote-minimal-text, .bg-additional-gray-darker .bg-additional-item .quote-minimal-text, .bg-image .quote-minimal-text, .bg-additional-image .bg-additional-item .quote-minimal-text, .bg-gradient .quote-minimal-text, .bg-gradient-1 .quote-minimal-text, .bg-gradient-2 .quote-minimal-text, .bg-gradient-3 .quote-minimal-text, .bg-accent .quote-minimal-text, .bg-accent-accent .quote-minimal-text, .bg-secondary-2 .quote-minimal-text, .breadcrumbs-custom-light .quote-minimal-text {
+	color: #ffffff;
+}
+
+.context-dark .quote-boxed-text, .box-scrim-example .quote-boxed-text, .bg-gray-darker .quote-boxed-text, .bg-additional-gray-darker .bg-additional-item .quote-boxed-text, .bg-image .quote-boxed-text, .bg-additional-image .bg-additional-item .quote-boxed-text, .bg-gradient .quote-boxed-text, .bg-gradient-1 .quote-boxed-text, .bg-gradient-2 .quote-boxed-text, .bg-gradient-3 .quote-boxed-text, .bg-accent .quote-boxed-text, .bg-accent-accent .quote-boxed-text, .bg-secondary-2 .quote-boxed-text, .breadcrumbs-custom-light .quote-boxed-text, .context-dark .quote-vertical-text, .box-scrim-example .quote-vertical-text, .bg-gray-darker .quote-vertical-text, .bg-additional-gray-darker .bg-additional-item .quote-vertical-text, .bg-image .quote-vertical-text, .bg-additional-image .bg-additional-item .quote-vertical-text, .bg-gradient .quote-vertical-text, .bg-gradient-1 .quote-vertical-text, .bg-gradient-2 .quote-vertical-text, .bg-gradient-3 .quote-vertical-text, .bg-accent .quote-vertical-text, .bg-accent-accent .quote-vertical-text, .bg-secondary-2 .quote-vertical-text, .breadcrumbs-custom-light .quote-vertical-text, .context-dark .quote-modern-text, .box-scrim-example .quote-modern-text, .bg-gray-darker .quote-modern-text, .bg-additional-gray-darker .bg-additional-item .quote-modern-text, .bg-image .quote-modern-text, .bg-additional-image .bg-additional-item .quote-modern-text, .bg-gradient .quote-modern-text, .bg-gradient-1 .quote-modern-text, .bg-gradient-2 .quote-modern-text, .bg-gradient-3 .quote-modern-text, .bg-accent .quote-modern-text, .bg-accent-accent .quote-modern-text, .bg-secondary-2 .quote-modern-text, .breadcrumbs-custom-light .quote-modern-text {
+	color: #ffffff;
+}
+
+.context-dark .quote-boxed-cite, .box-scrim-example .quote-boxed-cite, .bg-gray-darker .quote-boxed-cite, .bg-additional-gray-darker .bg-additional-item .quote-boxed-cite, .bg-image .quote-boxed-cite, .bg-additional-image .bg-additional-item .quote-boxed-cite, .bg-gradient .quote-boxed-cite, .bg-gradient-1 .quote-boxed-cite, .bg-gradient-2 .quote-boxed-cite, .bg-gradient-3 .quote-boxed-cite, .bg-accent .quote-boxed-cite, .bg-accent-accent .quote-boxed-cite, .bg-secondary-2 .quote-boxed-cite, .breadcrumbs-custom-light .quote-boxed-cite, .context-dark .quote-vertical-cite, .box-scrim-example .quote-vertical-cite, .bg-gray-darker .quote-vertical-cite, .bg-additional-gray-darker .bg-additional-item .quote-vertical-cite, .bg-image .quote-vertical-cite, .bg-additional-image .bg-additional-item .quote-vertical-cite, .bg-gradient .quote-vertical-cite, .bg-gradient-1 .quote-vertical-cite, .bg-gradient-2 .quote-vertical-cite, .bg-gradient-3 .quote-vertical-cite, .bg-accent .quote-vertical-cite, .bg-accent-accent .quote-vertical-cite, .bg-secondary-2 .quote-vertical-cite, .breadcrumbs-custom-light .quote-vertical-cite, .context-dark .quote-modern-cite, .box-scrim-example .quote-modern-cite, .bg-gray-darker .quote-modern-cite, .bg-additional-gray-darker .bg-additional-item .quote-modern-cite, .bg-image .quote-modern-cite, .bg-additional-image .bg-additional-item .quote-modern-cite, .bg-gradient .quote-modern-cite, .bg-gradient-1 .quote-modern-cite, .bg-gradient-2 .quote-modern-cite, .bg-gradient-3 .quote-modern-cite, .bg-accent .quote-modern-cite, .bg-accent-accent .quote-modern-cite, .bg-secondary-2 .quote-modern-cite, .breadcrumbs-custom-light .quote-modern-cite {
+	color: #ffec17;
+}
+
+.context-dark .quote-boxed-small, .box-scrim-example .quote-boxed-small, .bg-gray-darker .quote-boxed-small, .bg-additional-gray-darker .bg-additional-item .quote-boxed-small, .bg-image .quote-boxed-small, .bg-additional-image .bg-additional-item .quote-boxed-small, .bg-gradient .quote-boxed-small, .bg-gradient-1 .quote-boxed-small, .bg-gradient-2 .quote-boxed-small, .bg-gradient-3 .quote-boxed-small, .bg-accent .quote-boxed-small, .bg-accent-accent .quote-boxed-small, .bg-secondary-2 .quote-boxed-small, .breadcrumbs-custom-light .quote-boxed-small, .context-dark .quote-vertical-small, .box-scrim-example .quote-vertical-small, .bg-gray-darker .quote-vertical-small, .bg-additional-gray-darker .bg-additional-item .quote-vertical-small, .bg-image .quote-vertical-small, .bg-additional-image .bg-additional-item .quote-vertical-small, .bg-gradient .quote-vertical-small, .bg-gradient-1 .quote-vertical-small, .bg-gradient-2 .quote-vertical-small, .bg-gradient-3 .quote-vertical-small, .bg-accent .quote-vertical-small, .bg-accent-accent .quote-vertical-small, .bg-secondary-2 .quote-vertical-small, .breadcrumbs-custom-light .quote-vertical-small {
+	color: #838386;
+}
+
+.context-dark .quote-modern-small, .box-scrim-example .quote-modern-small, .bg-gray-darker .quote-modern-small, .bg-additional-gray-darker .bg-additional-item .quote-modern-small, .bg-image .quote-modern-small, .bg-additional-image .bg-additional-item .quote-modern-small, .bg-gradient .quote-modern-small, .bg-gradient-1 .quote-modern-small, .bg-gradient-2 .quote-modern-small, .bg-gradient-3 .quote-modern-small, .bg-accent .quote-modern-small, .bg-accent-accent .quote-modern-small, .bg-secondary-2 .quote-modern-small, .breadcrumbs-custom-light .quote-modern-small {
+	color: #c2c2c3;
+}
+
+.context-dark .owl-dot:hover, .box-scrim-example .owl-dot:hover, .bg-gray-darker .owl-dot:hover, .bg-additional-gray-darker .bg-additional-item .owl-dot:hover, .bg-image .owl-dot:hover, .bg-additional-image .bg-additional-item .owl-dot:hover, .bg-gradient .owl-dot:hover, .bg-gradient-1 .owl-dot:hover, .bg-gradient-2 .owl-dot:hover, .bg-gradient-3 .owl-dot:hover, .bg-accent .owl-dot:hover, .bg-accent-accent .owl-dot:hover, .bg-secondary-2 .owl-dot:hover, .breadcrumbs-custom-light .owl-dot:hover, .context-dark .owl-dot.active, .box-scrim-example .owl-dot.active, .bg-gray-darker .owl-dot.active, .bg-additional-gray-darker .bg-additional-item .owl-dot.active, .bg-image .owl-dot.active, .bg-additional-image .bg-additional-item .owl-dot.active, .bg-gradient .owl-dot.active, .bg-gradient-1 .owl-dot.active, .bg-gradient-2 .owl-dot.active, .bg-gradient-3 .owl-dot.active, .bg-accent .owl-dot.active, .bg-accent-accent .owl-dot.active, .bg-secondary-2 .owl-dot.active, .breadcrumbs-custom-light .owl-dot.active {
+	background-color: #ed1c94;
+}
+
+.context-dark .slider-widget, .box-scrim-example .slider-widget, .bg-gray-darker .slider-widget, .bg-additional-gray-darker .bg-additional-item .slider-widget, .bg-image .slider-widget, .bg-additional-image .bg-additional-item .slider-widget, .bg-gradient .slider-widget, .bg-gradient-1 .slider-widget, .bg-gradient-2 .slider-widget, .bg-gradient-3 .slider-widget, .bg-accent .slider-widget, .bg-accent-accent .slider-widget, .bg-secondary-2 .slider-widget, .breadcrumbs-custom-light .slider-widget {
+	box-shadow: none;
+}
+
+.context-dark hr, .box-scrim-example hr, .bg-gray-darker hr, .bg-additional-gray-darker .bg-additional-item hr, .bg-image hr, .bg-additional-image .bg-additional-item hr, .bg-gradient hr, .bg-gradient-1 hr, .bg-gradient-2 hr, .bg-gradient-3 hr, .bg-accent hr, .bg-accent-accent hr, .bg-secondary-2 hr, .breadcrumbs-custom-light hr {
+	border-color: #ffffff;
+	opacity: .5;
+}
+
+.context-dark .divider-default, .box-scrim-example .divider-default, .bg-gray-darker .divider-default, .bg-additional-gray-darker .bg-additional-item .divider-default, .bg-image .divider-default, .bg-additional-image .bg-additional-item .divider-default, .bg-gradient .divider-default, .bg-gradient-1 .divider-default, .bg-gradient-2 .divider-default, .bg-gradient-3 .divider-default, .bg-accent .divider-default, .bg-accent-accent .divider-default, .bg-secondary-2 .divider-default, .breadcrumbs-custom-light .divider-default {
+	opacity: 1;
+}
+
+.context-dark .box-minimal-border .box-minimal-icon, .box-scrim-example .box-minimal-border .box-minimal-icon, .bg-gray-darker .box-minimal-border .box-minimal-icon, .bg-additional-gray-darker .bg-additional-item .box-minimal-border .box-minimal-icon, .bg-image .box-minimal-border .box-minimal-icon, .bg-additional-image .bg-additional-item .box-minimal-border .box-minimal-icon, .bg-gradient .box-minimal-border .box-minimal-icon, .bg-gradient-1 .box-minimal-border .box-minimal-icon, .bg-gradient-2 .box-minimal-border .box-minimal-icon, .bg-gradient-3 .box-minimal-border .box-minimal-icon, .bg-accent .box-minimal-border .box-minimal-icon, .bg-accent-accent .box-minimal-border .box-minimal-icon, .bg-secondary-2 .box-minimal-border .box-minimal-icon, .breadcrumbs-custom-light .box-minimal-border .box-minimal-icon {
+	color: #ffffff;
+}
+
+.context-dark .box-minimal-border .box-minimal-icon svg, .box-scrim-example .box-minimal-border .box-minimal-icon svg, .bg-gray-darker .box-minimal-border .box-minimal-icon svg, .bg-additional-gray-darker .bg-additional-item .box-minimal-border .box-minimal-icon svg, .bg-image .box-minimal-border .box-minimal-icon svg, .bg-additional-image .bg-additional-item .box-minimal-border .box-minimal-icon svg, .bg-gradient .box-minimal-border .box-minimal-icon svg, .bg-gradient-1 .box-minimal-border .box-minimal-icon svg, .bg-gradient-2 .box-minimal-border .box-minimal-icon svg, .bg-gradient-3 .box-minimal-border .box-minimal-icon svg, .bg-accent .box-minimal-border .box-minimal-icon svg, .bg-accent-accent .box-minimal-border .box-minimal-icon svg, .bg-secondary-2 .box-minimal-border .box-minimal-icon svg, .breadcrumbs-custom-light .box-minimal-border .box-minimal-icon svg {
+	fill: #ffffff;
+}
+
+.context-dark .box-minimal-border .box-minimal-title, .box-scrim-example .box-minimal-border .box-minimal-title, .bg-gray-darker .box-minimal-border .box-minimal-title, .bg-additional-gray-darker .bg-additional-item .box-minimal-border .box-minimal-title, .bg-image .box-minimal-border .box-minimal-title, .bg-additional-image .bg-additional-item .box-minimal-border .box-minimal-title, .bg-gradient .box-minimal-border .box-minimal-title, .bg-gradient-1 .box-minimal-border .box-minimal-title, .bg-gradient-2 .box-minimal-border .box-minimal-title, .bg-gradient-3 .box-minimal-border .box-minimal-title, .bg-accent .box-minimal-border .box-minimal-title, .bg-accent-accent .box-minimal-border .box-minimal-title, .bg-secondary-2 .box-minimal-border .box-minimal-title, .breadcrumbs-custom-light .box-minimal-border .box-minimal-title {
+	color: #ffffff;
+}
+
+.context-dark .box-minimal-border:hover, .box-scrim-example .box-minimal-border:hover, .bg-gray-darker .box-minimal-border:hover, .bg-additional-gray-darker .bg-additional-item .box-minimal-border:hover, .bg-image .box-minimal-border:hover, .bg-additional-image .bg-additional-item .box-minimal-border:hover, .bg-gradient .box-minimal-border:hover, .bg-gradient-1 .box-minimal-border:hover, .bg-gradient-2 .box-minimal-border:hover, .bg-gradient-3 .box-minimal-border:hover, .bg-accent .box-minimal-border:hover, .bg-accent-accent .box-minimal-border:hover, .bg-secondary-2 .box-minimal-border:hover, .breadcrumbs-custom-light .box-minimal-border:hover {
+	background: #6d0eb1;
+	border-color: #6d0eb1;
+}
+
+.context-dark .box-minimal-modern, .box-scrim-example .box-minimal-modern, .bg-gray-darker .box-minimal-modern, .bg-additional-gray-darker .bg-additional-item .box-minimal-modern, .bg-image .box-minimal-modern, .bg-additional-image .bg-additional-item .box-minimal-modern, .bg-gradient .box-minimal-modern, .bg-gradient-1 .box-minimal-modern, .bg-gradient-2 .box-minimal-modern, .bg-gradient-3 .box-minimal-modern, .bg-accent .box-minimal-modern, .bg-accent-accent .box-minimal-modern, .bg-secondary-2 .box-minimal-modern, .breadcrumbs-custom-light .box-minimal-modern {
+	background-color: #ffffff;
+}
+
+.context-dark .box-minimal-modern .box-minimal-title, .box-scrim-example .box-minimal-modern .box-minimal-title, .bg-gray-darker .box-minimal-modern .box-minimal-title, .bg-additional-gray-darker .bg-additional-item .box-minimal-modern .box-minimal-title, .bg-image .box-minimal-modern .box-minimal-title, .bg-additional-image .bg-additional-item .box-minimal-modern .box-minimal-title, .bg-gradient .box-minimal-modern .box-minimal-title, .bg-gradient-1 .box-minimal-modern .box-minimal-title, .bg-gradient-2 .box-minimal-modern .box-minimal-title, .bg-gradient-3 .box-minimal-modern .box-minimal-title, .bg-accent .box-minimal-modern .box-minimal-title, .bg-accent-accent .box-minimal-modern .box-minimal-title, .bg-secondary-2 .box-minimal-modern .box-minimal-title, .breadcrumbs-custom-light .box-minimal-modern .box-minimal-title {
+	color: #29293a;
+}
+
+.context-dark .box-minimal-modern .box-minimal-text, .box-scrim-example .box-minimal-modern .box-minimal-text, .bg-gray-darker .box-minimal-modern .box-minimal-text, .bg-additional-gray-darker .bg-additional-item .box-minimal-modern .box-minimal-text, .bg-image .box-minimal-modern .box-minimal-text, .bg-additional-image .bg-additional-item .box-minimal-modern .box-minimal-text, .bg-gradient .box-minimal-modern .box-minimal-text, .bg-gradient-1 .box-minimal-modern .box-minimal-text, .bg-gradient-2 .box-minimal-modern .box-minimal-text, .bg-gradient-3 .box-minimal-modern .box-minimal-text, .bg-accent .box-minimal-modern .box-minimal-text, .bg-accent-accent .box-minimal-modern .box-minimal-text, .bg-secondary-2 .box-minimal-modern .box-minimal-text, .breadcrumbs-custom-light .box-minimal-modern .box-minimal-text {
+	color: #838386;
+}
+
+.context-dark .counter-wrap .icon-secondary, .box-scrim-example .counter-wrap .icon-secondary, .bg-gray-darker .counter-wrap .icon-secondary, .bg-additional-gray-darker .bg-additional-item .counter-wrap .icon-secondary, .bg-image .counter-wrap .icon-secondary, .bg-additional-image .bg-additional-item .counter-wrap .icon-secondary, .bg-gradient .counter-wrap .icon-secondary, .bg-gradient-1 .counter-wrap .icon-secondary, .bg-gradient-2 .counter-wrap .icon-secondary, .bg-gradient-3 .counter-wrap .icon-secondary, .bg-accent .counter-wrap .icon-secondary, .bg-accent-accent .counter-wrap .icon-secondary, .bg-secondary-2 .counter-wrap .icon-secondary, .breadcrumbs-custom-light .counter-wrap .icon-secondary {
+	color: #ffec17;
+}
+
+.page .context-dark .icon-primary, .page .box-scrim-example .icon-primary, .page .bg-gray-darker .icon-primary, .page .bg-additional-gray-darker .bg-additional-item .icon-primary, .bg-additional-gray-darker .page .bg-additional-item .icon-primary, .page .bg-image .icon-primary, .page .bg-additional-image .bg-additional-item .icon-primary, .bg-additional-image .page .bg-additional-item .icon-primary, .page .bg-gradient .icon-primary, .page .bg-gradient-1 .icon-primary, .page .bg-gradient-2 .icon-primary, .page .bg-gradient-3 .icon-primary, .page .bg-accent .icon-primary, .page .bg-accent-accent .icon-primary, .page .bg-secondary-2 .icon-primary, .page .breadcrumbs-custom-light .icon-primary {
+	color: #ed1c94;
+}
+
+.context-dark .post-blog-article, .box-scrim-example .post-blog-article, .bg-gray-darker .post-blog-article, .bg-additional-gray-darker .bg-additional-item .post-blog-article, .bg-image .post-blog-article, .bg-additional-image .bg-additional-item .post-blog-article, .bg-gradient .post-blog-article, .bg-gradient-1 .post-blog-article, .bg-gradient-2 .post-blog-article, .bg-gradient-3 .post-blog-article, .bg-accent .post-blog-article, .bg-accent-accent .post-blog-article, .bg-secondary-2 .post-blog-article, .breadcrumbs-custom-light .post-blog-article {
+	color: #c2c2c3;
+}
+
+.context-dark .post-blog-article-title, .box-scrim-example .post-blog-article-title, .bg-gray-darker .post-blog-article-title, .bg-additional-gray-darker .bg-additional-item .post-blog-article-title, .bg-image .post-blog-article-title, .bg-additional-image .bg-additional-item .post-blog-article-title, .bg-gradient .post-blog-article-title, .bg-gradient-1 .post-blog-article-title, .bg-gradient-2 .post-blog-article-title, .bg-gradient-3 .post-blog-article-title, .bg-accent .post-blog-article-title, .bg-accent-accent .post-blog-article-title, .bg-secondary-2 .post-blog-article-title, .breadcrumbs-custom-light .post-blog-article-title, .context-dark .post-blog-article .big, .box-scrim-example .post-blog-article .big, .bg-gray-darker .post-blog-article .big, .bg-additional-gray-darker .bg-additional-item .post-blog-article .big, .bg-image .post-blog-article .big, .bg-additional-image .bg-additional-item .post-blog-article .big, .bg-gradient .post-blog-article .big, .bg-gradient-1 .post-blog-article .big, .bg-gradient-2 .post-blog-article .big, .bg-gradient-3 .post-blog-article .big, .bg-accent .post-blog-article .big, .bg-accent-accent .post-blog-article .big, .bg-secondary-2 .post-blog-article .big, .breadcrumbs-custom-light .post-blog-article .big {
+	color: #ffffff;
+}
+
+.context-dark .post-blog-article .box-inline a, .box-scrim-example .post-blog-article .box-inline a, .bg-gray-darker .post-blog-article .box-inline a, .bg-additional-gray-darker .bg-additional-item .post-blog-article .box-inline a, .bg-image .post-blog-article .box-inline a, .bg-additional-image .bg-additional-item .post-blog-article .box-inline a, .bg-gradient .post-blog-article .box-inline a, .bg-gradient-1 .post-blog-article .box-inline a, .bg-gradient-2 .post-blog-article .box-inline a, .bg-gradient-3 .post-blog-article .box-inline a, .bg-accent .post-blog-article .box-inline a, .bg-accent-accent .post-blog-article .box-inline a, .bg-secondary-2 .post-blog-article .box-inline a, .breadcrumbs-custom-light .post-blog-article .box-inline a {
+	color: #c2c2c3;
+}
+
+.context-dark .post-blog-article .box-inline a:hover, .box-scrim-example .post-blog-article .box-inline a:hover, .bg-gray-darker .post-blog-article .box-inline a:hover, .bg-additional-gray-darker .bg-additional-item .post-blog-article .box-inline a:hover, .bg-image .post-blog-article .box-inline a:hover, .bg-additional-image .bg-additional-item .post-blog-article .box-inline a:hover, .bg-gradient .post-blog-article .box-inline a:hover, .bg-gradient-1 .post-blog-article .box-inline a:hover, .bg-gradient-2 .post-blog-article .box-inline a:hover, .bg-gradient-3 .post-blog-article .box-inline a:hover, .bg-accent .post-blog-article .box-inline a:hover, .bg-accent-accent .post-blog-article .box-inline a:hover, .bg-secondary-2 .post-blog-article .box-inline a:hover, .breadcrumbs-custom-light .post-blog-article .box-inline a:hover {
+	color: #ffec17;
+}
+
+.context-dark .breadcrumbs-custom-path>li.active, .box-scrim-example .breadcrumbs-custom-path>li.active, .bg-gray-darker .breadcrumbs-custom-path>li.active, .bg-additional-gray-darker .bg-additional-item .breadcrumbs-custom-path>li.active, .bg-image .breadcrumbs-custom-path>li.active, .bg-additional-image .bg-additional-item .breadcrumbs-custom-path>li.active, .bg-gradient .breadcrumbs-custom-path>li.active, .bg-gradient-1 .breadcrumbs-custom-path>li.active, .bg-gradient-2 .breadcrumbs-custom-path>li.active, .bg-gradient-3 .breadcrumbs-custom-path>li.active, .bg-accent .breadcrumbs-custom-path>li.active, .bg-accent-accent .breadcrumbs-custom-path>li.active, .bg-secondary-2 .breadcrumbs-custom-path>li.active, .breadcrumbs-custom-light .breadcrumbs-custom-path>li.active {
+	color: #ffffff;
+}
+
+.context-dark .breadcrumbs-custom-path>li a, .box-scrim-example .breadcrumbs-custom-path>li a, .bg-gray-darker .breadcrumbs-custom-path>li a, .bg-additional-gray-darker .bg-additional-item .breadcrumbs-custom-path>li a, .bg-image .breadcrumbs-custom-path>li a, .bg-additional-image .bg-additional-item .breadcrumbs-custom-path>li a, .bg-gradient .breadcrumbs-custom-path>li a, .bg-gradient-1 .breadcrumbs-custom-path>li a, .bg-gradient-2 .breadcrumbs-custom-path>li a, .bg-gradient-3 .breadcrumbs-custom-path>li a, .bg-accent .breadcrumbs-custom-path>li a, .bg-accent-accent .breadcrumbs-custom-path>li a, .bg-secondary-2 .breadcrumbs-custom-path>li a, .breadcrumbs-custom-light .breadcrumbs-custom-path>li a {
+	color: #ffffff;
+}
+
+.context-dark .breadcrumbs-custom-path>li a:hover, .box-scrim-example .breadcrumbs-custom-path>li a:hover, .bg-gray-darker .breadcrumbs-custom-path>li a:hover, .bg-additional-gray-darker .bg-additional-item .breadcrumbs-custom-path>li a:hover, .bg-image .breadcrumbs-custom-path>li a:hover, .bg-additional-image .bg-additional-item .breadcrumbs-custom-path>li a:hover, .bg-gradient .breadcrumbs-custom-path>li a:hover, .bg-gradient-1 .breadcrumbs-custom-path>li a:hover, .bg-gradient-2 .breadcrumbs-custom-path>li a:hover, .bg-gradient-3 .breadcrumbs-custom-path>li a:hover, .bg-accent .breadcrumbs-custom-path>li a:hover, .bg-accent-accent .breadcrumbs-custom-path>li a:hover, .bg-secondary-2 .breadcrumbs-custom-path>li a:hover, .breadcrumbs-custom-light .breadcrumbs-custom-path>li a:hover {
+	color: #ffec17;
+}
+
+.context-dark .parallax-text, .box-scrim-example .parallax-text, .bg-gray-darker .parallax-text, .bg-additional-gray-darker .bg-additional-item .parallax-text, .bg-image .parallax-text, .bg-additional-image .bg-additional-item .parallax-text, .bg-gradient .parallax-text, .bg-gradient-1 .parallax-text, .bg-gradient-2 .parallax-text, .bg-gradient-3 .parallax-text, .bg-accent .parallax-text, .bg-accent-accent .parallax-text, .bg-secondary-2 .parallax-text, .breadcrumbs-custom-light .parallax-text {
+	opacity: .1;
+}
+
+@media (min-width: 992px) {
+	.context-dark .isotope-filters-list>li>a, .box-scrim-example .isotope-filters-list>li>a, .bg-gray-darker .isotope-filters-list>li>a, .bg-additional-gray-darker .bg-additional-item .isotope-filters-list>li>a, .bg-image .isotope-filters-list>li>a, .bg-additional-image .bg-additional-item .isotope-filters-list>li>a, .bg-gradient .isotope-filters-list>li>a, .bg-gradient-1 .isotope-filters-list>li>a, .bg-gradient-2 .isotope-filters-list>li>a, .bg-gradient-3 .isotope-filters-list>li>a, .bg-accent .isotope-filters-list>li>a, .bg-accent-accent .isotope-filters-list>li>a, .bg-secondary-2 .isotope-filters-list>li>a, .breadcrumbs-custom-light .isotope-filters-list>li>a {
+		color: #c2c2c3;
+	}
+	.context-dark .isotope-filters-list>li>a.active, .box-scrim-example .isotope-filters-list>li>a.active, .bg-gray-darker .isotope-filters-list>li>a.active, .bg-additional-gray-darker .bg-additional-item .isotope-filters-list>li>a.active, .bg-image .isotope-filters-list>li>a.active, .bg-additional-image .bg-additional-item .isotope-filters-list>li>a.active, .bg-gradient .isotope-filters-list>li>a.active, .bg-gradient-1 .isotope-filters-list>li>a.active, .bg-gradient-2 .isotope-filters-list>li>a.active, .bg-gradient-3 .isotope-filters-list>li>a.active, .bg-accent .isotope-filters-list>li>a.active, .bg-accent-accent .isotope-filters-list>li>a.active, .bg-secondary-2 .isotope-filters-list>li>a.active, .breadcrumbs-custom-light .isotope-filters-list>li>a.active, .context-dark .isotope-filters-list>li>a:hover, .box-scrim-example .isotope-filters-list>li>a:hover, .bg-gray-darker .isotope-filters-list>li>a:hover, .bg-additional-gray-darker .bg-additional-item .isotope-filters-list>li>a:hover, .bg-image .isotope-filters-list>li>a:hover, .bg-additional-image .bg-additional-item .isotope-filters-list>li>a:hover, .bg-gradient .isotope-filters-list>li>a:hover, .bg-gradient-1 .isotope-filters-list>li>a:hover, .bg-gradient-2 .isotope-filters-list>li>a:hover, .bg-gradient-3 .isotope-filters-list>li>a:hover, .bg-accent .isotope-filters-list>li>a:hover, .bg-accent-accent .isotope-filters-list>li>a:hover, .bg-secondary-2 .isotope-filters-list>li>a:hover, .breadcrumbs-custom-light .isotope-filters-list>li>a:hover {
+		color: #ffec17;
+	}
+}
+
+@media (min-width: 992px) {
+	.context-dark .isotope-filters-horizontal:not(.isotope-filter-collapse-lg) .isotope-filters-list:not(.isotope-filters-list-buttons), .box-scrim-example .isotope-filters-horizontal:not(.isotope-filter-collapse-lg) .isotope-filters-list:not(.isotope-filters-list-buttons), .bg-gray-darker .isotope-filters-horizontal:not(.isotope-filter-collapse-lg) .isotope-filters-list:not(.isotope-filters-list-buttons), .bg-additional-gray-darker .bg-additional-item .isotope-filters-horizontal:not(.isotope-filter-collapse-lg) .isotope-filters-list:not(.isotope-filters-list-buttons), .bg-image .isotope-filters-horizontal:not(.isotope-filter-collapse-lg) .isotope-filters-list:not(.isotope-filters-list-buttons), .bg-additional-image .bg-additional-item .isotope-filters-horizontal:not(.isotope-filter-collapse-lg) .isotope-filters-list:not(.isotope-filters-list-buttons), .bg-gradient .isotope-filters-horizontal:not(.isotope-filter-collapse-lg) .isotope-filters-list:not(.isotope-filters-list-buttons), .bg-gradient-1 .isotope-filters-horizontal:not(.isotope-filter-collapse-lg) .isotope-filters-list:not(.isotope-filters-list-buttons), .bg-gradient-2 .isotope-filters-horizontal:not(.isotope-filter-collapse-lg) .isotope-filters-list:not(.isotope-filters-list-buttons), .bg-gradient-3 .isotope-filters-horizontal:not(.isotope-filter-collapse-lg) .isotope-filters-list:not(.isotope-filters-list-buttons), .bg-accent .isotope-filters-horizontal:not(.isotope-filter-collapse-lg) .isotope-filters-list:not(.isotope-filters-list-buttons), .bg-accent-accent .isotope-filters-horizontal:not(.isotope-filter-collapse-lg) .isotope-filters-list:not(.isotope-filters-list-buttons), .bg-secondary-2 .isotope-filters-horizontal:not(.isotope-filter-collapse-lg) .isotope-filters-list:not(.isotope-filters-list-buttons), .breadcrumbs-custom-light .isotope-filters-horizontal:not(.isotope-filter-collapse-lg) .isotope-filters-list:not(.isotope-filters-list-buttons), .context-dark .isotope-filters-vertical:not(.isotope-filter-collapse-lg) .isotope-filters-list:not(.isotope-filters-list-buttons), .box-scrim-example .isotope-filters-vertical:not(.isotope-filter-collapse-lg) .isotope-filters-list:not(.isotope-filters-list-buttons), .bg-gray-darker .isotope-filters-vertical:not(.isotope-filter-collapse-lg) .isotope-filters-list:not(.isotope-filters-list-buttons), .bg-additional-gray-darker .bg-additional-item .isotope-filters-vertical:not(.isotope-filter-collapse-lg) .isotope-filters-list:not(.isotope-filters-list-buttons), .bg-image .isotope-filters-vertical:not(.isotope-filter-collapse-lg) .isotope-filters-list:not(.isotope-filters-list-buttons), .bg-additional-image .bg-additional-item .isotope-filters-vertical:not(.isotope-filter-collapse-lg) .isotope-filters-list:not(.isotope-filters-list-buttons), .bg-gradient .isotope-filters-vertical:not(.isotope-filter-collapse-lg) .isotope-filters-list:not(.isotope-filters-list-buttons), .bg-gradient-1 .isotope-filters-vertical:not(.isotope-filter-collapse-lg) .isotope-filters-list:not(.isotope-filters-list-buttons), .bg-gradient-2 .isotope-filters-vertical:not(.isotope-filter-collapse-lg) .isotope-filters-list:not(.isotope-filters-list-buttons), .bg-gradient-3 .isotope-filters-vertical:not(.isotope-filter-collapse-lg) .isotope-filters-list:not(.isotope-filters-list-buttons), .bg-accent .isotope-filters-vertical:not(.isotope-filter-collapse-lg) .isotope-filters-list:not(.isotope-filters-list-buttons), .bg-accent-accent .isotope-filters-vertical:not(.isotope-filter-collapse-lg) .isotope-filters-list:not(.isotope-filters-list-buttons), .bg-secondary-2 .isotope-filters-vertical:not(.isotope-filter-collapse-lg) .isotope-filters-list:not(.isotope-filters-list-buttons), .breadcrumbs-custom-light .isotope-filters-vertical:not(.isotope-filter-collapse-lg) .isotope-filters-list:not(.isotope-filters-list-buttons) {
+		border-bottom: 1px solid rgba(242, 243, 249, 0.1);
+	}
+	.context-dark .isotope-filters-horizontal:not(.isotope-filter-collapse-lg) .isotope-filters-list:not(.isotope-filters-list-buttons) a, .box-scrim-example .isotope-filters-horizontal:not(.isotope-filter-collapse-lg) .isotope-filters-list:not(.isotope-filters-list-buttons) a, .bg-gray-darker .isotope-filters-horizontal:not(.isotope-filter-collapse-lg) .isotope-filters-list:not(.isotope-filters-list-buttons) a, .bg-additional-gray-darker .bg-additional-item .isotope-filters-horizontal:not(.isotope-filter-collapse-lg) .isotope-filters-list:not(.isotope-filters-list-buttons) a, .bg-image .isotope-filters-horizontal:not(.isotope-filter-collapse-lg) .isotope-filters-list:not(.isotope-filters-list-buttons) a, .bg-additional-image .bg-additional-item .isotope-filters-horizontal:not(.isotope-filter-collapse-lg) .isotope-filters-list:not(.isotope-filters-list-buttons) a, .bg-gradient .isotope-filters-horizontal:not(.isotope-filter-collapse-lg) .isotope-filters-list:not(.isotope-filters-list-buttons) a, .bg-gradient-1 .isotope-filters-horizontal:not(.isotope-filter-collapse-lg) .isotope-filters-list:not(.isotope-filters-list-buttons) a, .bg-gradient-2 .isotope-filters-horizontal:not(.isotope-filter-collapse-lg) .isotope-filters-list:not(.isotope-filters-list-buttons) a, .bg-gradient-3 .isotope-filters-horizontal:not(.isotope-filter-collapse-lg) .isotope-filters-list:not(.isotope-filters-list-buttons) a, .bg-accent .isotope-filters-horizontal:not(.isotope-filter-collapse-lg) .isotope-filters-list:not(.isotope-filters-list-buttons) a, .bg-accent-accent .isotope-filters-horizontal:not(.isotope-filter-collapse-lg) .isotope-filters-list:not(.isotope-filters-list-buttons) a, .bg-secondary-2 .isotope-filters-horizontal:not(.isotope-filter-collapse-lg) .isotope-filters-list:not(.isotope-filters-list-buttons) a, .breadcrumbs-custom-light .isotope-filters-horizontal:not(.isotope-filter-collapse-lg) .isotope-filters-list:not(.isotope-filters-list-buttons) a, .context-dark .isotope-filters-vertical:not(.isotope-filter-collapse-lg) .isotope-filters-list:not(.isotope-filters-list-buttons) a, .box-scrim-example .isotope-filters-vertical:not(.isotope-filter-collapse-lg) .isotope-filters-list:not(.isotope-filters-list-buttons) a, .bg-gray-darker .isotope-filters-vertical:not(.isotope-filter-collapse-lg) .isotope-filters-list:not(.isotope-filters-list-buttons) a, .bg-additional-gray-darker .bg-additional-item .isotope-filters-vertical:not(.isotope-filter-collapse-lg) .isotope-filters-list:not(.isotope-filters-list-buttons) a, .bg-image .isotope-filters-vertical:not(.isotope-filter-collapse-lg) .isotope-filters-list:not(.isotope-filters-list-buttons) a, .bg-additional-image .bg-additional-item .isotope-filters-vertical:not(.isotope-filter-collapse-lg) .isotope-filters-list:not(.isotope-filters-list-buttons) a, .bg-gradient .isotope-filters-vertical:not(.isotope-filter-collapse-lg) .isotope-filters-list:not(.isotope-filters-list-buttons) a, .bg-gradient-1 .isotope-filters-vertical:not(.isotope-filter-collapse-lg) .isotope-filters-list:not(.isotope-filters-list-buttons) a, .bg-gradient-2 .isotope-filters-vertical:not(.isotope-filter-collapse-lg) .isotope-filters-list:not(.isotope-filters-list-buttons) a, .bg-gradient-3 .isotope-filters-vertical:not(.isotope-filter-collapse-lg) .isotope-filters-list:not(.isotope-filters-list-buttons) a, .bg-accent .isotope-filters-vertical:not(.isotope-filter-collapse-lg) .isotope-filters-list:not(.isotope-filters-list-buttons) a, .bg-accent-accent .isotope-filters-vertical:not(.isotope-filter-collapse-lg) .isotope-filters-list:not(.isotope-filters-list-buttons) a, .bg-secondary-2 .isotope-filters-vertical:not(.isotope-filter-collapse-lg) .isotope-filters-list:not(.isotope-filters-list-buttons) a, .breadcrumbs-custom-light .isotope-filters-vertical:not(.isotope-filter-collapse-lg) .isotope-filters-list:not(.isotope-filters-list-buttons) a {
+		color: #c2c2c3;
+	}
+	.context-dark .isotope-filters-horizontal:not(.isotope-filter-collapse-lg) .isotope-filters-list:not(.isotope-filters-list-buttons) a:after, .box-scrim-example .isotope-filters-horizontal:not(.isotope-filter-collapse-lg) .isotope-filters-list:not(.isotope-filters-list-buttons) a:after, .bg-gray-darker .isotope-filters-horizontal:not(.isotope-filter-collapse-lg) .isotope-filters-list:not(.isotope-filters-list-buttons) a:after, .bg-additional-gray-darker .bg-additional-item .isotope-filters-horizontal:not(.isotope-filter-collapse-lg) .isotope-filters-list:not(.isotope-filters-list-buttons) a:after, .bg-image .isotope-filters-horizontal:not(.isotope-filter-collapse-lg) .isotope-filters-list:not(.isotope-filters-list-buttons) a:after, .bg-additional-image .bg-additional-item .isotope-filters-horizontal:not(.isotope-filter-collapse-lg) .isotope-filters-list:not(.isotope-filters-list-buttons) a:after, .bg-gradient .isotope-filters-horizontal:not(.isotope-filter-collapse-lg) .isotope-filters-list:not(.isotope-filters-list-buttons) a:after, .bg-gradient-1 .isotope-filters-horizontal:not(.isotope-filter-collapse-lg) .isotope-filters-list:not(.isotope-filters-list-buttons) a:after, .bg-gradient-2 .isotope-filters-horizontal:not(.isotope-filter-collapse-lg) .isotope-filters-list:not(.isotope-filters-list-buttons) a:after, .bg-gradient-3 .isotope-filters-horizontal:not(.isotope-filter-collapse-lg) .isotope-filters-list:not(.isotope-filters-list-buttons) a:after, .bg-accent .isotope-filters-horizontal:not(.isotope-filter-collapse-lg) .isotope-filters-list:not(.isotope-filters-list-buttons) a:after, .bg-accent-accent .isotope-filters-horizontal:not(.isotope-filter-collapse-lg) .isotope-filters-list:not(.isotope-filters-list-buttons) a:after, .bg-secondary-2 .isotope-filters-horizontal:not(.isotope-filter-collapse-lg) .isotope-filters-list:not(.isotope-filters-list-buttons) a:after, .breadcrumbs-custom-light .isotope-filters-horizontal:not(.isotope-filter-collapse-lg) .isotope-filters-list:not(.isotope-filters-list-buttons) a:after, .context-dark .isotope-filters-vertical:not(.isotope-filter-collapse-lg) .isotope-filters-list:not(.isotope-filters-list-buttons) a:after, .box-scrim-example .isotope-filters-vertical:not(.isotope-filter-collapse-lg) .isotope-filters-list:not(.isotope-filters-list-buttons) a:after, .bg-gray-darker .isotope-filters-vertical:not(.isotope-filter-collapse-lg) .isotope-filters-list:not(.isotope-filters-list-buttons) a:after, .bg-additional-gray-darker .bg-additional-item .isotope-filters-vertical:not(.isotope-filter-collapse-lg) .isotope-filters-list:not(.isotope-filters-list-buttons) a:after, .bg-image .isotope-filters-vertical:not(.isotope-filter-collapse-lg) .isotope-filters-list:not(.isotope-filters-list-buttons) a:after, .bg-additional-image .bg-additional-item .isotope-filters-vertical:not(.isotope-filter-collapse-lg) .isotope-filters-list:not(.isotope-filters-list-buttons) a:after, .bg-gradient .isotope-filters-vertical:not(.isotope-filter-collapse-lg) .isotope-filters-list:not(.isotope-filters-list-buttons) a:after, .bg-gradient-1 .isotope-filters-vertical:not(.isotope-filter-collapse-lg) .isotope-filters-list:not(.isotope-filters-list-buttons) a:after, .bg-gradient-2 .isotope-filters-vertical:not(.isotope-filter-collapse-lg) .isotope-filters-list:not(.isotope-filters-list-buttons) a:after, .bg-gradient-3 .isotope-filters-vertical:not(.isotope-filter-collapse-lg) .isotope-filters-list:not(.isotope-filters-list-buttons) a:after, .bg-accent .isotope-filters-vertical:not(.isotope-filter-collapse-lg) .isotope-filters-list:not(.isotope-filters-list-buttons) a:after, .bg-accent-accent .isotope-filters-vertical:not(.isotope-filter-collapse-lg) .isotope-filters-list:not(.isotope-filters-list-buttons) a:after, .bg-secondary-2 .isotope-filters-vertical:not(.isotope-filter-collapse-lg) .isotope-filters-list:not(.isotope-filters-list-buttons) a:after, .breadcrumbs-custom-light .isotope-filters-vertical:not(.isotope-filter-collapse-lg) .isotope-filters-list:not(.isotope-filters-list-buttons) a:after {
+		background: #ffec17;
+	}
+	.context-dark .isotope-filters-horizontal:not(.isotope-filter-collapse-lg) .isotope-filters-list:not(.isotope-filters-list-buttons) a.active, .box-scrim-example .isotope-filters-horizontal:not(.isotope-filter-collapse-lg) .isotope-filters-list:not(.isotope-filters-list-buttons) a.active, .bg-gray-darker .isotope-filters-horizontal:not(.isotope-filter-collapse-lg) .isotope-filters-list:not(.isotope-filters-list-buttons) a.active, .bg-additional-gray-darker .bg-additional-item .isotope-filters-horizontal:not(.isotope-filter-collapse-lg) .isotope-filters-list:not(.isotope-filters-list-buttons) a.active, .bg-image .isotope-filters-horizontal:not(.isotope-filter-collapse-lg) .isotope-filters-list:not(.isotope-filters-list-buttons) a.active, .bg-additional-image .bg-additional-item .isotope-filters-horizontal:not(.isotope-filter-collapse-lg) .isotope-filters-list:not(.isotope-filters-list-buttons) a.active, .bg-gradient .isotope-filters-horizontal:not(.isotope-filter-collapse-lg) .isotope-filters-list:not(.isotope-filters-list-buttons) a.active, .bg-gradient-1 .isotope-filters-horizontal:not(.isotope-filter-collapse-lg) .isotope-filters-list:not(.isotope-filters-list-buttons) a.active, .bg-gradient-2 .isotope-filters-horizontal:not(.isotope-filter-collapse-lg) .isotope-filters-list:not(.isotope-filters-list-buttons) a.active, .bg-gradient-3 .isotope-filters-horizontal:not(.isotope-filter-collapse-lg) .isotope-filters-list:not(.isotope-filters-list-buttons) a.active, .bg-accent .isotope-filters-horizontal:not(.isotope-filter-collapse-lg) .isotope-filters-list:not(.isotope-filters-list-buttons) a.active, .bg-accent-accent .isotope-filters-horizontal:not(.isotope-filter-collapse-lg) .isotope-filters-list:not(.isotope-filters-list-buttons) a.active, .bg-secondary-2 .isotope-filters-horizontal:not(.isotope-filter-collapse-lg) .isotope-filters-list:not(.isotope-filters-list-buttons) a.active, .breadcrumbs-custom-light .isotope-filters-horizontal:not(.isotope-filter-collapse-lg) .isotope-filters-list:not(.isotope-filters-list-buttons) a.active, .context-dark .isotope-filters-horizontal:not(.isotope-filter-collapse-lg) .isotope-filters-list:not(.isotope-filters-list-buttons) a:hover, .box-scrim-example .isotope-filters-horizontal:not(.isotope-filter-collapse-lg) .isotope-filters-list:not(.isotope-filters-list-buttons) a:hover, .bg-gray-darker .isotope-filters-horizontal:not(.isotope-filter-collapse-lg) .isotope-filters-list:not(.isotope-filters-list-buttons) a:hover, .bg-additional-gray-darker .bg-additional-item .isotope-filters-horizontal:not(.isotope-filter-collapse-lg) .isotope-filters-list:not(.isotope-filters-list-buttons) a:hover, .bg-image .isotope-filters-horizontal:not(.isotope-filter-collapse-lg) .isotope-filters-list:not(.isotope-filters-list-buttons) a:hover, .bg-additional-image .bg-additional-item .isotope-filters-horizontal:not(.isotope-filter-collapse-lg) .isotope-filters-list:not(.isotope-filters-list-buttons) a:hover, .bg-gradient .isotope-filters-horizontal:not(.isotope-filter-collapse-lg) .isotope-filters-list:not(.isotope-filters-list-buttons) a:hover, .bg-gradient-1 .isotope-filters-horizontal:not(.isotope-filter-collapse-lg) .isotope-filters-list:not(.isotope-filters-list-buttons) a:hover, .bg-gradient-2 .isotope-filters-horizontal:not(.isotope-filter-collapse-lg) .isotope-filters-list:not(.isotope-filters-list-buttons) a:hover, .bg-gradient-3 .isotope-filters-horizontal:not(.isotope-filter-collapse-lg) .isotope-filters-list:not(.isotope-filters-list-buttons) a:hover, .bg-accent .isotope-filters-horizontal:not(.isotope-filter-collapse-lg) .isotope-filters-list:not(.isotope-filters-list-buttons) a:hover, .bg-accent-accent .isotope-filters-horizontal:not(.isotope-filter-collapse-lg) .isotope-filters-list:not(.isotope-filters-list-buttons) a:hover, .bg-secondary-2 .isotope-filters-horizontal:not(.isotope-filter-collapse-lg) .isotope-filters-list:not(.isotope-filters-list-buttons) a:hover, .breadcrumbs-custom-light .isotope-filters-horizontal:not(.isotope-filter-collapse-lg) .isotope-filters-list:not(.isotope-filters-list-buttons) a:hover, .context-dark .isotope-filters-vertical:not(.isotope-filter-collapse-lg) .isotope-filters-list:not(.isotope-filters-list-buttons) a.active, .box-scrim-example .isotope-filters-vertical:not(.isotope-filter-collapse-lg) .isotope-filters-list:not(.isotope-filters-list-buttons) a.active, .bg-gray-darker .isotope-filters-vertical:not(.isotope-filter-collapse-lg) .isotope-filters-list:not(.isotope-filters-list-buttons) a.active, .bg-additional-gray-darker .bg-additional-item .isotope-filters-vertical:not(.isotope-filter-collapse-lg) .isotope-filters-list:not(.isotope-filters-list-buttons) a.active, .bg-image .isotope-filters-vertical:not(.isotope-filter-collapse-lg) .isotope-filters-list:not(.isotope-filters-list-buttons) a.active, .bg-additional-image .bg-additional-item .isotope-filters-vertical:not(.isotope-filter-collapse-lg) .isotope-filters-list:not(.isotope-filters-list-buttons) a.active, .bg-gradient .isotope-filters-vertical:not(.isotope-filter-collapse-lg) .isotope-filters-list:not(.isotope-filters-list-buttons) a.active, .bg-gradient-1 .isotope-filters-vertical:not(.isotope-filter-collapse-lg) .isotope-filters-list:not(.isotope-filters-list-buttons) a.active, .bg-gradient-2 .isotope-filters-vertical:not(.isotope-filter-collapse-lg) .isotope-filters-list:not(.isotope-filters-list-buttons) a.active, .bg-gradient-3 .isotope-filters-vertical:not(.isotope-filter-collapse-lg) .isotope-filters-list:not(.isotope-filters-list-buttons) a.active, .bg-accent .isotope-filters-vertical:not(.isotope-filter-collapse-lg) .isotope-filters-list:not(.isotope-filters-list-buttons) a.active, .bg-accent-accent .isotope-filters-vertical:not(.isotope-filter-collapse-lg) .isotope-filters-list:not(.isotope-filters-list-buttons) a.active, .bg-secondary-2 .isotope-filters-vertical:not(.isotope-filter-collapse-lg) .isotope-filters-list:not(.isotope-filters-list-buttons) a.active, .breadcrumbs-custom-light .isotope-filters-vertical:not(.isotope-filter-collapse-lg) .isotope-filters-list:not(.isotope-filters-list-buttons) a.active, .context-dark .isotope-filters-vertical:not(.isotope-filter-collapse-lg) .isotope-filters-list:not(.isotope-filters-list-buttons) a:hover, .box-scrim-example .isotope-filters-vertical:not(.isotope-filter-collapse-lg) .isotope-filters-list:not(.isotope-filters-list-buttons) a:hover, .bg-gray-darker .isotope-filters-vertical:not(.isotope-filter-collapse-lg) .isotope-filters-list:not(.isotope-filters-list-buttons) a:hover, .bg-additional-gray-darker .bg-additional-item .isotope-filters-vertical:not(.isotope-filter-collapse-lg) .isotope-filters-list:not(.isotope-filters-list-buttons) a:hover, .bg-image .isotope-filters-vertical:not(.isotope-filter-collapse-lg) .isotope-filters-list:not(.isotope-filters-list-buttons) a:hover, .bg-additional-image .bg-additional-item .isotope-filters-vertical:not(.isotope-filter-collapse-lg) .isotope-filters-list:not(.isotope-filters-list-buttons) a:hover, .bg-gradient .isotope-filters-vertical:not(.isotope-filter-collapse-lg) .isotope-filters-list:not(.isotope-filters-list-buttons) a:hover, .bg-gradient-1 .isotope-filters-vertical:not(.isotope-filter-collapse-lg) .isotope-filters-list:not(.isotope-filters-list-buttons) a:hover, .bg-gradient-2 .isotope-filters-vertical:not(.isotope-filter-collapse-lg) .isotope-filters-list:not(.isotope-filters-list-buttons) a:hover, .bg-gradient-3 .isotope-filters-vertical:not(.isotope-filter-collapse-lg) .isotope-filters-list:not(.isotope-filters-list-buttons) a:hover, .bg-accent .isotope-filters-vertical:not(.isotope-filter-collapse-lg) .isotope-filters-list:not(.isotope-filters-list-buttons) a:hover, .bg-accent-accent .isotope-filters-vertical:not(.isotope-filter-collapse-lg) .isotope-filters-list:not(.isotope-filters-list-buttons) a:hover, .bg-secondary-2 .isotope-filters-vertical:not(.isotope-filter-collapse-lg) .isotope-filters-list:not(.isotope-filters-list-buttons) a:hover, .breadcrumbs-custom-light .isotope-filters-vertical:not(.isotope-filter-collapse-lg) .isotope-filters-list:not(.isotope-filters-list-buttons) a:hover {
+		color: #ffec17;
+	}
+}
+
+@media (min-width: 1200px) {
+	.context-dark .isotope-wrap .isotope-filters.isotope-filters-vertical:not(.isotope-filter-collapse-lg) .isotope-filters-list, .box-scrim-example .isotope-wrap .isotope-filters.isotope-filters-vertical:not(.isotope-filter-collapse-lg) .isotope-filters-list, .bg-gray-darker .isotope-wrap .isotope-filters.isotope-filters-vertical:not(.isotope-filter-collapse-lg) .isotope-filters-list, .bg-additional-gray-darker .bg-additional-item .isotope-wrap .isotope-filters.isotope-filters-vertical:not(.isotope-filter-collapse-lg) .isotope-filters-list, .bg-image .isotope-wrap .isotope-filters.isotope-filters-vertical:not(.isotope-filter-collapse-lg) .isotope-filters-list, .bg-additional-image .bg-additional-item .isotope-wrap .isotope-filters.isotope-filters-vertical:not(.isotope-filter-collapse-lg) .isotope-filters-list, .bg-gradient .isotope-wrap .isotope-filters.isotope-filters-vertical:not(.isotope-filter-collapse-lg) .isotope-filters-list, .bg-gradient-1 .isotope-wrap .isotope-filters.isotope-filters-vertical:not(.isotope-filter-collapse-lg) .isotope-filters-list, .bg-gradient-2 .isotope-wrap .isotope-filters.isotope-filters-vertical:not(.isotope-filter-collapse-lg) .isotope-filters-list, .bg-gradient-3 .isotope-wrap .isotope-filters.isotope-filters-vertical:not(.isotope-filter-collapse-lg) .isotope-filters-list, .bg-accent .isotope-wrap .isotope-filters.isotope-filters-vertical:not(.isotope-filter-collapse-lg) .isotope-filters-list, .bg-accent-accent .isotope-wrap .isotope-filters.isotope-filters-vertical:not(.isotope-filter-collapse-lg) .isotope-filters-list, .bg-secondary-2 .isotope-wrap .isotope-filters.isotope-filters-vertical:not(.isotope-filter-collapse-lg) .isotope-filters-list, .breadcrumbs-custom-light .isotope-wrap .isotope-filters.isotope-filters-vertical:not(.isotope-filter-collapse-lg) .isotope-filters-list {
+		border-bottom: none;
+		border-right: 1px solid rgba(242, 243, 249, 0.1);
+	}
+}
+
+.context-dark .post-blog-article-meta, .box-scrim-example .post-blog-article-meta, .bg-gray-darker .post-blog-article-meta, .bg-additional-gray-darker .bg-additional-item .post-blog-article-meta, .bg-image .post-blog-article-meta, .bg-additional-image .bg-additional-item .post-blog-article-meta, .bg-gradient .post-blog-article-meta, .bg-gradient-1 .post-blog-article-meta, .bg-gradient-2 .post-blog-article-meta, .bg-gradient-3 .post-blog-article-meta, .bg-accent .post-blog-article-meta, .bg-accent-accent .post-blog-article-meta, .bg-secondary-2 .post-blog-article-meta, .breadcrumbs-custom-light .post-blog-article-meta {
+	color: #c2c2c3;
+}
+
+.context-dark .post-blog-article-meta .box-inline a, .box-scrim-example .post-blog-article-meta .box-inline a, .bg-gray-darker .post-blog-article-meta .box-inline a, .bg-additional-gray-darker .bg-additional-item .post-blog-article-meta .box-inline a, .bg-image .post-blog-article-meta .box-inline a, .bg-additional-image .bg-additional-item .post-blog-article-meta .box-inline a, .bg-gradient .post-blog-article-meta .box-inline a, .bg-gradient-1 .post-blog-article-meta .box-inline a, .bg-gradient-2 .post-blog-article-meta .box-inline a, .bg-gradient-3 .post-blog-article-meta .box-inline a, .bg-accent .post-blog-article-meta .box-inline a, .bg-accent-accent .post-blog-article-meta .box-inline a, .bg-secondary-2 .post-blog-article-meta .box-inline a, .breadcrumbs-custom-light .post-blog-article-meta .box-inline a {
+	color: #c2c2c3;
+}
+
+.context-dark .post-blog-article-meta .box-inline a:hover, .box-scrim-example .post-blog-article-meta .box-inline a:hover, .bg-gray-darker .post-blog-article-meta .box-inline a:hover, .bg-additional-gray-darker .bg-additional-item .post-blog-article-meta .box-inline a:hover, .bg-image .post-blog-article-meta .box-inline a:hover, .bg-additional-image .bg-additional-item .post-blog-article-meta .box-inline a:hover, .bg-gradient .post-blog-article-meta .box-inline a:hover, .bg-gradient-1 .post-blog-article-meta .box-inline a:hover, .bg-gradient-2 .post-blog-article-meta .box-inline a:hover, .bg-gradient-3 .post-blog-article-meta .box-inline a:hover, .bg-accent .post-blog-article-meta .box-inline a:hover, .bg-accent-accent .post-blog-article-meta .box-inline a:hover, .bg-secondary-2 .post-blog-article-meta .box-inline a:hover, .breadcrumbs-custom-light .post-blog-article-meta .box-inline a:hover {
+	color: #ed1c94;
+}
+
+.context-dark .post-blog-large-text, .box-scrim-example .post-blog-large-text, .bg-gray-darker .post-blog-large-text, .bg-additional-gray-darker .bg-additional-item .post-blog-large-text, .bg-image .post-blog-large-text, .bg-additional-image .bg-additional-item .post-blog-large-text, .bg-gradient .post-blog-large-text, .bg-gradient-1 .post-blog-large-text, .bg-gradient-2 .post-blog-large-text, .bg-gradient-3 .post-blog-large-text, .bg-accent .post-blog-large-text, .bg-accent-accent .post-blog-large-text, .bg-secondary-2 .post-blog-large-text, .breadcrumbs-custom-light .post-blog-large-text {
+	color: #29293a;
+}
+
+@media (max-width: 767.98px) {
+	.context-dark .tabs-custom.tabs-line .nav-tabs, .box-scrim-example .tabs-custom.tabs-line .nav-tabs, .bg-gray-darker .tabs-custom.tabs-line .nav-tabs, .bg-additional-gray-darker .bg-additional-item .tabs-custom.tabs-line .nav-tabs, .bg-image .tabs-custom.tabs-line .nav-tabs, .bg-additional-image .bg-additional-item .tabs-custom.tabs-line .nav-tabs, .bg-gradient .tabs-custom.tabs-line .nav-tabs, .bg-gradient-1 .tabs-custom.tabs-line .nav-tabs, .bg-gradient-2 .tabs-custom.tabs-line .nav-tabs, .bg-gradient-3 .tabs-custom.tabs-line .nav-tabs, .bg-accent .tabs-custom.tabs-line .nav-tabs, .bg-accent-accent .tabs-custom.tabs-line .nav-tabs, .bg-secondary-2 .tabs-custom.tabs-line .nav-tabs, .breadcrumbs-custom-light .tabs-custom.tabs-line .nav-tabs {
+		border-color: #29293a;
+	}
+}
+
+.context-dark .time_circles>div>h4, .box-scrim-example .time_circles>div>h4, .bg-gray-darker .time_circles>div>h4, .bg-additional-gray-darker .bg-additional-item .time_circles>div>h4, .bg-image .time_circles>div>h4, .bg-additional-image .bg-additional-item .time_circles>div>h4, .bg-gradient .time_circles>div>h4, .bg-gradient-1 .time_circles>div>h4, .bg-gradient-2 .time_circles>div>h4, .bg-gradient-3 .time_circles>div>h4, .bg-accent .time_circles>div>h4, .bg-accent-accent .time_circles>div>h4, .bg-secondary-2 .time_circles>div>h4, .breadcrumbs-custom-light .time_circles>div>h4, .context-dark .time_circles>div>span, .box-scrim-example .time_circles>div>span, .bg-gray-darker .time_circles>div>span, .bg-additional-gray-darker .bg-additional-item .time_circles>div>span, .bg-image .time_circles>div>span, .bg-additional-image .bg-additional-item .time_circles>div>span, .bg-gradient .time_circles>div>span, .bg-gradient-1 .time_circles>div>span, .bg-gradient-2 .time_circles>div>span, .bg-gradient-3 .time_circles>div>span, .bg-accent .time_circles>div>span, .bg-accent-accent .time_circles>div>span, .bg-secondary-2 .time_circles>div>span, .breadcrumbs-custom-light .time_circles>div>span {
+	color: #ffffff;
+}
+
+.context-dark .titled-gallery-caption a, .box-scrim-example .titled-gallery-caption a, .bg-gray-darker .titled-gallery-caption a, .bg-additional-gray-darker .bg-additional-item .titled-gallery-caption a, .bg-image .titled-gallery-caption a, .bg-additional-image .bg-additional-item .titled-gallery-caption a, .bg-gradient .titled-gallery-caption a, .bg-gradient-1 .titled-gallery-caption a, .bg-gradient-2 .titled-gallery-caption a, .bg-gradient-3 .titled-gallery-caption a, .bg-accent .titled-gallery-caption a, .bg-accent-accent .titled-gallery-caption a, .bg-secondary-2 .titled-gallery-caption a, .breadcrumbs-custom-light .titled-gallery-caption a {
+	color: #ffec17;
+}
+
+.context-dark .titled-gallery-caption a:hover, .box-scrim-example .titled-gallery-caption a:hover, .bg-gray-darker .titled-gallery-caption a:hover, .bg-additional-gray-darker .bg-additional-item .titled-gallery-caption a:hover, .bg-image .titled-gallery-caption a:hover, .bg-additional-image .bg-additional-item .titled-gallery-caption a:hover, .bg-gradient .titled-gallery-caption a:hover, .bg-gradient-1 .titled-gallery-caption a:hover, .bg-gradient-2 .titled-gallery-caption a:hover, .bg-gradient-3 .titled-gallery-caption a:hover, .bg-accent .titled-gallery-caption a:hover, .bg-accent-accent .titled-gallery-caption a:hover, .bg-secondary-2 .titled-gallery-caption a:hover, .breadcrumbs-custom-light .titled-gallery-caption a:hover {
+	color: #ffffff;
+}
+
+.context-light, .layout-panel-wrap {
+	color: #838386;
+}
+
+.context-light h1, .layout-panel-wrap h1, .context-light h2, .layout-panel-wrap h2, .context-light h3, .layout-panel-wrap h3, .context-light h4, .layout-panel-wrap h4, .context-light h5, .layout-panel-wrap h5, .context-light h6, .layout-panel-wrap h6, .context-light [class^='heading-'], .layout-panel-wrap [class^='heading-'] {
+	color: #29293a;
+}
+
+/**
+* Backgrounds Style
+*/
+
+@media (min-width: 992px) {
+	.bg-gray-lighter .isotope-filters-horizontal:not(.isotope-filter-collapse-lg) .isotope-filters-list:not(.isotope-filters-list-buttons) {
+		border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+	}
+}
+
+.element-boxed .bg-default, .element-boxed .bg-gray-lighter {
+	color: #838386;
+}
+
+.element-boxed .bg-default h1, .element-boxed .bg-default h2, .element-boxed .bg-default h3, .element-boxed .bg-default h4, .element-boxed .bg-default h5, .element-boxed .bg-default h6, .element-boxed .bg-default [class^='heading-'], .element-boxed .bg-gray-lighter h1, .element-boxed .bg-gray-lighter h2, .element-boxed .bg-gray-lighter h3, .element-boxed .bg-gray-lighter h4, .element-boxed .bg-gray-lighter h5, .element-boxed .bg-gray-lighter h6, .element-boxed .bg-gray-lighter [class^='heading-'] {
+	color: #29293a;
+}
+
+.element-boxed.bg-gray-darker, .bg-additional-gray-darker .element-boxed.bg-additional-item, .element-boxed.bg-gray-darker h1, .bg-additional-gray-darker .element-boxed.bg-additional-item h1, .element-boxed.bg-gray-darker h2, .bg-additional-gray-darker .element-boxed.bg-additional-item h2, .element-boxed.bg-gray-darker h3, .bg-additional-gray-darker .element-boxed.bg-additional-item h3, .element-boxed.bg-gray-darker h4, .bg-additional-gray-darker .element-boxed.bg-additional-item h4, .element-boxed.bg-gray-darker h5, .bg-additional-gray-darker .element-boxed.bg-additional-item h5, .element-boxed.bg-gray-darker h6, .bg-additional-gray-darker .element-boxed.bg-additional-item h6, .element-boxed.bg-gray-darker [class^='heading-'], .bg-additional-gray-darker .element-boxed.bg-additional-item [class^='heading-'] {
+	color: #ffffff;
+}
+
+.bg-gray-lighter .post-blog .post-blog-caption, .bg-gray-darker .post-blog .post-blog-caption, .bg-additional-gray-darker .bg-additional-item .post-blog .post-blog-caption {
+	background-color: #ffffff;
+}
+
+.bg-gray-lighter .post-blog .post-blog-caption-footer, .bg-gray-darker .post-blog .post-blog-caption-footer, .bg-additional-gray-darker .bg-additional-item .post-blog .post-blog-caption-footer {
+	border-color: #f2f3f9;
+}
+
+/**
+* Background White
+*/
+
+.bg-default {
+	background-color: #ffffff;
+	fill: #ffffff;
+}
+
+.bg-default .way-point>svg {
+	fill: inherit;
+}
+
+.bg-default+.bg-default {
+	padding-top: 0;
+}
+
+.bg-default .bg-decoration>svg {
+	fill: #ffffff;
+}
+
+.bg-default .time-line-vertical-element:before, .bg-default .time-line-vertical-element .unit-body:before {
+	background-color: #ffffff;
+}
+
+.bg-default .twitter-feed {
+	background-color: #f2f3f9;
+}
+
+.bg-default .slider-widget {
+	background: #f2f3f9;
+}
+
+/**
+* Background Gray Lighter
+*/
+
+.bg-gray-lighter {
+	background-color: #f2f3f9;
+	fill: #f2f3f9;
+}
+
+.bg-gray-lighter .way-point>svg {
+	fill: inherit;
+}
+
+.bg-gray-lighter+.bg-gray-lighter {
+	padding-top: 0;
+}
+
+.bg-gray-lighter .bg-decoration>svg {
+	fill: #f2f3f9;
+}
+
+.bg-gray-lighter .parallax-text {
+	color: #ffffff;
+}
+
+.bg-gray-lighter .time-line-vertical-element:before, .bg-gray-lighter .time-line-vertical-element .unit-body:before {
+	background-color: #f2f3f9;
+}
+
+.bg-gray-lighter .pricing-box {
+	background-color: #ffffff;
+}
+
+.bg-gray-lighter .slider-widget {
+	background: #ffffff;
+}
+
+.bg-gray-lighter .post-classic {
+	background: #ffffff;
+}
+
+.bg-gray-lighter .post-modern-body {
+	background: #ffffff;
+}
+
+.bg-gray-lighter .card-light:first-child .card-heading {
+	border-top-color: #c2c2c3;
+}
+
+.bg-gray-lighter .card-light .card-heading a.collapsed {
+	border-bottom-color: #c2c2c3;
+}
+
+.bg-gray-lighter .card-light .collapse {
+	border-bottom-color: #c2c2c3;
+}
+
+.bg-gray-lighter .card-light .card-body {
+	color: #838386;
+}
+
+.bg-gray-lighter .post-facebook {
+	background: #ffffff;
+}
+
+.bg-gray-lighter .rd-mailform-inline .rd-mailform-inline-inner::before, .bg-gray-lighter .form-input, .bg-gray-lighter .form-input:focus {
+	background-color: #ffffff;
+}
+
+.bg-gray-lighter+.bg-gray-lighter.page-footer-default {
+	background-color: #ffffff;
+}
+
+.bg-gray-lighter+.bg-gray-lighter.page-footer-default .rd-mailform-inline .rd-mailform-inline-inner::before, .bg-gray-lighter+.bg-gray-lighter.page-footer-default .form-input {
+	background-color: #f2f3f9;
+}
+
+.bg-gray-lighter .box-minimal-border:hover {
+	background: #ffffff;
+	border-color: #ffffff;
+}
+
+.bg-gray-lighter .box-minimal-modern {
+	background-color: #ffffff;
+}
+
+.bg-gray-lighter .breadcrumbs-custom-path a, .bg-gray-lighter .breadcrumbs-custom-path a:active, .bg-gray-lighter .breadcrumbs-custom-path a:focus {
+	color: #981df0;
+}
+
+.bg-gray-lighter .breadcrumbs-custom-path a:hover {
+	color: #ed1c94;
+}
+
+.bg-gray-lighter .breadcrumbs-custom-path li.active {
+	color: #981df0;
+}
+
+/**
+* Common Background Gray Darker, Background Images
+*/
+
+.bg-gray-darker .pricing-box, .bg-additional-gray-darker .bg-additional-item .pricing-box, .bg-image .pricing-box, .bg-additional-image .bg-additional-item .pricing-box, .bg-gradient .pricing-box, .bg-gradient-1 .pricing-box, .bg-gradient-2 .pricing-box, .bg-gradient-3 .pricing-box {
+	background-color: #ffffff;
+}
+
+.bg-gray-darker .list-comma, .bg-additional-gray-darker .bg-additional-item .list-comma, .bg-image .list-comma, .bg-additional-image .bg-additional-item .list-comma, .bg-gradient .list-comma, .bg-gradient-1 .list-comma, .bg-gradient-2 .list-comma, .bg-gradient-3 .list-comma {
+	color: #ffffff;
+}
+
+.bg-gray-darker .list-comma li:after, .bg-additional-gray-darker .bg-additional-item .list-comma li:after, .bg-image .list-comma li:after, .bg-additional-image .bg-additional-item .list-comma li:after, .bg-gradient .list-comma li:after, .bg-gradient-1 .list-comma li:after, .bg-gradient-2 .list-comma li:after, .bg-gradient-3 .list-comma li:after {
+	color: inherit;
+}
+
+.bg-gray-darker .card-light:first-child .card-heading, .bg-additional-gray-darker .bg-additional-item .card-light:first-child .card-heading, .bg-image .card-light:first-child .card-heading, .bg-additional-image .bg-additional-item .card-light:first-child .card-heading, .bg-gradient .card-light:first-child .card-heading, .bg-gradient-1 .card-light:first-child .card-heading, .bg-gradient-2 .card-light:first-child .card-heading, .bg-gradient-3 .card-light:first-child .card-heading {
+	border-top-color: #555555;
+}
+
+.bg-gray-darker .card-light .card-heading a, .bg-additional-gray-darker .bg-additional-item .card-light .card-heading a, .bg-image .card-light .card-heading a, .bg-additional-image .bg-additional-item .card-light .card-heading a, .bg-gradient .card-light .card-heading a, .bg-gradient-1 .card-light .card-heading a, .bg-gradient-2 .card-light .card-heading a, .bg-gradient-3 .card-light .card-heading a {
+	color: #ffffff;
+}
+
+.bg-gray-darker .card-light .card-heading a.collapsed, .bg-additional-gray-darker .bg-additional-item .card-light .card-heading a.collapsed, .bg-image .card-light .card-heading a.collapsed, .bg-additional-image .bg-additional-item .card-light .card-heading a.collapsed, .bg-gradient .card-light .card-heading a.collapsed, .bg-gradient-1 .card-light .card-heading a.collapsed, .bg-gradient-2 .card-light .card-heading a.collapsed, .bg-gradient-3 .card-light .card-heading a.collapsed {
+	border-bottom-color: #555555;
+}
+
+.bg-gray-darker .card-light .collapse, .bg-additional-gray-darker .bg-additional-item .card-light .collapse, .bg-image .card-light .collapse, .bg-additional-image .bg-additional-item .card-light .collapse, .bg-gradient .card-light .collapse, .bg-gradient-1 .card-light .collapse, .bg-gradient-2 .card-light .collapse, .bg-gradient-3 .card-light .collapse {
+	border-bottom-color: #555555;
+}
+
+.bg-gray-darker .card-light .card-body, .bg-additional-gray-darker .bg-additional-item .card-light .card-body, .bg-image .card-light .card-body, .bg-additional-image .bg-additional-item .card-light .card-body, .bg-gradient .card-light .card-body, .bg-gradient-1 .card-light .card-body, .bg-gradient-2 .card-light .card-body, .bg-gradient-3 .card-light .card-body {
+	color: #c2c2c3;
+}
+
+.bg-gray-darker .list-twitter a, .bg-additional-gray-darker .bg-additional-item .list-twitter a, .bg-image .list-twitter a, .bg-additional-image .bg-additional-item .list-twitter a, .bg-gradient .list-twitter a, .bg-gradient-1 .list-twitter a, .bg-gradient-2 .list-twitter a, .bg-gradient-3 .list-twitter a {
+	color: #ffec17;
+}
+
+.bg-gray-darker .list-twitter a:hover, .bg-additional-gray-darker .bg-additional-item .list-twitter a:hover, .bg-image .list-twitter a:hover, .bg-additional-image .bg-additional-item .list-twitter a:hover, .bg-gradient .list-twitter a:hover, .bg-gradient-1 .list-twitter a:hover, .bg-gradient-2 .list-twitter a:hover, .bg-gradient-3 .list-twitter a:hover {
+	color: #ed1c94;
+}
+
+.bg-gray-darker .tabs-custom.tabs-line .icon-primary, .bg-additional-gray-darker .bg-additional-item .tabs-custom.tabs-line .icon-primary, .bg-image .tabs-custom.tabs-line .icon-primary, .bg-additional-image .bg-additional-item .tabs-custom.tabs-line .icon-primary, .bg-gradient .tabs-custom.tabs-line .icon-primary, .bg-gradient-1 .tabs-custom.tabs-line .icon-primary, .bg-gradient-2 .tabs-custom.tabs-line .icon-primary, .bg-gradient-3 .tabs-custom.tabs-line .icon-primary {
+	color: #ed1c94;
+}
+
+@media (min-width: 768px) {
+	.bg-gray-darker .tabs-custom.tabs-line .nav-tabs, .bg-additional-gray-darker .bg-additional-item .tabs-custom.tabs-line .nav-tabs, .bg-image .tabs-custom.tabs-line .nav-tabs, .bg-additional-image .bg-additional-item .tabs-custom.tabs-line .nav-tabs, .bg-gradient .tabs-custom.tabs-line .nav-tabs, .bg-gradient-1 .tabs-custom.tabs-line .nav-tabs, .bg-gradient-2 .tabs-custom.tabs-line .nav-tabs, .bg-gradient-3 .tabs-custom.tabs-line .nav-tabs {
+		border-color: #c2c2c3;
+	}
+	.bg-gray-darker .tabs-custom.tabs-line .nav-tabs li a, .bg-additional-gray-darker .bg-additional-item .tabs-custom.tabs-line .nav-tabs li a, .bg-image .tabs-custom.tabs-line .nav-tabs li a, .bg-additional-image .bg-additional-item .tabs-custom.tabs-line .nav-tabs li a, .bg-gradient .tabs-custom.tabs-line .nav-tabs li a, .bg-gradient-1 .tabs-custom.tabs-line .nav-tabs li a, .bg-gradient-2 .tabs-custom.tabs-line .nav-tabs li a, .bg-gradient-3 .tabs-custom.tabs-line .nav-tabs li a {
+		color: #c2c2c3;
+	}
+	.bg-gray-darker .tabs-custom.tabs-line .nav-tabs li a:after, .bg-additional-gray-darker .bg-additional-item .tabs-custom.tabs-line .nav-tabs li a:after, .bg-image .tabs-custom.tabs-line .nav-tabs li a:after, .bg-additional-image .bg-additional-item .tabs-custom.tabs-line .nav-tabs li a:after, .bg-gradient .tabs-custom.tabs-line .nav-tabs li a:after, .bg-gradient-1 .tabs-custom.tabs-line .nav-tabs li a:after, .bg-gradient-2 .tabs-custom.tabs-line .nav-tabs li a:after, .bg-gradient-3 .tabs-custom.tabs-line .nav-tabs li a:after {
+		background-color: #ffec17;
+	}
+	.bg-gray-darker .tabs-custom.tabs-line .nav-tabs li.active a, .bg-additional-gray-darker .bg-additional-item .tabs-custom.tabs-line .nav-tabs li.active a, .bg-gray-darker .tabs-custom.tabs-line .nav-tabs li a:hover, .bg-additional-gray-darker .bg-additional-item .tabs-custom.tabs-line .nav-tabs li a:hover, .bg-image .tabs-custom.tabs-line .nav-tabs li.active a, .bg-additional-image .bg-additional-item .tabs-custom.tabs-line .nav-tabs li.active a, .bg-image .tabs-custom.tabs-line .nav-tabs li a:hover, .bg-additional-image .bg-additional-item .tabs-custom.tabs-line .nav-tabs li a:hover, .bg-gradient .tabs-custom.tabs-line .nav-tabs li.active a, .bg-gradient-1 .tabs-custom.tabs-line .nav-tabs li.active a, .bg-gradient-2 .tabs-custom.tabs-line .nav-tabs li.active a, .bg-gradient-3 .tabs-custom.tabs-line .nav-tabs li.active a, .bg-gradient .tabs-custom.tabs-line .nav-tabs li a:hover, .bg-gradient-1 .tabs-custom.tabs-line .nav-tabs li a:hover, .bg-gradient-2 .tabs-custom.tabs-line .nav-tabs li a:hover, .bg-gradient-3 .tabs-custom.tabs-line .nav-tabs li a:hover {
+		color: #ffec17;
+	}
+}
+
+.bg-gray-darker .box-inline a, .bg-additional-gray-darker .bg-additional-item .box-inline a, .bg-image .box-inline a, .bg-additional-image .bg-additional-item .box-inline a, .bg-gradient .box-inline a, .bg-gradient-1 .box-inline a, .bg-gradient-2 .box-inline a, .bg-gradient-3 .box-inline a {
+	color: #ffffff;
+}
+
+.bg-gray-darker .box-inline a:hover, .bg-additional-gray-darker .bg-additional-item .box-inline a:hover, .bg-image .box-inline a:hover, .bg-additional-image .bg-additional-item .box-inline a:hover, .bg-gradient .box-inline a:hover, .bg-gradient-1 .box-inline a:hover, .bg-gradient-2 .box-inline a:hover, .bg-gradient-3 .box-inline a:hover {
+	color: #ffec17;
+}
+
+.bg-gray-darker .radio .radio-custom-dummy, .bg-additional-gray-darker .bg-additional-item .radio .radio-custom-dummy, .bg-gray-darker .radio-inline .radio-custom-dummy, .bg-additional-gray-darker .bg-additional-item .radio-inline .radio-custom-dummy, .bg-image .radio .radio-custom-dummy, .bg-additional-image .bg-additional-item .radio .radio-custom-dummy, .bg-image .radio-inline .radio-custom-dummy, .bg-additional-image .bg-additional-item .radio-inline .radio-custom-dummy, .bg-gradient .radio .radio-custom-dummy, .bg-gradient-1 .radio .radio-custom-dummy, .bg-gradient-2 .radio .radio-custom-dummy, .bg-gradient-3 .radio .radio-custom-dummy, .bg-gradient .radio-inline .radio-custom-dummy, .bg-gradient-1 .radio-inline .radio-custom-dummy, .bg-gradient-2 .radio-inline .radio-custom-dummy, .bg-gradient-3 .radio-inline .radio-custom-dummy {
+	border-color: #ffffff;
+}
+
+.bg-gray-darker .radio .radio-custom:checked+.radio-custom-dummy, .bg-additional-gray-darker .bg-additional-item .radio .radio-custom:checked+.radio-custom-dummy, .bg-gray-darker .radio-inline .radio-custom:checked+.radio-custom-dummy, .bg-additional-gray-darker .bg-additional-item .radio-inline .radio-custom:checked+.radio-custom-dummy, .bg-image .radio .radio-custom:checked+.radio-custom-dummy, .bg-additional-image .bg-additional-item .radio .radio-custom:checked+.radio-custom-dummy, .bg-image .radio-inline .radio-custom:checked+.radio-custom-dummy, .bg-additional-image .bg-additional-item .radio-inline .radio-custom:checked+.radio-custom-dummy, .bg-gradient .radio .radio-custom:checked+.radio-custom-dummy, .bg-gradient-1 .radio .radio-custom:checked+.radio-custom-dummy, .bg-gradient-2 .radio .radio-custom:checked+.radio-custom-dummy, .bg-gradient-3 .radio .radio-custom:checked+.radio-custom-dummy, .bg-gradient .radio-inline .radio-custom:checked+.radio-custom-dummy, .bg-gradient-1 .radio-inline .radio-custom:checked+.radio-custom-dummy, .bg-gradient-2 .radio-inline .radio-custom:checked+.radio-custom-dummy, .bg-gradient-3 .radio-inline .radio-custom:checked+.radio-custom-dummy {
+	border-color: #981df0;
+}
+
+.bg-gray-darker .divider-thin, .bg-additional-gray-darker .bg-additional-item .divider-thin, .bg-image .divider-thin, .bg-additional-image .bg-additional-item .divider-thin, .bg-gradient .divider-thin, .bg-gradient-1 .divider-thin, .bg-gradient-2 .divider-thin, .bg-gradient-3 .divider-thin {
+	border-color: #d2d5e4;
+}
+
+.bg-gray-darker .twitter-feed-minimal-content, .bg-additional-gray-darker .bg-additional-item .twitter-feed-minimal-content, .bg-image .twitter-feed-minimal-content, .bg-additional-image .bg-additional-item .twitter-feed-minimal-content, .bg-gradient .twitter-feed-minimal-content, .bg-gradient-1 .twitter-feed-minimal-content, .bg-gradient-2 .twitter-feed-minimal-content, .bg-gradient-3 .twitter-feed-minimal-content {
+	color: #ffffff;
+}
+
+.bg-gray-darker .twitter-feed-minimal-content a, .bg-additional-gray-darker .bg-additional-item .twitter-feed-minimal-content a, .bg-gray-darker .twitter-feed-minimal-content a:focus, .bg-additional-gray-darker .bg-additional-item .twitter-feed-minimal-content a:focus, .bg-gray-darker .twitter-feed-minimal-content a:active, .bg-additional-gray-darker .bg-additional-item .twitter-feed-minimal-content a:active, .bg-image .twitter-feed-minimal-content a, .bg-additional-image .bg-additional-item .twitter-feed-minimal-content a, .bg-image .twitter-feed-minimal-content a:focus, .bg-additional-image .bg-additional-item .twitter-feed-minimal-content a:focus, .bg-image .twitter-feed-minimal-content a:active, .bg-additional-image .bg-additional-item .twitter-feed-minimal-content a:active, .bg-gradient .twitter-feed-minimal-content a, .bg-gradient-1 .twitter-feed-minimal-content a, .bg-gradient-2 .twitter-feed-minimal-content a, .bg-gradient-3 .twitter-feed-minimal-content a, .bg-gradient .twitter-feed-minimal-content a:focus, .bg-gradient-1 .twitter-feed-minimal-content a:focus, .bg-gradient-2 .twitter-feed-minimal-content a:focus, .bg-gradient-3 .twitter-feed-minimal-content a:focus, .bg-gradient .twitter-feed-minimal-content a:active, .bg-gradient-1 .twitter-feed-minimal-content a:active, .bg-gradient-2 .twitter-feed-minimal-content a:active, .bg-gradient-3 .twitter-feed-minimal-content a:active {
+	color: #ffec17;
+}
+
+.bg-gray-darker .twitter-feed-minimal-content a:hover, .bg-additional-gray-darker .bg-additional-item .twitter-feed-minimal-content a:hover, .bg-image .twitter-feed-minimal-content a:hover, .bg-additional-image .bg-additional-item .twitter-feed-minimal-content a:hover, .bg-gradient .twitter-feed-minimal-content a:hover, .bg-gradient-1 .twitter-feed-minimal-content a:hover, .bg-gradient-2 .twitter-feed-minimal-content a:hover, .bg-gradient-3 .twitter-feed-minimal-content a:hover {
+	color: #981df0;
+}
+
+.bg-gray-darker .page-footer-inline-list a, .bg-additional-gray-darker .bg-additional-item .page-footer-inline-list a, .bg-gray-darker .page-footer-inline-list a:focus, .bg-additional-gray-darker .bg-additional-item .page-footer-inline-list a:focus, .bg-gray-darker .page-footer-inline-list a:active, .bg-additional-gray-darker .bg-additional-item .page-footer-inline-list a:active, .bg-gray-darker .list-darker a, .bg-additional-gray-darker .bg-additional-item .list-darker a, .bg-gray-darker .list-darker a:focus, .bg-additional-gray-darker .bg-additional-item .list-darker a:focus, .bg-gray-darker .list-darker a:active, .bg-additional-gray-darker .bg-additional-item .list-darker a:active, .bg-image .page-footer-inline-list a, .bg-additional-image .bg-additional-item .page-footer-inline-list a, .bg-image .page-footer-inline-list a:focus, .bg-additional-image .bg-additional-item .page-footer-inline-list a:focus, .bg-image .page-footer-inline-list a:active, .bg-additional-image .bg-additional-item .page-footer-inline-list a:active, .bg-image .list-darker a, .bg-additional-image .bg-additional-item .list-darker a, .bg-image .list-darker a:focus, .bg-additional-image .bg-additional-item .list-darker a:focus, .bg-image .list-darker a:active, .bg-additional-image .bg-additional-item .list-darker a:active, .bg-gradient .page-footer-inline-list a, .bg-gradient-1 .page-footer-inline-list a, .bg-gradient-2 .page-footer-inline-list a, .bg-gradient-3 .page-footer-inline-list a, .bg-gradient .page-footer-inline-list a:focus, .bg-gradient-1 .page-footer-inline-list a:focus, .bg-gradient-2 .page-footer-inline-list a:focus, .bg-gradient-3 .page-footer-inline-list a:focus, .bg-gradient .page-footer-inline-list a:active, .bg-gradient-1 .page-footer-inline-list a:active, .bg-gradient-2 .page-footer-inline-list a:active, .bg-gradient-3 .page-footer-inline-list a:active, .bg-gradient .list-darker a, .bg-gradient-1 .list-darker a, .bg-gradient-2 .list-darker a, .bg-gradient-3 .list-darker a, .bg-gradient .list-darker a:focus, .bg-gradient-1 .list-darker a:focus, .bg-gradient-2 .list-darker a:focus, .bg-gradient-3 .list-darker a:focus, .bg-gradient .list-darker a:active, .bg-gradient-1 .list-darker a:active, .bg-gradient-2 .list-darker a:active, .bg-gradient-3 .list-darker a:active {
+	color: #ffffff;
+}
+
+.bg-gray-darker .page-footer-inline-list a:hover, .bg-additional-gray-darker .bg-additional-item .page-footer-inline-list a:hover, .bg-gray-darker .list-darker a:hover, .bg-additional-gray-darker .bg-additional-item .list-darker a:hover, .bg-image .page-footer-inline-list a:hover, .bg-additional-image .bg-additional-item .page-footer-inline-list a:hover, .bg-image .list-darker a:hover, .bg-additional-image .bg-additional-item .list-darker a:hover, .bg-gradient .page-footer-inline-list a:hover, .bg-gradient-1 .page-footer-inline-list a:hover, .bg-gradient-2 .page-footer-inline-list a:hover, .bg-gradient-3 .page-footer-inline-list a:hover, .bg-gradient .list-darker a:hover, .bg-gradient-1 .list-darker a:hover, .bg-gradient-2 .list-darker a:hover, .bg-gradient-3 .list-darker a:hover {
+	color: #981df0;
+}
+
+.bg-gray-darker p.rights a:hover, .bg-additional-gray-darker .bg-additional-item p.rights a:hover, .bg-image p.rights a:hover, .bg-additional-image .bg-additional-item p.rights a:hover, .bg-gradient p.rights a:hover, .bg-gradient-1 p.rights a:hover, .bg-gradient-2 p.rights a:hover, .bg-gradient-3 p.rights a:hover {
+	color: #ffffff;
+}
+
+.bg-gray-darker a.icon-gray-light, .bg-additional-gray-darker .bg-additional-item a.icon-gray-light, .bg-gray-darker a.icon-gray-light:focus, .bg-additional-gray-darker .bg-additional-item a.icon-gray-light:focus, .bg-gray-darker a.icon-gray-light:active, .bg-additional-gray-darker .bg-additional-item a.icon-gray-light:active, .bg-gray-darker a.icon-gray-light:not(:hover), .bg-additional-gray-darker .bg-additional-item a.icon-gray-light:not(:hover), .bg-image a.icon-gray-light, .bg-additional-image .bg-additional-item a.icon-gray-light, .bg-image a.icon-gray-light:focus, .bg-additional-image .bg-additional-item a.icon-gray-light:focus, .bg-image a.icon-gray-light:active, .bg-additional-image .bg-additional-item a.icon-gray-light:active, .bg-image a.icon-gray-light:not(:hover), .bg-additional-image .bg-additional-item a.icon-gray-light:not(:hover), .bg-gradient a.icon-gray-light, .bg-gradient-1 a.icon-gray-light, .bg-gradient-2 a.icon-gray-light, .bg-gradient-3 a.icon-gray-light, .bg-gradient a.icon-gray-light:focus, .bg-gradient-1 a.icon-gray-light:focus, .bg-gradient-2 a.icon-gray-light:focus, .bg-gradient-3 a.icon-gray-light:focus, .bg-gradient a.icon-gray-light:active, .bg-gradient-1 a.icon-gray-light:active, .bg-gradient-2 a.icon-gray-light:active, .bg-gradient-3 a.icon-gray-light:active, .bg-gradient a.icon-gray-light:not(:hover), .bg-gradient-1 a.icon-gray-light:not(:hover), .bg-gradient-2 a.icon-gray-light:not(:hover), .bg-gradient-3 a.icon-gray-light:not(:hover) {
+	color: #c2c2c3;
+}
+
+.bg-gray-darker.page-footer-alternative .divider-xl, .bg-additional-gray-darker .page-footer-alternative.bg-additional-item .divider-xl, .bg-image.page-footer-alternative .divider-xl, .bg-additional-image .page-footer-alternative.bg-additional-item .divider-xl, .bg-gradient.page-footer-alternative .divider-xl, .page-footer-alternative.bg-gradient-1 .divider-xl, .page-footer-alternative.bg-gradient-2 .divider-xl, .page-footer-alternative.bg-gradient-3 .divider-xl {
+	border-color: rgba(255, 255, 255, 0.2);
+}
+
+.bg-gray-darker.page-footer-alternative a.icon.icon-gray-light[class*='instagram']:hover, .bg-additional-gray-darker .page-footer-alternative.bg-additional-item a.icon.icon-gray-light[class*='instagram']:hover, .bg-image.page-footer-alternative a.icon.icon-gray-light[class*='instagram']:hover, .bg-additional-image .page-footer-alternative.bg-additional-item a.icon.icon-gray-light[class*='instagram']:hover, .bg-gradient.page-footer-alternative a.icon.icon-gray-light[class*='instagram']:hover, .page-footer-alternative.bg-gradient-1 a.icon.icon-gray-light[class*='instagram']:hover, .page-footer-alternative.bg-gradient-2 a.icon.icon-gray-light[class*='instagram']:hover, .page-footer-alternative.bg-gradient-3 a.icon.icon-gray-light[class*='instagram']:hover {
+	color: #c13584;
+}
+
+.bg-gray-darker .team-classic-title, .bg-additional-gray-darker .bg-additional-item .team-classic-title, .bg-image .team-classic-title, .bg-additional-image .bg-additional-item .team-classic-title, .bg-gradient .team-classic-title, .bg-gradient-1 .team-classic-title, .bg-gradient-2 .team-classic-title, .bg-gradient-3 .team-classic-title {
+	color: #ffec17;
+}
+
+.bg-gray-darker .team-classic-title:hover, .bg-additional-gray-darker .bg-additional-item .team-classic-title:hover, .bg-image .team-classic-title:hover, .bg-additional-image .bg-additional-item .team-classic-title:hover, .bg-gradient .team-classic-title:hover, .bg-gradient-1 .team-classic-title:hover, .bg-gradient-2 .team-classic-title:hover, .bg-gradient-3 .team-classic-title:hover {
+	color: #ffffff;
+}
+
+.bg-gray-darker .team-classic-job-position, .bg-additional-gray-darker .bg-additional-item .team-classic-job-position, .bg-image .team-classic-job-position, .bg-additional-image .bg-additional-item .team-classic-job-position, .bg-gradient .team-classic-job-position, .bg-gradient-1 .team-classic-job-position, .bg-gradient-2 .team-classic-job-position, .bg-gradient-3 .team-classic-job-position {
+	color: #c2c2c3;
+}
+
+.bg-gray-darker .team-inline-title:hover, .bg-additional-gray-darker .bg-additional-item .team-inline-title:hover, .bg-image .team-inline-title:hover, .bg-additional-image .bg-additional-item .team-inline-title:hover, .bg-gradient .team-inline-title:hover, .bg-gradient-1 .team-inline-title:hover, .bg-gradient-2 .team-inline-title:hover, .bg-gradient-3 .team-inline-title:hover {
+	color: #ffec17;
+}
+
+.bg-gray-darker a.icon.icon-gray-1:hover, .bg-additional-gray-darker .bg-additional-item a.icon.icon-gray-1:hover, .bg-image a.icon.icon-gray-1:hover, .bg-additional-image .bg-additional-item a.icon.icon-gray-1:hover, .bg-gradient a.icon.icon-gray-1:hover, .bg-gradient-1 a.icon.icon-gray-1:hover, .bg-gradient-2 a.icon.icon-gray-1:hover, .bg-gradient-3 a.icon.icon-gray-1:hover {
+	color: #ffec17;
+}
+
+.bg-gray-darker .team-classic .button-default-outline, .bg-additional-gray-darker .bg-additional-item .team-classic .button-default-outline, .bg-gray-darker .team-classic .button-default-outline:focus, .bg-additional-gray-darker .bg-additional-item .team-classic .button-default-outline:focus, .bg-image .team-classic .button-default-outline, .bg-additional-image .bg-additional-item .team-classic .button-default-outline, .bg-image .team-classic .button-default-outline:focus, .bg-additional-image .bg-additional-item .team-classic .button-default-outline:focus, .bg-gradient .team-classic .button-default-outline, .bg-gradient-1 .team-classic .button-default-outline, .bg-gradient-2 .team-classic .button-default-outline, .bg-gradient-3 .team-classic .button-default-outline, .bg-gradient .team-classic .button-default-outline:focus, .bg-gradient-1 .team-classic .button-default-outline:focus, .bg-gradient-2 .team-classic .button-default-outline:focus, .bg-gradient-3 .team-classic .button-default-outline:focus {
+	color: #ffffff;
+	background-color: #ed1c94;
+	border-color: #ed1c94;
+}
+
+.bg-gray-darker .team-classic .button-default-outline:hover, .bg-additional-gray-darker .bg-additional-item .team-classic .button-default-outline:hover, .bg-gray-darker .team-classic .button-default-outline:active, .bg-additional-gray-darker .bg-additional-item .team-classic .button-default-outline:active, .bg-gray-darker .team-classic .button-default-outline:hover, .bg-additional-gray-darker .bg-additional-item .team-classic .button-default-outline:hover, .bg-image .team-classic .button-default-outline:hover, .bg-additional-image .bg-additional-item .team-classic .button-default-outline:hover, .bg-image .team-classic .button-default-outline:active, .bg-additional-image .bg-additional-item .team-classic .button-default-outline:active, .bg-image .team-classic .button-default-outline:hover, .bg-additional-image .bg-additional-item .team-classic .button-default-outline:hover, .bg-gradient .team-classic .button-default-outline:hover, .bg-gradient-1 .team-classic .button-default-outline:hover, .bg-gradient-2 .team-classic .button-default-outline:hover, .bg-gradient-3 .team-classic .button-default-outline:hover, .bg-gradient .team-classic .button-default-outline:active, .bg-gradient-1 .team-classic .button-default-outline:active, .bg-gradient-2 .team-classic .button-default-outline:active, .bg-gradient-3 .team-classic .button-default-outline:active, .bg-gradient .team-classic .button-default-outline:hover, .bg-gradient-1 .team-classic .button-default-outline:hover, .bg-gradient-2 .team-classic .button-default-outline:hover, .bg-gradient-3 .team-classic .button-default-outline:hover {
+	color: #ffffff;
+	background-color: #981df0;
+	border-color: #981df0;
+}
+
+.bg-gray-darker .team-inline-text, .bg-additional-gray-darker .bg-additional-item .team-inline-text, .bg-image .team-inline-text, .bg-additional-image .bg-additional-item .team-inline-text, .bg-gradient .team-inline-text, .bg-gradient-1 .team-inline-text, .bg-gradient-2 .team-inline-text, .bg-gradient-3 .team-inline-text {
+	color: #ededed;
+}
+
+.bg-gray-darker .event-default-title, .bg-additional-gray-darker .bg-additional-item .event-default-title, .bg-image .event-default-title, .bg-additional-image .bg-additional-item .event-default-title, .bg-gradient .event-default-title, .bg-gradient-1 .event-default-title, .bg-gradient-2 .event-default-title, .bg-gradient-3 .event-default-title {
+	color: #ffec17;
+}
+
+.bg-gray-darker .event-default-title:hover, .bg-additional-gray-darker .bg-additional-item .event-default-title:hover, .bg-image .event-default-title:hover, .bg-additional-image .bg-additional-item .event-default-title:hover, .bg-gradient .event-default-title:hover, .bg-gradient-1 .event-default-title:hover, .bg-gradient-2 .event-default-title:hover, .bg-gradient-3 .event-default-title:hover {
+	color: #ffffff;
+}
+
+.bg-gray-darker .event-default-inner .event-default-link, .bg-additional-gray-darker .bg-additional-item .event-default-inner .event-default-link, .bg-image .event-default-inner .event-default-link, .bg-additional-image .bg-additional-item .event-default-inner .event-default-link, .bg-gradient .event-default-inner .event-default-link, .bg-gradient-1 .event-default-inner .event-default-link, .bg-gradient-2 .event-default-inner .event-default-link, .bg-gradient-3 .event-default-inner .event-default-link {
+	color: #c2c2c3;
+}
+
+.bg-gray-darker .event-default-inner .event-default-link:hover, .bg-additional-gray-darker .bg-additional-item .event-default-inner .event-default-link:hover, .bg-image .event-default-inner .event-default-link:hover, .bg-additional-image .bg-additional-item .event-default-inner .event-default-link:hover, .bg-gradient .event-default-inner .event-default-link:hover, .bg-gradient-1 .event-default-inner .event-default-link:hover, .bg-gradient-2 .event-default-inner .event-default-link:hover, .bg-gradient-3 .event-default-inner .event-default-link:hover {
+	color: #ffec17;
+}
+
+/**
+*  Common Background Gray Darker, Background Images, Background gradient 1
+ */
+
+.bg-gradient-1 .box-cta-title, .bg-gradient-2 .box-cta-title, .bg-image .box-cta-title, .bg-additional-image .bg-additional-item .box-cta-title, .bg-secondary-2 .box-cta-title, .bg-gray-darker .box-cta-title, .bg-additional-gray-darker .bg-additional-item .box-cta-title {
+	color: #ffec17;
+}
+
+.bg-gradient-1 .box-cta, .bg-gradient-2 .box-cta, .bg-image .box-cta, .bg-additional-image .bg-additional-item .box-cta, .bg-secondary-2 .box-cta, .bg-gray-darker .box-cta, .bg-additional-gray-darker .bg-additional-item .box-cta {
+	color: #ffffff;
+}
+
+.bg-gradient-1 .link-bold, .bg-gradient-2 .link-bold, .bg-image .link-bold, .bg-additional-image .bg-additional-item .link-bold, .bg-secondary-2 .link-bold, .bg-gray-darker .link-bold, .bg-additional-gray-darker .bg-additional-item .link-bold {
+	color: #ffec17;
+}
+
+.bg-gradient-1 .link-bold:hover, .bg-gradient-2 .link-bold:hover, .bg-image .link-bold:hover, .bg-additional-image .bg-additional-item .link-bold:hover, .bg-secondary-2 .link-bold:hover, .bg-gray-darker .link-bold:hover, .bg-additional-gray-darker .bg-additional-item .link-bold:hover {
+	color: #ffffff;
+}
+
+.bg-gradient-1 .box-minimal-title, .bg-gradient-2 .box-minimal-title, .bg-image .box-minimal-title, .bg-additional-image .bg-additional-item .box-minimal-title, .bg-secondary-2 .box-minimal-title, .bg-gray-darker .box-minimal-title, .bg-additional-gray-darker .bg-additional-item .box-minimal-title {
+	color: #ffec17;
+}
+
+.bg-gradient-1 .box-minimal-text, .bg-gradient-2 .box-minimal-text, .bg-image .box-minimal-text, .bg-additional-image .bg-additional-item .box-minimal-text, .bg-secondary-2 .box-minimal-text, .bg-gray-darker .box-minimal-text, .bg-additional-gray-darker .bg-additional-item .box-minimal-text {
+	color: #ffffff;
+	opacity: .6;
+}
+
+.bg-gradient-1 .box-minimal-header .box-minimal-icon, .bg-gradient-2 .box-minimal-header .box-minimal-icon, .bg-image .box-minimal-header .box-minimal-icon, .bg-additional-image .bg-additional-item .box-minimal-header .box-minimal-icon, .bg-secondary-2 .box-minimal-header .box-minimal-icon, .bg-gray-darker .box-minimal-header .box-minimal-icon, .bg-additional-gray-darker .bg-additional-item .box-minimal-header .box-minimal-icon {
+	color: #ffffff;
+}
+
+.bg-gradient-1 .box-minimal-header .box-minimal-icon svg, .bg-gradient-2 .box-minimal-header .box-minimal-icon svg, .bg-image .box-minimal-header .box-minimal-icon svg, .bg-additional-image .bg-additional-item .box-minimal-header .box-minimal-icon svg, .bg-secondary-2 .box-minimal-header .box-minimal-icon svg, .bg-gray-darker .box-minimal-header .box-minimal-icon svg, .bg-additional-gray-darker .bg-additional-item .box-minimal-header .box-minimal-icon svg {
+	fill: #ffffff;
+}
+
+.bg-gradient-1 .thumbnail-classic .divider-default, .bg-gradient-2 .thumbnail-classic .divider-default, .bg-image .thumbnail-classic .divider-default, .bg-additional-image .bg-additional-item .thumbnail-classic .divider-default, .bg-secondary-2 .thumbnail-classic .divider-default, .bg-gray-darker .thumbnail-classic .divider-default, .bg-additional-gray-darker .bg-additional-item .thumbnail-classic .divider-default {
+	background: #ffffff;
+}
+
+.bg-gradient-1 .thumbnail-classic-title, .bg-gradient-2 .thumbnail-classic-title, .bg-image .thumbnail-classic-title, .bg-additional-image .bg-additional-item .thumbnail-classic-title, .bg-secondary-2 .thumbnail-classic-title, .bg-gray-darker .thumbnail-classic-title, .bg-additional-gray-darker .bg-additional-item .thumbnail-classic-title {
+	color: #ffec17;
+}
+
+.bg-gradient-1 .thumbnail-classic-icon, .bg-gradient-2 .thumbnail-classic-icon, .bg-image .thumbnail-classic-icon, .bg-additional-image .bg-additional-item .thumbnail-classic-icon, .bg-secondary-2 .thumbnail-classic-icon, .bg-gray-darker .thumbnail-classic-icon, .bg-additional-gray-darker .bg-additional-item .thumbnail-classic-icon {
+	color: #ffffff;
+}
+
+.bg-gradient-1 .thumbnail-classic-secondary .divider-default, .bg-gradient-2 .thumbnail-classic-secondary .divider-default, .bg-image .thumbnail-classic-secondary .divider-default, .bg-additional-image .bg-additional-item .thumbnail-classic-secondary .divider-default, .bg-secondary-2 .thumbnail-classic-secondary .divider-default, .bg-gray-darker .thumbnail-classic-secondary .divider-default, .bg-additional-gray-darker .bg-additional-item .thumbnail-classic-secondary .divider-default {
+	background: #981df0;
+}
+
+.bg-gradient-1 .thumbnail-classic-secondary .thumbnail-classic-title, .bg-gradient-2 .thumbnail-classic-secondary .thumbnail-classic-title, .bg-image .thumbnail-classic-secondary .thumbnail-classic-title, .bg-additional-image .bg-additional-item .thumbnail-classic-secondary .thumbnail-classic-title, .bg-secondary-2 .thumbnail-classic-secondary .thumbnail-classic-title, .bg-gray-darker .thumbnail-classic-secondary .thumbnail-classic-title, .bg-additional-gray-darker .bg-additional-item .thumbnail-classic-secondary .thumbnail-classic-title {
+	color: #ffffff;
+}
+
+.bg-gradient-1 .thumbnail-classic-secondary .thumbnail-classic-icon, .bg-gradient-2 .thumbnail-classic-secondary .thumbnail-classic-icon, .bg-image .thumbnail-classic-secondary .thumbnail-classic-icon, .bg-additional-image .bg-additional-item .thumbnail-classic-secondary .thumbnail-classic-icon, .bg-secondary-2 .thumbnail-classic-secondary .thumbnail-classic-icon, .bg-gray-darker .thumbnail-classic-secondary .thumbnail-classic-icon, .bg-additional-gray-darker .bg-additional-item .thumbnail-classic-secondary .thumbnail-classic-icon {
+	color: #ffec17;
+}
+
+.bg-gradient-1 .thumbnail-classic-secondary .thumbnail-classic-icon::after, .bg-gradient-2 .thumbnail-classic-secondary .thumbnail-classic-icon::after, .bg-image .thumbnail-classic-secondary .thumbnail-classic-icon::after, .bg-additional-image .bg-additional-item .thumbnail-classic-secondary .thumbnail-classic-icon::after, .bg-secondary-2 .thumbnail-classic-secondary .thumbnail-classic-icon::after, .bg-gray-darker .thumbnail-classic-secondary .thumbnail-classic-icon::after, .bg-additional-gray-darker .bg-additional-item .thumbnail-classic-secondary .thumbnail-classic-icon::after {
+	border-color: #ffec17;
+}
+
+.bg-gradient-1 .image-shadow img, .bg-gradient-2 .image-shadow img, .bg-image .image-shadow img, .bg-additional-image .bg-additional-item .image-shadow img, .bg-secondary-2 .image-shadow img, .bg-gray-darker .image-shadow img, .bg-additional-gray-darker .bg-additional-item .image-shadow img {
+	box-shadow: 0 10px 30px 0 rgba(30, 31, 34, 0.5);
+}
+
+.bg-image .thumbnail-classic-secondary .thumbnail-classic-text, .bg-additional-image .bg-additional-item .thumbnail-classic-secondary .thumbnail-classic-text, .bg-gradient .thumbnail-classic-secondary .thumbnail-classic-text, .bg-gradient-1 .thumbnail-classic-secondary .thumbnail-classic-text, .bg-gradient-2 .thumbnail-classic-secondary .thumbnail-classic-text, .bg-gradient-3 .thumbnail-classic-secondary .thumbnail-classic-text, .bg-secondary-2 .thumbnail-classic-secondary .thumbnail-classic-text {
+	color: rgba(255, 255, 255, 0.8);
+}
+
+.bg-image .typed-text, .bg-additional-image .bg-additional-item .typed-text, .bg-image .typed-cursor, .bg-additional-image .bg-additional-item .typed-cursor, .bg-gradient .typed-text, .bg-gradient-1 .typed-text, .bg-gradient-2 .typed-text, .bg-gradient-3 .typed-text, .bg-gradient .typed-cursor, .bg-gradient-1 .typed-cursor, .bg-gradient-2 .typed-cursor, .bg-gradient-3 .typed-cursor, .bg-secondary-2 .typed-text, .bg-secondary-2 .typed-cursor {
+	color: #ffec17;
+}
+
+/**
+* Background mixed
+*/
+
+.bg-accent-accent .button-default-outline, .bg-accent-accent .button-default-outline:focus, .bg-secondary-2 .button-default-outline, .bg-secondary-2 .button-default-outline:focus {
+	color: #ffffff;
+	background-color: transparent;
+	border-color: #ffffff;
+}
+
+.bg-accent-accent .button-default-outline:hover, .bg-accent-accent .button-default-outline:active, .bg-accent-accent .button-default-outline:hover, .bg-secondary-2 .button-default-outline:hover, .bg-secondary-2 .button-default-outline:active, .bg-secondary-2 .button-default-outline:hover {
+	color: #ffffff;
+	background-color: #ed1c94;
+	border-color: #ed1c94;
+}
+
+/**
+* Background Primary
+*/
+
+.bg-accent {
+	background-color: #981df0;
+	fill: #981df0;
+}
+
+.bg-accent .way-point>svg {
+	fill: inherit;
+}
+
+.bg-accent+.bg-accent {
+	padding-top: 0;
+}
+
+.bg-accent .bg-decoration>svg {
+	fill: #981df0;
+}
+
+.bg-accent-accent {
+	background-color: #6a0dac;
+	fill: #6a0dac;
+}
+
+.bg-accent-accent .way-point>svg {
+	fill: inherit;
+}
+
+.bg-accent-accent+.bg-accent-accent {
+	padding-top: 0;
+}
+
+.bg-accent-accent .bg-decoration>svg {
+	fill: #6a0dac;
+}
+
+.bg-accent-accent .parallax-text {
+	color: rgba(0, 0, 0, 0.2);
+	opacity: 1;
+}
+
+/**
+* Background Secondary 2
+*/
+
+.bg-secondary-2 {
+	background-color: #6d0eb1;
+	fill: #6d0eb1;
+}
+
+.bg-secondary-2 .way-point>svg {
+	fill: inherit;
+}
+
+.bg-secondary-2+.bg-secondary-2 {
+	padding-top: 0;
+}
+
+.bg-secondary-2 .bg-decoration>svg {
+	fill: #6d0eb1;
+}
+
+.bg-secondary-2 .thumbnail-classic .divider-default {
+	background: #ffffff;
+}
+
+.bg-secondary-2 .thumbnail-classic-title {
+	color: #ffec17;
+}
+
+.bg-secondary-2 .box-minimal-border:hover {
+	background: #29293a;
+	border-color: #29293a;
+}
+
+/**
+* Background Gray Darker
+*/
+
+.bg-gray-darker, .bg-additional-gray-darker .bg-additional-item {
+	background-color: #29293a;
+	fill: #29293a;
+}
+
+.bg-gray-darker .way-point>svg, .bg-additional-gray-darker .bg-additional-item .way-point>svg {
+	fill: inherit;
+}
+
+.bg-gray-darker+.bg-gray-darker, .bg-additional-gray-darker .bg-additional-item+.bg-gray-darker, .bg-additional-gray-darker .bg-gray-darker+.bg-additional-item, .bg-additional-gray-darker .bg-additional-item+.bg-additional-item {
+	padding-top: 0;
+}
+
+.bg-gray-darker .bg-decoration>svg, .bg-additional-gray-darker .bg-additional-item .bg-decoration>svg {
+	fill: #29293a;
+}
+
+.bg-gray-darker h1 a:hover, .bg-additional-gray-darker .bg-additional-item h1 a:hover, .bg-gray-darker h2 a:hover, .bg-additional-gray-darker .bg-additional-item h2 a:hover, .bg-gray-darker h3 a:hover, .bg-additional-gray-darker .bg-additional-item h3 a:hover, .bg-gray-darker h4 a:hover, .bg-additional-gray-darker .bg-additional-item h4 a:hover, .bg-gray-darker h5 a:hover, .bg-additional-gray-darker .bg-additional-item h5 a:hover, .bg-gray-darker h6 a:hover, .bg-additional-gray-darker .bg-additional-item h6 a:hover, .bg-gray-darker [class^='heading-'] a:hover, .bg-additional-gray-darker .bg-additional-item [class^='heading-'] a:hover {
+	color: #ffec17;
+}
+
+.bg-gray-darker .time-line-vertical:before, .bg-additional-gray-darker .bg-additional-item .time-line-vertical:before, .bg-gray-darker .time-line-vertical-element:last-child .unit-body:after, .bg-additional-gray-darker .bg-additional-item .time-line-vertical-element:last-child .unit-body:after, .bg-gray-darker .time-line-vertical-element:before, .bg-additional-gray-darker .bg-additional-item .time-line-vertical-element:before, .bg-gray-darker .time-line-vertical-element .unit-body:before, .bg-additional-gray-darker .bg-additional-item .time-line-vertical-element .unit-body:before {
+	background-color: #29293a;
+	border-color: #ffec17;
+}
+
+.bg-gray-darker .twitter, .bg-additional-gray-darker .bg-additional-item .twitter {
+	color: #ffffff;
+}
+
+.bg-gray-darker .time-line-time, .bg-additional-gray-darker .bg-additional-item .time-line-time, .bg-gray-darker .time-line-content, .bg-additional-gray-darker .bg-additional-item .time-line-content {
+	color: #c2c2c3;
+}
+
+.bg-gray-darker .radio a, .bg-additional-gray-darker .bg-additional-item .radio a, .bg-gray-darker .radio-inline a, .bg-additional-gray-darker .bg-additional-item .radio-inline a, .bg-gray-darker .checkbox a, .bg-additional-gray-darker .bg-additional-item .checkbox a, .bg-gray-darker .checkbox-inline a, .bg-additional-gray-darker .bg-additional-item .checkbox-inline a {
+	color: #ed1c94;
+}
+
+.bg-gray-darker .radio a:hover, .bg-additional-gray-darker .bg-additional-item .radio a:hover, .bg-gray-darker .radio-inline a:hover, .bg-additional-gray-darker .bg-additional-item .radio-inline a:hover, .bg-gray-darker .checkbox a:hover, .bg-additional-gray-darker .bg-additional-item .checkbox a:hover, .bg-gray-darker .checkbox-inline a:hover, .bg-additional-gray-darker .bg-additional-item .checkbox-inline a:hover {
+	color: #ffec17;
+}
+
+.bg-gray-darker .isotope-filters-list-buttons a, .bg-additional-gray-darker .bg-additional-item .isotope-filters-list-buttons a, .bg-gray-darker .isotope-filters-list-buttons a:focus, .bg-additional-gray-darker .bg-additional-item .isotope-filters-list-buttons a:focus {
+	color: #29293a;
+	background-color: #ffffff;
+	border-color: #ededed;
+}
+
+.bg-gray-darker .isotope-filters-list-buttons a:hover, .bg-additional-gray-darker .bg-additional-item .isotope-filters-list-buttons a:hover, .bg-gray-darker .isotope-filters-list-buttons a:active, .bg-additional-gray-darker .bg-additional-item .isotope-filters-list-buttons a:active, .bg-gray-darker .isotope-filters-list-buttons a:hover, .bg-additional-gray-darker .bg-additional-item .isotope-filters-list-buttons a:hover {
+	color: #ffffff;
+	background-color: #6a0dac;
+	border-color: #6a0dac;
+}
+
+.bg-gray-darker .button-default-outline, .bg-additional-gray-darker .bg-additional-item .button-default-outline, .bg-gray-darker .button-default-outline:focus, .bg-additional-gray-darker .bg-additional-item .button-default-outline:focus {
+	color: #ffffff;
+	background-color: transparent;
+	border-color: #ffffff;
+}
+
+.bg-gray-darker .button-default-outline:hover, .bg-additional-gray-darker .bg-additional-item .button-default-outline:hover, .bg-gray-darker .button-default-outline:active, .bg-additional-gray-darker .bg-additional-item .button-default-outline:active, .bg-gray-darker .button-default-outline:hover, .bg-additional-gray-darker .bg-additional-item .button-default-outline:hover {
+	color: #ffffff;
+	background-color: #ed1c94;
+	border-color: #ed1c94;
+}
+
+/**
+* Background decorated
+*/
+
+.bg-decorated {
+	position: relative;
+	z-index: 10;
+}
+
+.bg-decoration {
+	position: absolute;
+	left: 0;
+	right: 0;
+	font-size: 0;
+	line-height: 0;
+}
+
+.bg-decoration-top {
+	top: 1px;
+	transform: translateY(-100%);
+}
+
+.bg-decoration-bottom {
+	bottom: 1px;
+	transform: translateY(100%);
+}
+
+.bg-decoration svg {
+	min-width: 1000px;
+	width: 100%;
+	fill: #ffffff;
+}
+
+/**
+* Background Gradients
+*/
+
+.bg-gradient .divider-default, .bg-gradient-1 .divider-default, .bg-gradient-2 .divider-default, .bg-gradient-3 .divider-default {
+	background: #ffffff;
+}
+
+.bg-gradient-1 {
+	background-image: linear-gradient(to right, #6d0eb1 20%, #ed1c94);
+}
+
+.bg-gradient-1 .box-cta .button-secondary, .bg-gradient-1 .box-cta .button-secondary:focus {
+	color: #ffffff;
+	background-color: transparent;
+	border-color: #ededed;
+}
+
+.bg-gradient-1 .box-cta .button-secondary:hover, .bg-gradient-1 .box-cta .button-secondary:active, .bg-gradient-1 .box-cta .button-secondary:hover {
+	color: #ffffff;
+	background-color: #6a0dac;
+	border-color: #6a0dac;
+}
+
+.bg-gradient-2 {
+	background-image: linear-gradient(to left, #6d0eb1 20%, #ed1c94);
+}
+
+.bg-gradient-2 .box-minimal-border:hover {
+	background: #29293a;
+	border-color: #29293a;
+}
+
+.bg-gradient-3 {
+	background-image: linear-gradient(-45deg, #310cb3 10%, #520db2 45%, #6d0eb1 80%);
+}
+
+.bg-gradient-3 .button-default-outline, .bg-gradient-3 .button-default-outline:focus {
+	color: #ffffff;
+	background-color: transparent;
+	border-color: #ededed;
+}
+
+.bg-gradient-3 .button-default-outline:hover, .bg-gradient-3 .button-default-outline:active, .bg-gradient-3 .button-default-outline:hover {
+	color: #ffffff;
+	background-color: #6a0dac;
+	border-color: #6a0dac;
+}
+
+/**
+* Background Images
+*/
+
+.bg-image, .bg-additional-image .bg-additional-item {
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+
+.bg-image, .bg-additional-image .bg-additional-item {
+	position: relative;
+	overflow: hidden;
+	z-index: 1;
+}
+
+.bg-image.page-footer-default, .bg-additional-image .page-footer-default.bg-additional-item, .bg-image.page-footer-extended, .bg-additional-image .page-footer-extended.bg-additional-item, .bg-image.page-footer-alternative, .bg-additional-image .page-footer-alternative.bg-additional-item, .bg-image.page-footer-minimal, .bg-additional-image .page-footer-minimal.bg-additional-item {
+	background-image: url(../images/bg-image-fixed.jpg);
+}
+
+.bg-image .box-minimal-icon, .bg-additional-image .bg-additional-item .box-minimal-icon {
+	color: #ffec17;
+}
+
+.bg-image .box-minimal-icon svg, .bg-additional-image .bg-additional-item .box-minimal-icon svg {
+	fill: #ffec17;
+}
+
+.bg-image .quote-boxed-small, .bg-additional-image .bg-additional-item .quote-boxed-small, .bg-image .quote-vertical-small, .bg-additional-image .bg-additional-item .quote-vertical-small {
+	color: #c2c2c3;
+}
+
+.bg-image .button-default-outline, .bg-additional-image .bg-additional-item .button-default-outline, .bg-image .button-default-outline:focus, .bg-additional-image .bg-additional-item .button-default-outline:focus {
+	color: #ffffff;
+	background-color: transparent;
+	border-color: #ffffff;
+}
+
+.bg-image .button-default-outline:hover, .bg-additional-image .bg-additional-item .button-default-outline:hover, .bg-image .button-default-outline:active, .bg-additional-image .bg-additional-item .button-default-outline:active, .bg-image .button-default-outline:hover, .bg-additional-image .bg-additional-item .button-default-outline:hover {
+	color: #ffffff;
+	background-color: #6a0dac;
+	border-color: #6a0dac;
+}
+
+.bg-image .radio, .bg-additional-image .bg-additional-item .radio, .bg-image .radio-inline, .bg-additional-image .bg-additional-item .radio-inline, .bg-image .checkbox, .bg-additional-image .bg-additional-item .checkbox, .bg-image .checkbox-inline, .bg-additional-image .bg-additional-item .checkbox-inline {
+	color: #ffffff;
+}
+
+.bg-image .radio a, .bg-additional-image .bg-additional-item .radio a, .bg-image .radio-inline a, .bg-additional-image .bg-additional-item .radio-inline a, .bg-image .checkbox a, .bg-additional-image .bg-additional-item .checkbox a, .bg-image .checkbox-inline a, .bg-additional-image .bg-additional-item .checkbox-inline a {
+	color: #ffec17;
+}
+
+.bg-image .radio a:hover, .bg-additional-image .bg-additional-item .radio a:hover, .bg-image .radio-inline a:hover, .bg-additional-image .bg-additional-item .radio-inline a:hover, .bg-image .checkbox a:hover, .bg-additional-image .bg-additional-item .checkbox a:hover, .bg-image .checkbox-inline a:hover, .bg-additional-image .bg-additional-item .checkbox-inline a:hover {
+	color: #ffffff;
+}
+
+.bg-image .bg-image-poster, .bg-additional-image .bg-additional-item .bg-image-poster {
+	position: absolute;
+	z-index: -1;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+}
+
+.bg-image .bg-image-poster img, .bg-additional-image .bg-additional-item .bg-image-poster img {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	object-fit: cover;
+	object-position: right center;
+	width: 100%;
+	height: 100%;
+}
+
+.bg-image.section-reverse .bg-image-poster, .bg-additional-image .section-reverse.bg-additional-item .bg-image-poster {
+	transform: scale(-1, 1);
+}
+
+.bg-image.section-reverse .bg-image-poster img, .bg-additional-image .section-reverse.bg-additional-item .bg-image-poster img {
+	object-position: left center;
+}
+
+@media (max-width: 1199.98px) {
+	.bg-image.section-reverse .bg-image-poster.bg-image-poster-lg, .bg-additional-image .section-reverse.bg-additional-item .bg-image-poster.bg-image-poster-lg {
+		transform: none;
+	}
+	.bg-image.section-reverse .bg-image-poster.bg-image-poster-lg img, .bg-additional-image .section-reverse.bg-additional-item .bg-image-poster.bg-image-poster-lg img {
+		object-position: right center;
+	}
+}
+
+.ie-10 .bg-image .bg-image-poster img, .ie-10 .bg-additional-image .bg-additional-item .bg-image-poster img, .bg-additional-image .ie-10 .bg-additional-item .bg-image-poster img, .ie-11 .bg-image .bg-image-poster img, .ie-11 .bg-additional-image .bg-additional-item .bg-image-poster img, .bg-additional-image .ie-11 .bg-additional-item .bg-image-poster img {
+	right: auto;
+	bottom: auto;
+	top: 50%;
+	left: 50%;
+	width: auto;
+	height: auto;
+	max-width: 135%;
+	max-height: 135%;
+	min-height: 101%;
+	min-width: 101%;
+	transform: translate(-50%, -50%);
+}
+
+@media (min-width: 992px) {
+	html.desktop .bg-fixed {
+		background-attachment: fixed;
+	}
+}
+
+[class*='bg-'] {
+	background-size: cover;
+	background-position: center center;
+}
+
+.bg-image-1 {
+	background-image: url("../images/bg-image-fixed.jpg");
+}
+
+.bg-image-2 {
+	background-image: url("../images/bg-02.jpg");
+}
+
+.bg-image-3 {
+	background-image: url("../images/bg-image-default.jpg");
+}
+
+.bg-image-4 {
+	background-image: url("../images/bg-03.jpg");
+}
+
+.bg-image-5 {
+	background-image: url("../images/bg-05.jpg");
+}
+
+.bg-image-6 {
+	background-image: url("../images/bg-07.jpg");
+}
+
+.bg-image-7 {
+	background-image: url("../images/bg-08.jpg");
+}
+
+.bg-image-8 {
+	background-image: url("../images/bg-09.jpg");
+}
+
+.bg-image-9 {
+	background-image: url("../images/bg-10.jpg");
+}
+
+.bg-image-10 {
+	background-image: url("../images/bg-11.jpg");
+}
+
+.bg-pattern-dark, .bg-additional-pattern-dark .bg-additional-item {
+	background-image: url("../images/bg-pattern-dark.jpg");
+	background-repeat: repeat;
+}
+
+.bg-additional-image-1 .bg-additional-item {
+	background-image: url("../images/bg-image-fixed.jpg");
+}
+
+.bg-additional-image-1 .bg-additional-item {
+	background-image: url("../images/bg-image-fixed.jpg");
+}
+
+.bg-additional-item {
+	align-self: stretch;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.bg-additional-item>* {
+	width: 100%;
+}
+
+/**
+
+/*
+*
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+*
+/** Thumbnail classic with icon*/
+
+/**----------------------------------------------------*/
+
+.thumbnail-classic *+.divider {
+	margin-top: 20px;
+}
+
+.thumbnail-classic span {
+	position: relative;
+}
+
+.thumbnail-classic .thumbnail-classic-icon {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.thumbnail-classic:hover .thumbnail-classic-icon {
+	color: #ffffff;
+}
+
+.thumbnail-classic:hover .thumbnail-classic-icon:before {
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	opacity: 1;
+	box-shadow: 0 8px 29px rgba(63, 9, 102, 0.25);
+}
+
+.thumbnail-classic:hover .thumbnail-classic-icon:after {
+	opacity: 0;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+	.thumbnail-classic.unit-sm-horizontal {
+		text-align: left;
+	}
+	.thumbnail-classic.unit-sm-horizontal .thumbnail-classic-caption {
+		margin-top: 0;
+	}
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+	.thumbnail-classic.unit-md-horizontal {
+		text-align: left;
+	}
+	.thumbnail-classic.unit-md-horizontal .thumbnail-classic-caption {
+		margin-top: 0;
+	}
+}
+
+.thumbnail-classic-icon {
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 120px;
+	height: 120px;
+	margin-left: auto;
+	margin-right: auto;
+	transition: 450ms ease-in-out;
+	color: #ed1c94;
+	font-family: "Oswald", Helvetica, Arial, sans-serif;
+	font-weight: 400;
+}
+
+.thumbnail-classic-icon:before, .thumbnail-classic-icon:after {
+	position: absolute;
+	content: "";
+	display: inline-block;
+	border-radius: 50%;
+	transition: 450ms ease-in-out;
+}
+
+.thumbnail-classic-icon:after {
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	border: 2px solid #d8dae2;
+}
+
+.thumbnail-classic-icon:before {
+	top: 50%;
+	bottom: 50%;
+	left: 50%;
+	right: 50%;
+	opacity: 0;
+	background: linear-gradient(-45deg, #ed1c94 15%, #ffec17);
+}
+
+.thumbnail-classic-icon .icon {
+	font-size: 48px;
+}
+
+.thumbnail-classic-secondary .thumbnail-classic-text {
+	letter-spacing: .02em;
+	color: #838386;
+	opacity: 1;
+}
+
+.thumbnail-classic-secondary .thumbnail-classic-icon::after {
+	border-color: #ed1c94;
+}
+
+.thumbnail-classic-secondary .divider {
+	background: #981df0;
+}
+
+.thumbnail-classic-caption {
+	margin-top: 15px;
+	padding-left: 15px;
+}
+
+@media (min-width: 768px) {
+	.thumbnail-classic-caption {
+		padding-right: 15px;
+	}
+}
+
+@media (min-width: 1600px) {
+	.thumbnail-classic-caption {
+		margin-top: 20px;
+	}
+	.thumbnail-classic-caption *+.divider {
+		margin-top: 30px;
+	}
+	.thumbnail-classic-caption .divider+p {
+		margin-top: 30px;
+	}
+}
+
+/**
+* Thumb Minimal
+*/
+
+.thumb-minimal {
+	display: inline-block;
+	position: relative;
+}
+
+.thumb-minimal-overlay {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: rgba(237, 28, 148, 0.7);
+	transition: .3s ease-out all;
+}
+
+.thumb-minimal-overlay:before {
+	content: '\f504';
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	font-size: 36px;
+	color: #ffffff;
+	font-family: "Material Design Icons";
+	transform: translate(-50%, -50%);
+}
+
+@media (min-width: 768px) {
+	.desktop .thumb-minimal-overlay {
+		visibility: hidden;
+		opacity: 0;
+	}
+	.desktop .thumb-minimal:hover .thumb-minimal-overlay {
+		visibility: visible;
+		opacity: 1;
+	}
+}
+
+/**
+* Thumb Default
+*/
+
+.thumb-default {
+	position: relative;
+	padding-bottom: 100%;
+}
+
+.thumb-default a {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+}
+
+.thumb-default img {
+	object-fit: cover;
+	object-position: center;
+	width: 100%;
+	height: 100%;
+}
+
+.thumb-default-overlay {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: rgba(237, 28, 148, 0.25);
+	transition: .3s ease-out all;
+}
+
+.thumb-default-overlay:before {
+	content: '\f504';
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	font-size: 36px;
+	color: #ffffff;
+	font-family: "Material Design Icons";
+	transform: translate(-50%, -50%);
+}
+
+@media (min-width: 768px) {
+	.desktop .thumb-default-overlay {
+		visibility: hidden;
+		opacity: 0;
+		background-color: rgba(237, 28, 148, 0.7);
+	}
+	.desktop .thumb-default:hover .thumb-default-overlay {
+		visibility: visible;
+		opacity: 1;
+	}
+}
+
+.ie-10 .thumb-default, .ie-11 .thumb-default {
+	overflow: hidden;
+}
+
+.ie-10 .thumb-default img, .ie-11 .thumb-default img {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: auto;
+	height: auto;
+	max-width: 135%;
+	max-height: 135%;
+	min-height: 101%;
+	min-width: 101%;
+}
+
+.thumbnail-simple {
+	text-align: left;
+	max-width: 270px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.thumbnail-simple-image-wrap {
+	display: block;
+	position: relative;
+	border-radius: 9px;
+	overflow: hidden;
+}
+
+.thumbnail-simple-image-wrap img {
+	width: 100%;
+}
+
+.thumbnail-simple-image-wrap:hover {
+	box-shadow: 0 6px 8px 0 rgba(110, 123, 157, 0.17);
+	transform: translate3d(0, -5px, 0);
+}
+
+.thumbnail-simple-title {
+	font-size: 18px;
+	line-height: 1.3;
+	font-weight: 400;
+}
+
+.thumbnail-simple-subtitle {
+	font-style: italic;
+}
+
+*+.thumbnail-simple-subtitle {
+	margin-top: 0;
+}
+
+@media (min-width: 1200px) {
+	.thumbnail-simple-title {
+		font-size: 20px;
+	}
+}
+
+@media (min-width: 1800px) {
+	.thumbnail-simple-title {
+		font-size: 24px;
+	}
+}
+
+/*
+*
+* Thumbnail Modern
+* --------------------------------------------------
+*/
+
+.thumbnail-modern {
+	display: block;
+	position: relative;
+	max-width: 360px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.thumbnail-modern-image-wrap {
+	display: block;
+	position: relative;
+	overflow: hidden;
+	will-change: transform;
+	border-radius: 9px;
+	box-shadow: 0 5px 12px 0 #dcdeec;
+}
+
+.thumbnail-modern-image-wrap img, .thumbnail-modern-image-wrap::after {
+	border-radius: 9px;
+}
+
+.thumbnail-modern-image-wrap::before, .thumbnail-modern-image-wrap::after {
+	pointer-events: none;
+}
+
+.thumbnail-modern-image {
+	min-width: 100%;
+}
+
+*+.thumbnail-modern-caption {
+	margin-top: 15px;
+}
+
+@media (min-width: 992px) {
+	.desktop .thumbnail-modern-image-wrap {
+		transition: .33s;
+	}
+	.desktop .thumbnail-modern-image-wrap img {
+		transition: .7s;
+		transform: scale3d(1, 1, 1);
+	}
+	.desktop .thumbnail-modern-image-wrap::before {
+		content: '\f504';
+		position: absolute;
+		display: block;
+		z-index: 2;
+		top: 50%;
+		left: 50%;
+		transform: translate3d(-50%, -50%, 0);
+		-webkit-filter: blur(0);
+		font-family: "Material Design Icons";
+		font-size: 60px;
+		color: #ffffff;
+		opacity: 0;
+		transition: .4s .1s;
+	}
+	.desktop .thumbnail-modern-image-wrap::after {
+		content: '';
+		position: absolute;
+		z-index: 1;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		background: #ed1c94;
+		opacity: 0;
+		transition: .4s;
+	}
+	.desktop .thumbnail-modern-image-wrap:hover {
+		box-shadow: 0 6px 8px 0 rgba(110, 123, 157, 0.17);
+	}
+	.desktop .thumbnail-modern-image-wrap:hover img {
+		transform: scale3d(1.05, 1.05, 1.05);
+	}
+	.desktop .thumbnail-modern-image-wrap:hover::before {
+		opacity: 1;
+		transform: translate3d(-50%, -50%, 0) scale3d(1, 1, 1);
+	}
+	.desktop .thumbnail-modern-image-wrap:hover::after {
+		opacity: .6;
+	}
+}
+
+@media (min-width: 768px) {
+	*+.thumbnail-modern-caption {
+		margin-top: 22px;
+	}
+}
+
+@media (min-width: 1600px) {
+	*+.thumbnail-modern-caption {
+		margin-top: 35px;
+	}
+}
+
+/ .shop-aside h6+* {
+	margin-top: 15px;
+}
+
+@media (min-width: 1600px) {
+	.shop-aside-item {
+		margin-left: 30px;
+	}
+	.shop-aside h6+* {
+		margin-top: 28px;
+	}
+}
+
+@media (min-width: 1800px) {
+	.shop-aside-item {
+		margin-left: 60px;
+	}
+}
+
+/**
+* Product Thumb
+*/
+
+.product-thumbnails {
+	margin-bottom: -20px;
+	text-align: center;
+}
+
+.product-thumbnails:empty {
+	margin-bottom: 0;
+}
+
+.product-thumbnails>* {
+	margin-bottom: 20px;
+}
+
+.product-thumbnails>li {
+	width: 100px;
+	height: 100px;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	margin-left: 5px;
+	margin-right: 5px;
+	border: 1px solid transparent;
+	cursor: pointer;
+	transition: .3s ease-out all;
+}
+
+.product-thumbnails>li:hover, .product-thumbnails>li.active {
+	border-color: #c2c2c3;
+}
+
+/**
+* Product Single Image
+*/
+
+.product-single-preview {
+	max-width: 350px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.product-single-image.unit-right {
+	flex-shrink: 1;
+}
+
+@media (min-width: 1600px) {
+	.product-single-image.unit-right {
+		flex-shrink: 0;
+	}
+}
+
+.product-single-image-element {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.product-single-image-element img[src="images/shop-01-420x550.png"] {
+	box-shadow: 0 12px 29px 0 rgba(76, 82, 99, 0.5);
+}
+
+@media (max-width: 767.98px) {
+	.product-single-image-element img {
+		max-height: 300px;
+	}
+}
+
+@media (min-width: 992px) {
+	.product-single-preview {
+		max-width: 570px;
+		margin-right: 0;
+	}
+}
+
+.animateImageIn {
+	opacity: 1;
+	visibility: visible;
+	transition: .3s ease-out opacity;
+}
+
+.animateImageOut {
+	opacity: 0;
+	visibility: hidden;
+}
+
+.product-counter {
+	padding-top: 100px;
+}
+
+@media (min-width: 1800px) {
+	.product-counter {
+		padding-top: 120px;
+	}
+}
+
+.product-counter-inner {
+	position: absolute;
+	top: 0;
+	right: 0;
+	left: 0;
+	padding: 15px;
+	background-color: #981df0;
+	border-radius: 9px 9px 0 0;
+}
+
+.product-counter-inner .countdown {
+	font-weight: 400;
+	color: #ffffff;
+}
+
+@media (min-width: 1200px) {
+	.product-counter-inner .countdown {
+		font-size: 24px;
+	}
+}
+
+.product-auction .product-image a {
+	box-shadow: none;
+}
+
+@media (min-width: 1200px) {
+	.product-auction .product-title {
+		min-height: 68px;
+	}
+}
+
+}
+
+/*
+*
+* Text Alignment
+* --------------------------------------------------
+*/
+
+.text-left {
+	text-align: left;
+}
+
+.text-center {
+	text-align: center;
+}
+
+.text-right {
+	text-align: right;
+}
+
+.text-middle {
+	vertical-align: middle;
+}
+
+@media (min-width: 480px) {
+	html:not(.lt-ie10) .text-xs-left {
+		text-align: left;
+	}
+	html:not(.lt-ie10) .text-xs-center {
+		text-align: center;
+	}
+	html:not(.lt-ie10) .text-xs-right {
+		text-align: right;
+	}
+	html:not(.lt-ie10) .text-xs-justify {
+		text-align: justify;
+	}
+}
+
+@media (min-width: 768px) {
+	html:not(.lt-ie10) .text-sm-left {
+		text-align: left;
+	}
+	html:not(.lt-ie10) .text-sm-center {
+		text-align: center;
+	}
+	html:not(.lt-ie10) .text-sm-right {
+		text-align: right;
+	}
+	html:not(.lt-ie10) .text-sm-justify {
+		text-align: justify;
+	}
+}
+
+@media (min-width: 992px) {
+	html:not(.lt-ie10) .text-md-left {
+		text-align: left;
+	}
+	html:not(.lt-ie10) .text-md-center {
+		text-align: center;
+	}
+	html:not(.lt-ie10) .text-md-right {
+		text-align: right;
+	}
+	html:not(.lt-ie10) .text-md-justify {
+		text-align: justify;
+	}
+}
+
+@media (min-width: 1200px) {
+	html:not(.lt-ie10) .text-lg-left {
+		text-align: left;
+	}
+	html:not(.lt-ie10) .text-lg-center {
+		text-align: center;
+	}
+	html:not(.lt-ie10) .text-lg-right {
+		text-align: right;
+	}
+	html:not(.lt-ie10) .text-lg-justify {
+		text-align: justify;
+	}
+}
+
+.bg-gray-darker.page-footer, .bg-additional-gray-darker .page-footer.bg-additional-item, .bg-image.page-footer, .bg-additional-image .page-footer.bg-additional-item, .bg-gradient.page-footer, .page-footer.bg-gradient-1, .page-footer.bg-gradient-2, .page-footer.bg-gradient-3 {
+	color: #ffffff;
+}
+
+.bg-gray-darker.page-footer h1, .bg-additional-gray-darker .page-footer.bg-additional-item h1, .bg-image.page-footer h1, .bg-additional-image .page-footer.bg-additional-item h1, .bg-gradient.page-footer h1, .page-footer.bg-gradient-1 h1, .page-footer.bg-gradient-2 h1, .page-footer.bg-gradient-3 h1, .bg-gray-darker.page-footer h2, .bg-additional-gray-darker .page-footer.bg-additional-item h2, .bg-image.page-footer h2, .bg-additional-image .page-footer.bg-additional-item h2, .bg-gradient.page-footer h2, .page-footer.bg-gradient-1 h2, .page-footer.bg-gradient-2 h2, .page-footer.bg-gradient-3 h2, .bg-gray-darker.page-footer h3, .bg-additional-gray-darker .page-footer.bg-additional-item h3, .bg-image.page-footer h3, .bg-additional-image .page-footer.bg-additional-item h3, .bg-gradient.page-footer h3, .page-footer.bg-gradient-1 h3, .page-footer.bg-gradient-2 h3, .page-footer.bg-gradient-3 h3, .bg-gray-darker.page-footer h4, .bg-additional-gray-darker .page-footer.bg-additional-item h4, .bg-image.page-footer h4, .bg-additional-image .page-footer.bg-additional-item h4, .bg-gradient.page-footer h4, .page-footer.bg-gradient-1 h4, .page-footer.bg-gradient-2 h4, .page-footer.bg-gradient-3 h4, .bg-gray-darker.page-footer h5, .bg-additional-gray-darker .page-footer.bg-additional-item h5, .bg-image.page-footer h5, .bg-additional-image .page-footer.bg-additional-item h5, .bg-gradient.page-footer h5, .page-footer.bg-gradient-1 h5, .page-footer.bg-gradient-2 h5, .page-footer.bg-gradient-3 h5, .bg-gray-darker.page-footer h6, .bg-additional-gray-darker .page-footer.bg-additional-item h6, .bg-image.page-footer h6, .bg-additional-image .page-footer.bg-additional-item h6, .bg-gradient.page-footer h6, .page-footer.bg-gradient-1 h6, .page-footer.bg-gradient-2 h6, .page-footer.bg-gradient-3 h6, .bg-gray-darker.page-footer [class^='heading-'], .bg-additional-gray-darker .page-footer.bg-additional-item [class^='heading-'], .bg-image.page-footer [class^='heading-'], .bg-additional-image .page-footer.bg-additional-item [class^='heading-'], .bg-gradient.page-footer [class^='heading-'], .page-footer.bg-gradient-1 [class^='heading-'], .page-footer.bg-gradient-2 [class^='heading-'], .page-footer.bg-gradient-3 [class^='heading-'] {
+	color: #ffffff;
+}
+
+.bg-gray-darker.page-footer .list-marked-primary>li:before, .bg-additional-gray-darker .page-footer.bg-additional-item .list-marked-primary>li:before, .bg-image.page-footer .list-marked-primary>li:before, .bg-additional-image .page-footer.bg-additional-item .list-marked-primary>li:before, .bg-gradient.page-footer .list-marked-primary>li:before, .page-footer.bg-gradient-1 .list-marked-primary>li:before, .page-footer.bg-gradient-2 .list-marked-primary>li:before, .page-footer.bg-gradient-3 .list-marked-primary>li:before {
+	color: #c2c2c3;
+}
+
+.bg-gray-darker.page-footer .list-marked-primary>li a, .bg-additional-gray-darker .page-footer.bg-additional-item .list-marked-primary>li a, .bg-image.page-footer .list-marked-primary>li a, .bg-additional-image .page-footer.bg-additional-item .list-marked-primary>li a, .bg-gradient.page-footer .list-marked-primary>li a, .page-footer.bg-gradient-1 .list-marked-primary>li a, .page-footer.bg-gradient-2 .list-marked-primary>li a, .page-footer.bg-gradient-3 .list-marked-primary>li a, .bg-gray-darker.page-footer .list-marked-primary>li a:focus, .bg-additional-gray-darker .page-footer.bg-additional-item .list-marked-primary>li a:focus, .bg-image.page-footer .list-marked-primary>li a:focus, .bg-additional-image .page-footer.bg-additional-item .list-marked-primary>li a:focus, .bg-gradient.page-footer .list-marked-primary>li a:focus, .page-footer.bg-gradient-1 .list-marked-primary>li a:focus, .page-footer.bg-gradient-2 .list-marked-primary>li a:focus, .page-footer.bg-gradient-3 .list-marked-primary>li a:focus, .bg-gray-darker.page-footer .list-marked-primary>li a:active, .bg-additional-gray-darker .page-footer.bg-additional-item .list-marked-primary>li a:active, .bg-image.page-footer .list-marked-primary>li a:active, .bg-additional-image .page-footer.bg-additional-item .list-marked-primary>li a:active, .bg-gradient.page-footer .list-marked-primary>li a:active, .page-footer.bg-gradient-1 .list-marked-primary>li a:active, .page-footer.bg-gradient-2 .list-marked-primary>li a:active, .page-footer.bg-gradient-3 .list-marked-primary>li a:active {
+	color: #ffec17;
+}
+
+.bg-gray-darker.page-footer .list-marked-primary>li a:hover, .bg-additional-gray-darker .page-footer.bg-additional-item .list-marked-primary>li a:hover, .bg-image.page-footer .list-marked-primary>li a:hover, .bg-additional-image .page-footer.bg-additional-item .list-marked-primary>li a:hover, .bg-gradient.page-footer .list-marked-primary>li a:hover, .page-footer.bg-gradient-1 .list-marked-primary>li a:hover, .page-footer.bg-gradient-2 .list-marked-primary>li a:hover, .page-footer.bg-gradient-3 .list-marked-primary>li a:hover {
+	color: #ed1c94;
+}
+
+.bg-gray-darker.page-footer .rights, .bg-additional-gray-darker .page-footer.bg-additional-item .rights, .bg-image.page-footer .rights, .bg-additional-image .page-footer.bg-additional-item .rights, .bg-gradient.page-footer .rights, .page-footer.bg-gradient-1 .rights, .page-footer.bg-gradient-2 .rights, .page-footer.bg-gradient-3 .rights, .bg-gray-darker.page-footer .form-label, .bg-additional-gray-darker .page-footer.bg-additional-item .form-label, .bg-image.page-footer .form-label, .bg-additional-image .page-footer.bg-additional-item .form-label, .bg-gradient.page-footer .form-label, .page-footer.bg-gradient-1 .form-label, .page-footer.bg-gradient-2 .form-label, .page-footer.bg-gradient-3 .form-label, .bg-gray-darker.page-footer .form-input, .bg-additional-gray-darker .page-footer.bg-additional-item .form-input, .bg-image.page-footer .form-input, .bg-additional-image .page-footer.bg-additional-item .form-input, .bg-gradient.page-footer .form-input, .page-footer.bg-gradient-1 .form-input, .page-footer.bg-gradient-2 .form-input, .page-footer.bg-gradient-3 .form-input {
+	color: #838386;
+}
+
+.bg-gray-lighter.page-footer-default .rd-mailform-inline .rd-mailform-inline-inner::before, .bg-gray-lighter.page-footer-default .form-input {
+	background-color: #ffffff;
+}
+
+.bg-gray-lighter.page-footer-default .rights, .bg-gray-lighter.page-footer-default .form-label, .bg-gray-lighter.page-footer-default .form-input {
+	color: #838386;
+}
+
+.bg-default.page-footer-minimal, .bg-gray-lighter.page-footer-minimal {
+	color: #838386;
+}
+
+.bg-default.page-footer-minimal .logo-default, .bg-gray-lighter.page-footer-minimal .logo-default {
+	display: inline-block;
+}
+
+.bg-default.page-footer-minimal .logo-inverse, .bg-gray-lighter.page-footer-minimal .logo-inverse {
+	display: none;
+}
+
+.bg-gray-darker.page-footer-minimal .logo-default, .bg-additional-gray-darker .page-footer-minimal.bg-additional-item .logo-default, .bg-image.page-footer-minimal .logo-default, .bg-additional-image .page-footer-minimal.bg-additional-item .logo-default, .bg-gradient.page-footer-minimal .logo-default, .page-footer-minimal.bg-gradient-1 .logo-default, .page-footer-minimal.bg-gradient-2 .logo-default, .page-footer-minimal.bg-gradient-3 .logo-default {
+	display: none;
+}
+
+.bg-gray-darker.page-footer-minimal .logo-inverse, .bg-additional-gray-darker .page-footer-minimal.bg-additional-item .logo-inverse, .bg-image.page-footer-minimal .logo-inverse, .bg-additional-image .page-footer-minimal.bg-additional-item .logo-inverse, .bg-gradient.page-footer-minimal .logo-inverse, .page-footer-minimal.bg-gradient-1 .logo-inverse, .page-footer-minimal.bg-gradient-2 .logo-inverse, .page-footer-minimal.bg-gradient-3 .logo-inverse {
+	display: inline-block;
+}
+
+.bg-gray-darker.page-footer-minimal a.icon-secondary-5-filled, .bg-additional-gray-darker .page-footer-minimal.bg-additional-item a.icon-secondary-5-filled, .bg-image.page-footer-minimal a.icon-secondary-5-filled, .bg-additional-image .page-footer-minimal.bg-additional-item a.icon-secondary-5-filled, .bg-gradient.page-footer-minimal a.icon-secondary-5-filled, .page-footer-minimal.bg-gradient-1 a.icon-secondary-5-filled, .page-footer-minimal.bg-gradient-2 a.icon-secondary-5-filled, .page-footer-minimal.bg-gradient-3 a.icon-secondary-5-filled, .bg-gray-darker.page-footer-minimal a.icon-secondary-5-filled:focus, .bg-additional-gray-darker .page-footer-minimal.bg-additional-item a.icon-secondary-5-filled:focus, .bg-image.page-footer-minimal a.icon-secondary-5-filled:focus, .bg-additional-image .page-footer-minimal.bg-additional-item a.icon-secondary-5-filled:focus, .bg-gradient.page-footer-minimal a.icon-secondary-5-filled:focus, .page-footer-minimal.bg-gradient-1 a.icon-secondary-5-filled:focus, .page-footer-minimal.bg-gradient-2 a.icon-secondary-5-filled:focus, .page-footer-minimal.bg-gradient-3 a.icon-secondary-5-filled:focus, .bg-gray-darker.page-footer-minimal a.icon-secondary-5-filled:active, .bg-additional-gray-darker .page-footer-minimal.bg-additional-item a.icon-secondary-5-filled:active, .bg-image.page-footer-minimal a.icon-secondary-5-filled:active, .bg-additional-image .page-footer-minimal.bg-additional-item a.icon-secondary-5-filled:active, .bg-gradient.page-footer-minimal a.icon-secondary-5-filled:active, .page-footer-minimal.bg-gradient-1 a.icon-secondary-5-filled:active, .page-footer-minimal.bg-gradient-2 a.icon-secondary-5-filled:active, .page-footer-minimal.bg-gradient-3 a.icon-secondary-5-filled:active, .bg-gray-darker.page-footer-minimal a.icon-secondary-5-filled:hover, .bg-additional-gray-darker .page-footer-minimal.bg-additional-item a.icon-secondary-5-filled:hover, .bg-image.page-footer-minimal a.icon-secondary-5-filled:hover, .bg-additional-image .page-footer-minimal.bg-additional-item a.icon-secondary-5-filled:hover, .bg-gradient.page-footer-minimal a.icon-secondary-5-filled:hover, .page-footer-minimal.bg-gradient-1 a.icon-secondary-5-filled:hover, .page-footer-minimal.bg-gradient-2 a.icon-secondary-5-filled:hover, .page-footer-minimal.bg-gradient-3 a.icon-secondary-5-filled:hover {
+	color: #ffffff;
+}
+
+.bg-default.page-footer-minimal a.icon-secondary-5-filled {
+	color: #838386;
+	background-color: #f2f3f9;
+}
+
+.bg-default.page-footer-minimal a.icon-secondary-5-filled:hover {
+	color: #ffffff;
+}
+
+.bg-gray-lighter.page-footer-minimal a.icon-secondary-5-filled {
+	color: #838386;
+	background-color: #ffffff;
+}
+
+.bg-gray-lighter.page-footer-minimal a.icon-secondary-5-filled:hover {
+	color: #ffffff;
+}
+
+.bg-default.page-footer-extended .tabs-custom.tabs-line .nav-tabs li a, .bg-gray-lighter.page-footer-extended .tabs-custom.tabs-line .nav-tabs li a {
+	color: #838386;
+}
+
+.bg-default.page-footer-extended .tabs-custom.tabs-line .nav-tabs li.active a, .bg-gray-lighter.page-footer-extended .tabs-custom.tabs-line .nav-tabs li.active a, .bg-default.page-footer-extended .tabs-custom.tabs-line .nav-tabs li a:hover, .bg-gray-lighter.page-footer-extended .tabs-custom.tabs-line .nav-tabs li a:hover {
+	color: #981df0;
+}
+
+.bg-default.page-footer-extended .box-inline a, .bg-gray-lighter.page-footer-extended .box-inline a, .bg-default.page-footer-extended .box-inline a:focus, .bg-gray-lighter.page-footer-extended .box-inline a:focus, .bg-default.page-footer-extended .box-inline a:active, .bg-gray-lighter.page-footer-extended .box-inline a:active {
+	color: #838386;
+}
+
+.bg-default.page-footer-extended .box-inline a:hover, .bg-gray-lighter.page-footer-extended .box-inline a:hover {
+	color: #981df0;
+}
+
+.bg-default.page-footer-extended a.icon-secondary-5-filled, .bg-gray-lighter.page-footer-extended a.icon-secondary-5-filled, .bg-default.page-footer-extended a.icon-secondary-5-filled:focus, .bg-gray-lighter.page-footer-extended a.icon-secondary-5-filled:focus, .bg-default.page-footer-extended a.icon-secondary-5-filled:active, .bg-gray-lighter.page-footer-extended a.icon-secondary-5-filled:active {
+	color: #ffffff;
+	background-color: #c2c2c3;
+}
+
+.bg-default.page-footer-extended a.icon-secondary-5-filled:hover, .bg-gray-lighter.page-footer-extended a.icon-secondary-5-filled:hover {
+	color: #ffffff;
+}
+
+.bg-gray-darker.page-footer-extended .icon-secondary-5-filled, .bg-additional-gray-darker .page-footer-extended.bg-additional-item .icon-secondary-5-filled, .bg-image.page-footer-extended .icon-secondary-5-filled, .bg-additional-image .page-footer-extended.bg-additional-item .icon-secondary-5-filled, .bg-gradient.page-footer-extended .icon-secondary-5-filled, .page-footer-extended.bg-gradient-1 .icon-secondary-5-filled, .page-footer-extended.bg-gradient-2 .icon-secondary-5-filled, .page-footer-extended.bg-gradient-3 .icon-secondary-5-filled {
+	color: #c2c2c3;
+	background-color: #21212e;
+}
+
+.bg-gray-darker.page-footer-extended .list-darker, .bg-additional-gray-darker .page-footer-extended.bg-additional-item .list-darker, .bg-image.page-footer-extended .list-darker, .bg-additional-image .page-footer-extended.bg-additional-item .list-darker, .bg-gradient.page-footer-extended .list-darker, .page-footer-extended.bg-gradient-1 .list-darker, .page-footer-extended.bg-gradient-2 .list-darker, .page-footer-extended.bg-gradient-3 .list-darker {
+	color: #c2c2c3;
+}
+
+.bg-gray-darker.page-footer-extended .list-darker a:hover, .bg-additional-gray-darker .page-footer-extended.bg-additional-item .list-darker a:hover, .bg-image.page-footer-extended .list-darker a:hover, .bg-additional-image .page-footer-extended.bg-additional-item .list-darker a:hover, .bg-gradient.page-footer-extended .list-darker a:hover, .page-footer-extended.bg-gradient-1 .list-darker a:hover, .page-footer-extended.bg-gradient-2 .list-darker a:hover, .page-footer-extended.bg-gradient-3 .list-darker a:hover {
+	color: #ffec17;
+}
+
+.bg-gray-darker.page-footer-extended .tabs-custom.tabs-line .nav-tabs, .bg-additional-gray-darker .page-footer-extended.bg-additional-item .tabs-custom.tabs-line .nav-tabs, .bg-image.page-footer-extended .tabs-custom.tabs-line .nav-tabs, .bg-additional-image .page-footer-extended.bg-additional-item .tabs-custom.tabs-line .nav-tabs, .bg-gradient.page-footer-extended .tabs-custom.tabs-line .nav-tabs, .page-footer-extended.bg-gradient-1 .tabs-custom.tabs-line .nav-tabs, .page-footer-extended.bg-gradient-2 .tabs-custom.tabs-line .nav-tabs, .page-footer-extended.bg-gradient-3 .tabs-custom.tabs-line .nav-tabs {
+	border-color: rgba(255, 255, 255, 0.1);
+}
+
+@media (max-width: 767.98px) {
+	.bg-gray-darker.page-footer-extended .tabs-custom.tabs-line .nav-tabs li.active a, .bg-additional-gray-darker .page-footer-extended.bg-additional-item .tabs-custom.tabs-line .nav-tabs li.active a, .bg-image.page-footer-extended .tabs-custom.tabs-line .nav-tabs li.active a, .bg-additional-image .page-footer-extended.bg-additional-item .tabs-custom.tabs-line .nav-tabs li.active a, .bg-gradient.page-footer-extended .tabs-custom.tabs-line .nav-tabs li.active a, .page-footer-extended.bg-gradient-1 .tabs-custom.tabs-line .nav-tabs li.active a, .page-footer-extended.bg-gradient-2 .tabs-custom.tabs-line .nav-tabs li.active a, .page-footer-extended.bg-gradient-3 .tabs-custom.tabs-line .nav-tabs li.active a {
+		color: #ffffff;
+	}
+}
+
+@media (min-width: 768px) {
+	.bg-gray-darker.page-footer-extended .tabs-custom.tabs-line .nav-tabs li a, .bg-additional-gray-darker .page-footer-extended.bg-additional-item .tabs-custom.tabs-line .nav-tabs li a, .bg-image.page-footer-extended .tabs-custom.tabs-line .nav-tabs li a, .bg-additional-image .page-footer-extended.bg-additional-item .tabs-custom.tabs-line .nav-tabs li a, .bg-gradient.page-footer-extended .tabs-custom.tabs-line .nav-tabs li a, .page-footer-extended.bg-gradient-1 .tabs-custom.tabs-line .nav-tabs li a, .page-footer-extended.bg-gradient-2 .tabs-custom.tabs-line .nav-tabs li a, .page-footer-extended.bg-gradient-3 .tabs-custom.tabs-line .nav-tabs li a {
+		color: #c2c2c3;
+	}
+}
+
+.bg-gray-darker.page-footer-extended .rights a:hover, .bg-additional-gray-darker .page-footer-extended.bg-additional-item .rights a:hover, .bg-image.page-footer-extended .rights a:hover, .bg-additional-image .page-footer-extended.bg-additional-item .rights a:hover, .bg-gradient.page-footer-extended .rights a:hover, .page-footer-extended.bg-gradient-1 .rights a:hover, .page-footer-extended.bg-gradient-2 .rights a:hover, .page-footer-extended.bg-gradient-3 .rights a:hover {
+	color: #ffffff;
+}
+
+.bg-gray-darker.page-footer-extended .blog-inline-meta a:hover, .bg-additional-gray-darker .page-footer-extended.bg-additional-item .blog-inline-meta a:hover, .bg-image.page-footer-extended .blog-inline-meta a:hover, .bg-additional-image .page-footer-extended.bg-additional-item .blog-inline-meta a:hover, .bg-gradient.page-footer-extended .blog-inline-meta a:hover, .page-footer-extended.bg-gradient-1 .blog-inline-meta a:hover, .page-footer-extended.bg-gradient-2 .blog-inline-meta a:hover, .page-footer-extended.bg-gradient-3 .blog-inline-meta a:hover {
+	color: #ffffff;
+}
+
+.bg-gray-darker.page-footer-extended .blog-inline-title, .bg-additional-gray-darker .page-footer-extended.bg-additional-item .blog-inline-title, .bg-image.page-footer-extended .blog-inline-title, .bg-additional-image .page-footer-extended.bg-additional-item .blog-inline-title, .bg-gradient.page-footer-extended .blog-inline-title, .page-footer-extended.bg-gradient-1 .blog-inline-title, .page-footer-extended.bg-gradient-2 .blog-inline-title, .page-footer-extended.bg-gradient-3 .blog-inline-title {
+	color: #ffec17;
+}
+
+.bg-gray-darker.page-footer-extended .blog-inline-title a:hover, .bg-additional-gray-darker .page-footer-extended.bg-additional-item .blog-inline-title a:hover, .bg-image.page-footer-extended .blog-inline-title a:hover, .bg-additional-image .page-footer-extended.bg-additional-item .blog-inline-title a:hover, .bg-gradient.page-footer-extended .blog-inline-title a:hover, .page-footer-extended.bg-gradient-1 .blog-inline-title a:hover, .page-footer-extended.bg-gradient-2 .blog-inline-title a:hover, .page-footer-extended.bg-gradient-3 .blog-inline-title a:hover {
+	color: #ffffff;
+}
+
+.bg-gray-darker.page-footer-extended .tabs-custom.tabs-line .nav-tabs li a::after, .bg-additional-gray-darker .page-footer-extended.bg-additional-item .tabs-custom.tabs-line .nav-tabs li a::after, .bg-image.page-footer-extended .tabs-custom.tabs-line .nav-tabs li a::after, .bg-additional-image .page-footer-extended.bg-additional-item .tabs-custom.tabs-line .nav-tabs li a::after, .bg-gradient.page-footer-extended .tabs-custom.tabs-line .nav-tabs li a::after, .page-footer-extended.bg-gradient-1 .tabs-custom.tabs-line .nav-tabs li a::after, .page-footer-extended.bg-gradient-2 .tabs-custom.tabs-line .nav-tabs li a::after, .page-footer-extended.bg-gradient-3 .tabs-custom.tabs-line .nav-tabs li a::after {
+	background-color: #ffec17;
+}
+
+@media (min-width: 768px) {
+	.bg-gray-darker.page-footer-extended .tabs-custom.tabs-line .nav-tabs li.active a, .bg-additional-gray-darker .page-footer-extended.bg-additional-item .tabs-custom.tabs-line .nav-tabs li.active a, .bg-image.page-footer-extended .tabs-custom.tabs-line .nav-tabs li.active a, .bg-additional-image .page-footer-extended.bg-additional-item .tabs-custom.tabs-line .nav-tabs li.active a, .bg-gradient.page-footer-extended .tabs-custom.tabs-line .nav-tabs li.active a, .page-footer-extended.bg-gradient-1 .tabs-custom.tabs-line .nav-tabs li.active a, .page-footer-extended.bg-gradient-2 .tabs-custom.tabs-line .nav-tabs li.active a, .page-footer-extended.bg-gradient-3 .tabs-custom.tabs-line .nav-tabs li.active a, .bg-gray-darker.page-footer-extended .tabs-custom.tabs-line .nav-tabs li a:hover, .bg-additional-gray-darker .page-footer-extended.bg-additional-item .tabs-custom.tabs-line .nav-tabs li a:hover, .bg-image.page-footer-extended .tabs-custom.tabs-line .nav-tabs li a:hover, .bg-additional-image .page-footer-extended.bg-additional-item .tabs-custom.tabs-line .nav-tabs li a:hover, .bg-gradient.page-footer-extended .tabs-custom.tabs-line .nav-tabs li a:hover, .page-footer-extended.bg-gradient-1 .tabs-custom.tabs-line .nav-tabs li a:hover, .page-footer-extended.bg-gradient-2 .tabs-custom.tabs-line .nav-tabs li a:hover, .page-footer-extended.bg-gradient-3 .tabs-custom.tabs-line .nav-tabs li a:hover {
+		color: #ffec17;
+	}
+}
+
+.bg-default.page-footer-extended p.rights, .bg-default.page-footer-default p.rights, .bg-default.page-footer-alternative p.rights, .bg-gray-lighter.page-footer-extended p.rights, .bg-gray-lighter.page-footer-default p.rights, .bg-gray-lighter.page-footer-alternative p.rights {
+	color: #838386;
+}
+
+/*
+*
+* Sections
+* --------------------------------------------------
+*/
+
+.section-bottom {
+	padding-top: 0;
+	padding-bottom: 60px;
+}
+
+@media (min-width: 992px) {
+	.section-bottom {
+		padding-bottom: 0;
+	}
+}
+
+.section-bottom.section-reverse {
+	padding-top: 60px;
+	padding-bottom: 0;
+}
+
+@media (min-width: 992px) {
+	.section-bottom.section-reverse {
+		padding-top: 0;
+		padding-bottom: 0;
+	}
+}
+
+.section-xs {
+	padding: 40px 0;
+}
+
+.section-sm, .section-md, .section-lg, .section-xl, .section-custom, .section-xxl, .section-variant-1, .section-variant-2 {
+	padding: 60px 0;
+}
+
+.section-lg-top {
+	padding-top: 60px;
+}
+
+@media (min-width: 768px) {
+	.section-md {
+		padding-top: 60px;
+		padding-bottom: 60px;
+	}
+	.section-lg {
+		padding-top: 80px;
+		padding-bottom: 80px;
+	}
+	.section-xl, .section-custom {
+		padding-top: 100px;
+		padding-bottom: 100px;
+	}
+	.section-xxl {
+		padding-top: 100px;
+		padding-bottom: 100px;
+	}
+	.section-lg-top {
+		padding-top: 80px;
+	}
+	.section-variant-1 {
+		padding: 120px 0;
+	}
+	.section-variant-2 {
+		padding: 80px 0;
+	}
+}
+
+@media (min-width: 992px) {
+	.section-xl, .section-custom {
+		padding-top: 120px;
+		padding-bottom: 120px;
+	}
+}
+
+@media (min-width: 1200px) {
+	.section-md {
+		padding-top: 100px;
+		padding-bottom: 100px;
+	}
+	.section-lg {
+		padding-top: 80px;
+		padding-bottom: 80px;
+	}
+	.breadcrumbs-custom-wrap+.section-lg {
+		padding-top: 100px;
+	}
+	.section-xl, .section-custom {
+		padding-top: 130px;
+		padding-bottom: 130px;
+	}
+	.breadcrumbs-custom-wrap+.section-xl, .breadcrumbs-custom-wrap+.section-custom {
+		padding-top: 145px;
+	}
+	.section-xxl {
+		padding-top: 150px;
+		padding-bottom: 150px;
+	}
+	.section-variant-1 {
+		padding: 160px 0 100px;
+	}
+	.section-variant-2 {
+		padding: 120px 0 140px;
+	}
+}
+
+@media (min-width: 1600px) {
+	.section-lg {
+		padding-top: 125px;
+		padding-bottom: 125px;
+	}
+	.section-lg.section-way-point {
+		padding-top: 165px;
+	}
+	.breadcrumbs-custom-wrap+.section-lg {
+		padding-top: 170px;
+	}
+	.section-lg-alternative {
+		padding-top: 130px;
+		padding-bottom: 140px;
+	}
+	.section-xl, .section-custom {
+		padding-top: 165px;
+		padding-bottom: 165px;
+	}
+	.breadcrumbs-custom-wrap+.section-xl, .breadcrumbs-custom-wrap+.section-custom {
+		padding-top: 190px;
+	}
+	.section-xxl {
+		padding-top: 200px;
+		padding-bottom: 200px;
+	}
+	.section-lg-top {
+		padding-top: 125px;
+	}
+	.section-variant-1 {
+		padding: 220px 0 140px;
+	}
+	.section-variant-2 {
+		padding: 160px 0;
+	}
+}
+
+@media (min-width: 1800px) {
+	.section-xl, .section-custom {
+		padding-top: 200px;
+		padding-bottom: 200px;
+	}
+	.section-xxl {
+		padding-top: 290px;
+		padding-bottom: 290px;
+	}
+}
+
+.divider {
+	display: inline-block;
+	border: 0;
+	font-size: 0;
+	line-height: 0;
+	height: 3px;
+	max-width: 100px;
+	width: 100%;
+}
+
+h3+.divider {
+	margin-top: 20px;
+}
+
+h3+.divider+h5 {
+	margin-top: 35px;
+}
+
+h3+.divider+h5+p {
+	margin-top: 15px;
+}
+
+@media (min-width: 1600px) {
+	h3+.divider {
+		margin-top: 40px;
+	}
+}
+
+.divider-sm {
+	height: 2px;
+	max-width: 60px;
+}
+
+.divider-default {
+	background: linear-gradient(to right, #ed1c94 50%, #981df0 120%);
+}
+
+.divider-secondary {
+	background: #ed1c94;
+}
+
+.divider-thin {
+	border-top: 1px solid #d2d5e4;
+}
+
+.divider-xl {
+	max-width: 1770px;
+	width: 100%;
+	margin: 30px auto;
+	border-bottom: 1px solid #cacbd3;
+}
+
+/*
+*
+* Flex Grid system
+* --------------------------------------------------
+*/
+
+.container, .container-wide, .container-fluid {
+	margin-right: auto;
+	margin-left: auto;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+.container, .container-wide {
+	max-width: 480px;
+}
+
+@media (min-width: 768px) {
+	.container, .container-wide {
+		max-width: 750px;
+	}
+}
+
+@media (min-width: 992px) {
+	.container, .container-wide {
+		max-width: 970px;
+	}
+}
+
+@media (min-width: 1200px) {
+	.container, .container-wide {
+		max-width: 1200px;
+	}
+}
+
+@media (min-width: 1600px) {
+	.container-bigger {
+		max-width: 1500px;
+	}
+}
+
+@media (min-width: 1600px) {
+	.container-wide {
+		max-width: 1600px;
+	}
+}
+
+@media (min-width: 1800px) {
+	.container-wide {
+		max-width: 1800px;
+	}
+}
+
+/* ================================= */
+
+.howItWorkTitle {
+	color: #04102c;
+	margin-bottom: 0.104vw;
+	font-size: 2.865vw;
+}
+
+h3+.divider {
+	margin-top: 20px;
+}
+
+.divider-default {
+	background: linear-gradient( to right, #8e602c, #b98b43, #f8ed8d, #b98b43, #8e602c);
+}
+
+.divider {
+	display: inline-block;
+	border: 0;
+	font-size: 0;
+	line-height: 0;
+	height: 1px;
+	max-width: 100px;
+	width: 100%;
+}
+
+.thumbnail-classic-icon {
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 120px;
+	height: 120px;
+	margin-left: auto;
+	margin-right: auto;
+	transition: 450ms ease-in-out;
+	color: #b98b43;
+	font-family: "Oswald", Helvetica, Arial, sans-serif;
+	font-weight: 400;
+}
+
+.thumbnail-classic-icon:after {
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	border: 2px solid #b98b43;
+}
+
+.thumbnail-classic-icon:before {
+	top: 50%;
+	bottom: 50%;
+	left: 50%;
+	right: 50%;
+	opacity: 0;
+	background: #b98b43;
+}
+
+.thumbnail-classic-title, .thumbnail-classic-text {
+	color: #102054;
+	font-size: 22px;
+}
+
+@media (min-width: 320px) and (max-width: 500.68px) {
+	.thumbnail-classic-icon {
+		width: 80px;
+		height: 80px;
+	}
+	.thumbnail-classic-icon .icon {
+		font-size: 30px;
+	}
+	.howItWorkTitle {
+		font-size: 30px;
+	}
+	.thumbnail-classic-title, .thumbnail-classic-text {
+		color: #102054;
+		font-size: 16px;
+	}
+}

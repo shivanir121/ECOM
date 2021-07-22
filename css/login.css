@@ -1,0 +1,468 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+/* colors used through out the website  */
+
+:root {
+    /* blue  */
+    --darkBlue: #04102c;
+    --lightBlue: #102054;
+    /* Gold  */
+    --darkGold: #8e602c;
+    --mediumGold: #b98b43;
+    --lightGold: #f8ed8d;
+}
+
+body {
+    font-size: 16px;
+    overflow-x: hidden;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    color: black;
+}
+
+.blueGradient {
+    background-image: linear-gradient(to right, var(--darkBlue), var(--lightBlue));
+}
+
+.navBg {
+    background: transparent;
+    /* border-bottom-width: 2.4px;
+    border-bottom-style: solid;
+    border-image: linear-gradient( to right, #8e602c, #b98b43, #f8ed8d, #b98b43, #8e602c) 0 0 100% 0; */
+}
+
+.container-fluid {
+    width: 94%;
+    margin: 0 auto;
+}
+
+/*======================================= topheader ======================= */
+
+/* dropdown on topheader which asks about location  */
+
+.stateDropdown {
+    border: none;
+    padding: 0.5rem;
+}
+
+select:focus, option:focus, select:active, option:active {
+    outline: none !important;
+}
+
+.selectStyle {}
+
+.option {
+    background: #b98b43 !important;
+}
+
+/* social icons  */
+
+.socialIcon {
+    color: #b98b43;
+}
+
+.socialIcon:hover {
+    color: #102054;
+}
+
+.sociaLink {
+    font-size: 16px;
+}
+
+.sociaLink:hover {
+    font-size: 16px;
+}
+
+/*=================================end of topheader ======================= */
+
+/*=============================== navigation ================================= */
+
+.sticky-top {
+    z-index: 5;
+}
+
+.logo {
+    height: 8vh;
+}
+
+.logoWrapper {
+    margin-right: 5rem;
+}
+
+.navLink {
+    color: #ffffff;
+    margin: 0;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.navLink:hover, .navLink:focus, .navLink.active {
+    color: #b98b43;
+}
+
+/* Bootstrap 4 text input with search icon */
+
+.has-search .form-control {
+    padding-left: 2.375rem;
+}
+
+.has-search .form-control-feedback {
+    position: absolute;
+    z-index: 2;
+    display: block;
+    width: 2.375rem;
+    height: 2.375rem;
+    line-height: 2.375rem;
+    text-align: center;
+    pointer-events: none;
+    color: white;
+}
+
+#search {
+    width: .1vw;
+    background: transparent;
+    border: none;
+    color: white;
+}
+
+input#search:focus, input#search:active, input#search:hover {
+    width: 300px;
+}
+
+input:focus, textarea:focus, select:focus, input:active, textarea#search:active, textarea#search:focus {
+    outline: none;
+}
+
+.bag, .profile {
+    margin-top: 1vh;
+}
+
+.bagIcon {
+    color: white;
+}
+
+.bagIcon:hover {
+    font-size: 17.4px;
+    background: -moz-linear-gradient(top, #8e602c, #b98b43, #f8ed8d, #b98b43, #8e602c);
+    background: -webkit-linear-gradient(top, #8e602c, #b98b43, #f8ed8d, #b98b43, #8e602c);
+    background: linear-gradient(to right, #8e602c, #b98b43, #f8ed8d, #b98b43, #8e602c);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.has-search input#search:hover {
+    border-width: 2px;
+    border-style: solid;
+    border-image: linear-gradient( to right, #8e602c, #b98b43, #f8ed8d, #b98b43, #8e602c) 0 0 100% 0;
+    background: transparent;
+    transition: 0.5s;
+}
+
+/* profile icon and popup styling  */
+
+.profileContainer {
+    width: 16%;
+    height: 29vh;
+}
+
+.profileUpdate {
+    display: none;
+    position: fixed;
+    top: 114px;
+    right: 15px;
+    z-index: 9;
+    background: #ffffff;
+}
+
+/* Add styles to the form container */
+
+.profileContent {
+    max-width: 300px;
+    padding: 10px;
+    background-color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    border: 1px dashed #b98b43;
+}
+
+.name, .hello {
+    font-weight: 800;
+}
+
+.name {
+    color: #b98b43;
+}
+
+.mailId {
+    font-size: 12px;
+}
+
+.addr, .prof, .pdt {
+    font-size: 12px;
+}
+
+.addr:hover, .prof:hover, .pdt:hover {
+    font-size: 12.2px;
+    font-weight: 800;
+    color: #102054;
+}
+
+.profileContent .btn {
+    background-color: #102054;
+    color: white;
+    padding: 8px 18px;
+    border: none;
+    cursor: pointer;
+    /* width: 100%; */
+    margin-bottom: 10px;
+    opacity: 1;
+}
+
+/* Add some hover effects to buttons */
+
+.profileContent .btn:hover {
+    opacity: 1;
+    background: linear-gradient( to right, #8e602c, #b98b43, #f8ed8d, #b98b43, #8e602c);
+    color: #102054;
+}
+
+/*===============================end of  navigation ================================= */
+
+/* start of login form  */
+
+body {
+    background-image: url("../img/dark.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.loginContainer {
+    width: 100vw;
+    height: 90vh;
+    padding-top: 7.969vw;
+    padding-top: 114px;
+    color: white;
+}
+
+.loginFormContent {
+    width: 34%;
+    margin: 0 auto;
+}
+
+.loginHeading {
+    color: #b98b43;
+    padding-bottom: 3.229vw;
+}
+
+.usrname, .loginPwd {
+    background: transparent;
+    border: none;
+    border-radius: 0px;
+    border-width: 2px;
+    border-style: solid;
+    border-image: linear-gradient( to right, #8e602c, #b98b43, #f8ed8d, #b98b43, #8e602c) 0 0 100% 0;
+}
+
+input:active, input:focus, textarea, .form-control, .form-control:focus, .form-control:visited {
+    color: white;
+    caret-color: #b98b43;
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+
+input:not(:placeholder-shown) {
+    background-color: transparent !important;
+}
+
+input:placeholder-shown {
+    background-color: transparent !important;
+}
+
+.form-control:focus {
+    border-color: #b98b43;
+    -webkit-box-shadow: none;
+}
+
+/* styling for placeholder text color*/
+
+input::-webkit-input-placeholder {
+    color: #b3b3b3 !important;
+    letter-spacing: 1px;
+}
+
+input:-moz-placeholder {
+    color: #b3b3b3 !important;
+}
+
+input::-moz-placeholder {
+    color: #b3b3b3 !important;
+}
+
+input:-ms-input-placeholder {
+    color: #b3b3b3 !important;
+}
+
+.loginLabel {
+    color: white;
+}
+
+.loginBtn {
+    padding-bottom: 38px;
+    color: white;
+    border-width: 2px;
+    border-style: solid;
+    border-image: linear-gradient( to right, #8e602c, #b98b43, #f8ed8d, #b98b43, #8e602c) 1 1 1 1;
+    font-size: 16px;
+    background-color: transparent;
+    margin-top: 40px;
+}
+
+.loginBtn:hover {
+    color: white;
+    border-width: 2px;
+    border-style: solid;
+    border-image: linear-gradient( to right, #8e602c, #b98b43, #f8ed8d, #b98b43, #8e602c) 1 1 1 1;
+    font-size: 16px;
+    background-color: transparent;
+}
+
+@keyframes float {
+    0% {
+        box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+        transform: translatey(0px);
+    }
+    50% {
+        box-shadow: 0 25px 15px 0px rgba(0, 0, 0, 0.2);
+        transform: translatey(5px);
+    }
+    100% {
+        box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+        transform: translatey(0px);
+    }
+}
+
+.floatBtn {
+    box-sizing: border-box;
+    transform: translatey(0px);
+    animation: float 2s ease-in-out infinite;
+}
+
+.floatBtn:hover {
+    box-sizing: border-box;
+    transform: translatey(0px);
+    animation: none;
+}
+
+.createAccount a {
+    color: #b98b43;
+}
+
+.createAccount a:hover, .createAccount a:active, .createAccount a:focus {
+    color: #f8ed8d;
+}
+
+div[class*=background] {
+    text-align: center;
+    width: 100%;
+    height: 33%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.background {
+    background: transparent;
+}
+
+.Gbtn {
+    position: relative;
+    color: white;
+    width: 256px;
+    width: 377px;
+    height: 64px;
+    line-height: 64px;
+    transition: all 0.3s;
+}
+
+.Gbtn span {
+    transition: all 0.3s;
+    transform: scale(1, 1);
+}
+
+.Gbtn::before, .Gbtn::after {
+    content: '';
+    position: absolute;
+    transition: all 0.3s;
+    bottom: 6px;
+    left: 0;
+    width: 100%;
+    height: 82%;
+    z-index: 1;
+}
+
+.btn-one::before {
+    left: 4px;
+    z-index: 1;
+    opacity: 0;
+    background: rgba(255, 255, 255, 0.1);
+    transform: scale(0.1, 1);
+}
+
+.btn-one:hover::before {
+    opacity: 1;
+    transform: scale(1, 1);
+}
+
+.btn-one::after {
+    transition: all 0.3s;
+    border-width: 2px;
+    border-style: solid;
+    border-image: linear-gradient( to right, #8e602c, #b98b43, #f8ed8d, #b98b43, #8e602c) 1 1 1 1;
+    font-size: 16px;
+}
+
+.btn-one:hover::after {
+    transform: scale(1, .1);
+    opacity: 0;
+}
+
+/* media queries for login */
+
+@media (max-width: 538px) {
+    .loginFormContent {
+        width: 61%;
+        margin: 0 auto;
+    }
+}
+
+@media (min-width: 539px) and (max-width: 600.98px) {
+    .loginFormContent {
+        width: 54%;
+        margin: 0 auto;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .loginFormContent {
+        width: 58%;
+        margin: 0 auto;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .loginFormContent {
+        width: 51%;
+        margin: 0 auto;
+    }
+}

@@ -1,0 +1,1699 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+.container-fluid {
+  width: 90%;
+  margin: 0 auto;
+}
+
+/*=========Main banner section/hero section ======== */
+
+.bannerContainer {
+  width: 100vw;
+}
+
+.bannerContainerImg {
+  width: 100vw;
+}
+
+/*==============end of main banner section ============= */
+
+/* Start of statisticsBanner */
+
+.w-100 {
+  width: 100%!important;
+  height: 77vh;
+}
+
+.statisticsBannerContainer {
+  background: #04102c;
+  background-attachment: fixed;
+}
+
+.statisticsBannerRow {
+  padding: 6px 0px 6px 0px;
+}
+
+.statisticsHeading {
+  font-size: 1.4vw;
+  color: white;
+}
+
+.statisticsData {
+  font-size: 1.8vw;
+  background: -webkit-linear-gradient(90deg, #462e0a, #c89957, #f9f290, #e29c53, #7b5b32, #c89957, #cc9d53, #fbf391, #603913);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  filter: drop-shadow(2px -5px 3px #000);
+  margin-bottom: 0px;
+}
+
+/* End of statisticsBanner */
+
+/*====================Pool Product Card=========================*/
+
+/* new card  */
+
+.productPoolRow {
+  margin: 0px!important;
+}
+
+.shoppdtimg {
+  border-radius: 10px;
+  /* height: 460px; */
+}
+
+.shopname {
+  font: normal normal 500 15px/16px Roboto!important;
+  letter-spacing: 0.24px;
+  color: #A5A5A5;
+  text-transform: uppercase;
+  margin-top: 15px;
+}
+
+.shoppdtname {
+  font: normal normal 600 20px/21px Roboto!important;
+  letter-spacing: 0px;
+  color: #212121;
+  text-transform: capitalize;
+  margin-top: 5px;
+}
+
+.shopprice {
+  font: normal normal 500 22px/21px Roboto!important;
+  color: #000000;
+  text-transform: capitalize;
+  /* margin-top: 5px; */
+}
+
+.shopinstock {
+  font: normal normal 400 14px/16px Roboto!important;
+  color: #37B896;
+  margin-top: 5px;
+  padding-top: 2px;
+}
+
+.shopoutstock {
+  font: normal normal 400 12px/16px Roboto!important;
+  color: red;
+}
+
+.shoppopular {
+  font: normal normal 400 12px/16px Roboto!important;
+  letter-spacing: 0.24px;
+  color: #FFAA00;
+  text-transform: capitalize;
+  background: #FFF7E6 0 0 no-repeat padding-box;
+  border-radius: 11px;
+  text-align: center;
+  margin-top: 5px;
+  margin-bottom: 61px;
+}
+
+.clear {
+  width: 9%!important;
+  float: right;
+}
+
+.filterTitle {
+  font: normal normal 500 16px/21px Roboto!important;
+  color: #000000;
+  text-transform: capitalize;
+  margin-bottom: 10px;
+}
+
+.universalfiltercontent {
+  font: normal normal 400 16px/21px Roboto!important;
+  color: #3E3E3E;
+  margin-bottom: 10px;
+}
+
+shopinnercontent . {
+  margin-bottom: 0px!important;
+  margin: 0!important;
+}
+
+#myBtn {
+  width: 50px;
+  height: 50px;
+  background: #FFAA00;
+  border-radius: 50%;
+  border: none;
+  box-shadow: 0 3px 10px #ffa6004d;
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+}
+
+#myBtn:active, #myBtn:focus {
+  outline: none!important;
+  border: none!important;
+}
+
+#filterpopup {
+  display: none;
+  position: fixed;
+  top: 0;
+  background: white;
+  width: 100%;
+  height: 100%;
+  z-index: 1000;
+  padding-top: 80px;
+}
+
+.filtercontainer {
+  padding: 32px 16px;
+  margin: 0 auto;
+  width: 74%;
+  box-shadow: 0px 0px 14px #f4f2f2;
+}
+
+.filtershop {
+  display: block;
+}
+
+.navbarforshop {
+  box-shadow: none!important;
+}
+
+.popupCloseButton {
+  border-radius: 50px;
+  cursor: pointer;
+  display: inline-block;
+  font-weight: 300;
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  font-size: 38px;
+  line-height: 30px;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  color: #ffaa00;
+}
+
+.categoryfilterleft:nth-child(odd) {
+  background: aliceblue;
+  /* box-shadow: 3px 4px 5px #f4f2f2; */
+  height: 55px;
+  padding-top: 10px;
+}
+
+.categoryfilterleft:nth-child(odd) {
+  background: aliceblue;
+  /* box-shadow: 3px 4px 5px #f4f2f2; */
+  height: 55px;
+  padding-top: 10px;
+}
+
+.categoryTag {
+  padding: 6px;
+  transition: all 0.3s;
+  cursor: pointer;
+  font-size: 19px;
+}
+
+@media (min-width: 310px) and (max-width: 991.68px) {
+  #myBtn {
+    display: block!important;
+  }
+  .filtershop {
+    display: block;
+  }
+}
+
+.shopcol {
+  margin-bottom: 14px;
+}
+
+.exclusive {
+  color: #b98b43;
+  font: normal normal 400 14px/16px Roboto!important;
+}
+
+@media (min-width: 320px) and (max-width: 500.68px) {
+  .breadcrumb-item.active, .breadcrumb-item {
+    font: normal normal 400 12px/19px Roboto!important;
+  }
+  .universalcategoryheading {
+    font: normal normal bold 20px/21px Roboto!important;
+    margin-bottom: 30px;
+    margin-top: -6px;
+  }
+  .shopcol:nth-child(even) {
+    padding-left: 7px!important;
+    padding-right: 0px!important;
+  }
+  .shopcol:nth-child(odd) {
+    padding-right: 7px!important;
+    padding-left: 0px!important;
+  }
+  .shoppdtimg {
+    border-radius: 10px;
+    height: auto;
+  }
+  .shoppdtname {
+    font: normal normal 500 20px/21px Roboto!important;
+    color: #212121;
+    text-transform: capitalize;
+    margin-top: -10px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .shopinnercontent {
+    margin-bottom: 2px!important;
+  }
+  .shopname {
+    font: normal normal 500 15px/21px Roboto!important;
+    letter-spacing: 0.22px;
+    color: #A5A5A5;
+    text-transform: uppercase;
+    margin-top: 8px;
+  }
+  .shopprice {
+    font: normal normal 500 14px/21px Roboto!important;
+    /* margin-top: 1px; */
+  }
+  .shopinstock, .shopoutstock {
+    font: normal normal 400 12px/16px Roboto!important;
+    margin-top: 3px;
+    padding-top: 0px;
+    display: none;
+  }
+  #shopPageSection {
+    margin-top: 0px!important;
+  }
+}
+
+@media (min-width: 501px) and (max-width: 991.68px) {
+  .universalcategoryheading {
+    margin-bottom: 50px;
+    margin-top: -22px;
+  }
+}
+
+/* SHOP PAGE */
+
+/* new card  */
+
+.productPoolContainer {
+  padding-bottom: 48px;
+  background: linear-gradient(90deg, rgba(4, 16, 44, 1) 0%, rgba(16, 32, 84, 1) 50%, rgba(4, 16, 44, 1) 100%);
+}
+
+.productHeading {
+  color: #b98b43;
+  margin-bottom: 0.104vw;
+  padding-top: 3.125vw;
+  font-size: 2.865vw;
+}
+
+.subTitle {
+  font-size: 1.406vw;
+  margin-bottom: 2.865vw;
+}
+
+.poolCard {
+  box-shadow: none;
+  /*border: 1px solid #b98b43;*/
+  height: 60vh;
+  border-radius: 8px;
+  background: white;
+  width: 89%;
+  position: relative;
+}
+
+.triangle {
+  width: 0;
+  height: 0;
+  border-top: 14px solid transparent;
+  border-right: 8px solid #7f602f;
+  position: absolute;
+  right: 80px;
+  top: -14px;
+  z-index: 1;
+}
+
+.badge-gold {
+  color: #fff !important;
+  background-color: #b98b43 !important;
+  padding: 10px 12px;
+  position: absolute;
+  z-index: 1;
+  right: 15px;
+  top: -14px;
+  font-size: 14px;
+}
+
+.poolCardImgContainer {
+  /* position: relative;
+  width: 69%;
+  left: 2.8vw;
+  height: 317px; */
+  height: 374px;
+  height: fit-content;
+}
+
+.poolImage {
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  position: relative;
+  background-size: cover;
+  width: 100%;
+  height: 355px;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.poolOnHoverBtnContent {
+  letter-spacing: 5px;
+  font-size: 1.2vw;
+}
+
+.productDesc {
+  padding: 2px 16px;
+}
+
+.productBrand {
+  font-size: 1.3vw;
+  color: #b98b43;
+  margin: 19px auto 5px;
+}
+
+.productName {
+  font-size: 0.9vw;
+  letter-spacing: 1px;
+}
+
+/* rating style */
+
+.starRating {
+  background: #fff;
+  padding: 1px 1px;
+  border-radius: 10px;
+  /*margin: -39px auto 10px;*/
+  margin: -56px auto -6px;
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  width: 14vw;
+  color: darkblue;
+}
+
+.starIcon {
+  font-size: 14px;
+  color: #b98b43;
+}
+
+.starIconBlack {
+  font-size: 14px;
+  color: black;
+}
+
+/* progress bar  */
+
+.progress {
+  border-radius: .55rem;
+  clear: both;
+}
+
+.progress-bar {
+  background-color: #102054;
+}
+
+.bag {
+  color: #102054;
+}
+
+.bag:hover {
+  background: -moz-linear-gradient(top, #8e602c, #b98b43, #f8ed8d, #b98b43, #8e602c);
+  background: -webkit-linear-gradient(top, #8e602c, #b98b43, #f8ed8d, #b98b43, #8e602c);
+  background: linear-gradient(to right, #8e602c, #b98b43, #f8ed8d, #b98b43, #8e602c);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* card description  */
+
+/* =====on hover of poolCard content visible style====== */
+
+.poolCard .poolOnHoverContent {
+  visibility: hidden;
+  -webkit-transition: visibility 0s, opacity 0.5s linear;
+  transition: visibility 0s, opacity 0.5s linear;
+  bottom: 12vh;
+  position: absolute;
+  width: 100%;
+  opacity: 0;
+  transform: translateY(100px);
+  transition: all 900ms cubic-bezier(0.68, -0.55, 0.265, 1.55) 0.0s;
+}
+
+.poolCard:hover {
+  cursor: pointer;
+}
+
+.poolCard:hover .poolOnHoverContent {
+  width: 100%;
+  visibility: visible;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* pool button  */
+
+div[class*=background] {
+  text-align: center;
+  width: 100%;
+  height: 33%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.background {
+  background: #b98b43;
+}
+
+.Gbtn {
+  position: relative;
+  color: white;
+  width: 256px;
+  height: 64px;
+  line-height: 64px;
+  transition: all 0.3s;
+}
+
+.Gbtn span {
+  transition: all 0.3s;
+  transform: scale(1, 1);
+}
+
+.Gbtn::before, .Gbtn::after {
+  content: '';
+  position: absolute;
+  transition: all 0.3s;
+  bottom: 6px;
+  left: 0;
+  width: 100%;
+  height: 82%;
+  z-index: 1;
+}
+
+.btn-one::before {
+  left: 4px;
+  z-index: 1;
+  opacity: 0;
+  background: rgba(255, 255, 255, 0.1);
+  transform: scale(0.1, 1);
+}
+
+.btn-one:hover::before {
+  opacity: 1;
+  transform: scale(1, 1);
+}
+
+.btn-one::after {
+  transition: all 0.3s;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.btn-one:hover::after {
+  transform: scale(1, .1);
+  opacity: 0;
+}
+
+/* end of pool button  */
+
+/* =========end of pool section========== */
+
+/* shop by category and shop by brand section */
+
+.bottomSpacing {
+  margin-bottom: 4.195vw;
+}
+
+.heading, .brandHeading {
+  color: #b98b43;
+  margin-bottom: 2.083vw;
+  font-size: 2.865vw;
+  margin-top: 4.167vw;
+}
+
+.brandHeading {
+  padding-top: 4.167vw;
+}
+
+.brandSearch {
+  /* background: #f5efe2; */
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-bottom: 4.688vw;
+}
+
+.categoryContainer, .brandSearchContainer {
+  position: relative;
+  overflow: hidden;
+  /* width: 17.188vw; */
+}
+
+.categoryContainer .categoryImgContainer img, .brandSearchContainer .brandSearchImgContainer img {
+  width: 100%;
+  height: auto;
+  transition: transform 1s;
+}
+
+.categoryContainer .categoryTitle::before, .brandSearchContainer .brandSearchTitle::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 40%;
+  border-width: 2px;
+  border-style: solid;
+  border-image: linear-gradient( to right, #8e602c, #b98b43, #f8ed8d, #b98b43, #8e602c) 1 0 0 1;
+  border-right: 3px solid transparent;
+  border-bottom: 3px solid transparent;
+  transform: scale(1, 1);
+  transition: all 0.50s ease;
+}
+
+.categoryContainer .categoryTitle::after, .brandSearchContainer .brandSearchTitle::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 50%;
+  height: 40%;
+  border-width: 2px;
+  border-style: solid;
+  border-image: linear-gradient( to right, #8e602c, #b98b43, #f8ed8d, #b98b43, #8e602c) 0 1 1 0;
+  border-left: 3px solid transparent;
+  border-top: 3px solid transparent;
+  transition: all 0.50s ease;
+}
+
+.categoryContainer:hover .categoryTitle:before, .brandSearchContainer:hover .brandSearchTitle:before {
+  top: 20px;
+  left: 20px;
+}
+
+.categoryContainer:hover .categoryTitle:after, .brandSearchContainer:hover .brandSearchTitle:after {
+  bottom: 20px;
+  right: 20px;
+}
+
+.categoryContainer .categoryTitle, .brandSearchContainer .brandSearchTitle {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 45% 4%;
+  text-align: center;
+}
+
+.categoryContainer .categoryTitle:hover, .brandSearchContainer .brandSearchTitle:hover {
+  background-color: rgba(185, 139, 67, 20%);
+}
+
+.categoryContainer .categoryTitle .title, .brandSearchContainer .brandSearchTitle .title {
+  font-size: 1.8vw;
+  color: #ffffff;
+  opacity: 1;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  transition: all 1s ease;
+}
+
+.categoryContainer:hover .title, .brandSearchContainer:hover .title {
+  opacity: 1;
+  transform: scale(1.2);
+}
+
+.categoryContainer:hover .title::after, .brandSearchContainer:hover .title::after {
+  content: "";
+  display: block;
+  width: 50%;
+  margin: 10px auto;
+  border-width: 2px;
+  border-style: solid;
+  border-image: linear-gradient( to right, #8e602c, #b98b43, #f8ed8d, #b98b43, #8e602c) 1 0 0 1;
+}
+
+#categoryBottomBtn {
+  display: none;
+}
+
+#brandBottomBtn {
+  display: none;
+}
+
+/*======buttons (floating)(hover)(default)========*/
+
+/*floating property*/
+
+@keyframes float {
+  0% {
+    box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+    transform: translatey(0px);
+  }
+  50% {
+    box-shadow: 0 25px 15px 0px rgba(0, 0, 0, 0.2);
+    transform: translatey(5px);
+  }
+  100% {
+    box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+    transform: translatey(0px);
+  }
+}
+
+.floatBtn {
+  box-sizing: border-box;
+  transform: translatey(0px);
+  animation: float 2s ease-in-out infinite;
+}
+
+.floatBtn:hover {
+  box-sizing: border-box;
+  transform: translatey(0px);
+  animation: none;
+}
+
+.blueBtn {
+  background: #b98b43;
+  color: white;
+  padding-top: 0.781vw;
+  padding-bottom: 0.781vw;
+  padding-left: 2.083vw;
+  padding-right: 2.083vw;
+  border-radius: 1.875vw;
+}
+
+.blueBtn:hover {
+  color: #b98b43;
+  border: 1px solid #b98b43;
+  background: white;
+}
+
+.blueBtn span {
+  font-size: 0.938vw;
+}
+
+.goldBtn {
+  background: white;
+  color: #b98b43;
+  ;
+  padding: 16px 47px;
+  border-radius: 36px;
+  border: 1px solid #b98b43;
+}
+
+.goldBtn:hover {
+  color: white;
+  background: #b98b43;
+}
+
+.goldBtn span {
+  font-size: 21px;
+}
+
+/* shop by category and shop by brand section */
+
+/*=======shopBy gender=================*/
+
+.BtnContainer {
+  /* margin-top: 1.302vw; */
+  margin-top: -2vw;
+}
+
+.shopBy {
+  background: #f5efe2;
+  margin-top: 5.729vw;
+  margin-bottom: 5.729vw;
+}
+
+.shopByContainer {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.shopByContainer .shopByFigure img {
+  transition: transform 1s;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.shopByTitle {
+  width: 67%;
+  height: 10%;
+}
+
+.shopByContainer {
+  overflow: hidden;
+  transition: all 1s ease;
+}
+
+.shopByContainer figure {
+  position: relative;
+}
+
+.shopByContainer figure::before {
+  position: absolute;
+  top: 0;
+  left: -75%;
+  z-index: 2;
+  display: block;
+  content: '';
+  width: 50%;
+  height: 100%;
+  background: -webkit-linear-gradient(left, rgba(185, 139, 67, 20%) 0%, rgba(185, 139, 67, 20%) 100%);
+  background: linear-gradient(to right, rgba(185, 139, 67, 20%) 0%, rgba(185, 139, 67, 20%) 100%);
+  -webkit-transform: skewX(-25deg);
+  transform: skewX(-25deg);
+}
+
+.shopByContainer figure:hover::before {
+  -webkit-animation: shine .75s;
+  animation: shine .75s;
+}
+
+@-webkit-keyframes shine {
+  100% {
+    left: 125%;
+  }
+}
+
+@keyframes shine {
+  100% {
+    left: 125%;
+  }
+}
+
+.shopByFigure {
+  margin: 0px;
+}
+
+.shopByTitle span {
+  font-size: 1.9vw;
+  color: #b98b43;
+  background: white;
+  padding: .6vw 1vw;
+  transition: all 1s ease;
+}
+
+/*=============end of shop by gender================*/
+
+.comingSoonHeading {
+  font-size: 60px;
+  color: #b98b43;
+  padding-top: 8vh;
+  padding-bottom: 8vh;
+}
+
+/* newsletter  */
+
+.newsletterContainer {
+  height: 60vh;
+  background: url(../image/house.jpg);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding-top: 6.74vw;
+  padding-bottom: 6.74vw;
+}
+
+.newsletterContent {
+  width: 30%;
+  margin: 0 auto;
+  background: #ffffffcc;
+  border-radius: 0.833vw;
+}
+
+.newsletterHeading {
+  font-size: 50px;
+  color: #102054;
+  padding-top: 14px;
+}
+
+.newsletterSubHeading {
+  font-size: 16px;
+  padding-bottom: 14px;
+}
+
+.newsletterForm {
+  margin-top: 62px;
+}
+
+.emailInput {
+  width: 265px;
+  height: 50px;
+  outline: none;
+  padding: 1px 24px;
+  margin-right: 6px;
+  margin-bottom: 18px;
+  border: none;
+  background: #ffffffcc;
+}
+
+.emailInput:hover, .emailInput:active, .emailInput:focus {
+  background: #ffffff;
+}
+
+.subscribe {
+  height: 50px;
+  width: 165px;
+  background: rgba(16, 32, 84, 0.8);
+  color: white;
+  border: none;
+  outline: none;
+  transition: all .3ms ease;
+}
+
+.subscribe:hover {
+  background: #102054;
+  border: none;
+}
+
+/* newsletter  */
+
+@media (min-width: 300px) and (max-width: 600px) {
+  .statisticsHeading {
+    font-size: 2.2vw;
+    color: #b98b43;
+  }
+  .statisticsData {
+    font-size: 2.8vw;
+  }
+}
+
+/* categoryContainer */
+
+@media (max-width: 636px) and (min-width: 500px) {
+  .categoryContainer, .brandSearchContainer {
+    /* min-width: 35.74vw; */
+    margin-bottom: 7.406vw;
+  }
+  .shopByContainer .shopByFigure img {
+    transition: transform 1s;
+    min-height: 30vh;
+  }
+  .BtnContainer {
+    margin-top: -6.104vw;
+  }
+  .newsletterContainer {
+    height: 43vh;
+    background: url(../image/house.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-top: 6.74vw;
+    padding-bottom: 6.74vw;
+  }
+}
+
+/* media queries for mobile responsivness */
+
+@media (max-width: 538px) {
+  .categoryContainer .categoryTitle .title, .brandSearchContainer .brandSearchTitle .title {
+    font-size: 1.5vw;
+    font-size: 4vw;
+    color: #ffffff;
+    opacity: 1;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    transition: all 1s;
+  }
+  .categoryContainer:hover .title, .brandSearchContainer:hover .title {
+    opacity: 1;
+    transform: scale(1.1);
+  }
+  .categoryContainer .categoryTitle::before, .brandSearchContainer .brandSearchTitle::before {
+    border-width: 2px;
+  }
+  .categoryContainer .categoryTitle::after, .brandSearchContainer .brandSearchTitle::after {
+    border-width: 2px;
+  }
+  .categoryContainer:hover .categoryTitle:before, .brandSearchContainer:hover .brandSearchTitle:before {
+    top: 0px;
+    left: 0px;
+  }
+  .categoryContainer:hover .categoryTitle:after, .brandSearchContainer:hover .brandSearchTitle:after {
+    bottom: 0px;
+    right: 0px;
+  }
+  .categoryContainer:hover .title::after, .brandSearchContainer:hover .title::after {
+    border-width: 1px;
+  }
+  .blueBtn span {
+    font-size: 12px;
+  }
+  /* pool On card  */
+  .productPoolContainer {
+    height: auto;
+  }
+  /* .poolCardImgContainer {
+    height: 21vh;
+    left: 10.9vw;
+    width: 40%;
+  } */
+  .poolCardImgContainer {
+    height: 29vh;
+    left: 10.9vw;
+    width: 40%;
+  }
+  .poolCard {
+    box-shadow: none;
+    /* height: 36vh; */
+    height: 43vh;
+    border-radius: 8px;
+    background: white;
+    /* width: 98%; */
+    position: relative;
+    margin-bottom: 29px;
+    max-width: 36vw;
+  }
+  .productPoolRow {
+    margin-top: 32px;
+    padding-bottom: 3px;
+  }
+  .poolCard .poolOnHoverContent {
+    bottom: 10vh;
+  }
+  .poolOnHoverBtnContent {
+    letter-spacing: 1vw;
+    font-size: 2.2vw;
+  }
+  .starIcon {
+    font-size: 10px;
+    color: #b98b43;
+  }
+  .starRating {
+    border-radius: 16px;
+    margin: -56px auto -6px;
+    z-index: 1;
+    text-align: center;
+    width: 27vw;
+    padding: 0px 2px 3px 3px;
+  }
+  .soldContent {
+    font-size: 2vw;
+  }
+  .productBrand {
+    font-size: 2.3vw;
+  }
+  .productName {
+    font-size: 2vw;
+    letter-spacing: 1px;
+  }
+  .Gbtn::before, .Gbtn::after {
+    content: '';
+    position: absolute;
+    transition: all 0.3s;
+    bottom: 10px;
+    left: 7px;
+    width: 92%;
+    height: 60%;
+    z-index: 1;
+  }
+  .Gbtn {
+    height: 48px;
+    line-height: 44px;
+  }
+  .badge-gold {
+    padding: 8px 8px;
+    right: 15px;
+    font-size: 10px;
+  }
+  .triangle {
+    right: 57px;
+  }
+  /* newsletter  */
+  .newsletterContent {
+    width: 65%;
+  }
+  .newsletterHeading {
+    font-size: 40px;
+  }
+  .newsletterSubHeading {
+    font-size: 14px;
+    margin: auto 12px;
+  }
+  .emailInput {
+    width: 207px;
+    height: 42px;
+  }
+  .subscribe {
+    height: 42px;
+    width: 120px;
+  }
+}
+
+/* media queries for landscape phones, 576px and up responsivness */
+
+@media (min-width: 539px) and (max-width: 600.98px) {
+  .poolCardImgContainer {
+    height: 32vh;
+    left: 9vw;
+    width: 54%;
+  }
+  .productPoolContainer {
+    height: auto;
+  }
+  .poolCard {
+    box-shadow: none;
+    height: 46vh;
+    border-radius: 8px;
+    background: white;
+    /* width: 98%; */
+    position: relative;
+    margin-bottom: 29px;
+    max-width: 36vw;
+  }
+  .productPoolRow {
+    margin-top: 32px;
+    padding-bottom: 3px;
+  }
+  .poolCard .poolOnHoverContent {
+    bottom: 10vh;
+  }
+  .poolOnHoverBtnContent {
+    letter-spacing: 1vw;
+    font-size: 2.2vw;
+  }
+  .starIcon {
+    font-size: 10px;
+    color: #b98b43;
+  }
+  .starRating {
+    border-radius: 16px;
+    margin: -56px auto -6px;
+    z-index: 1;
+    text-align: center;
+    width: 27vw;
+    padding: 0px 2px 3px 3px;
+  }
+  .soldContent {
+    font-size: 2vw;
+  }
+  .productBrand {
+    font-size: 2.3vw;
+  }
+  .productName {
+    font-size: 2vw;
+    letter-spacing: 1px;
+  }
+  .Gbtn::before, .Gbtn::after {
+    content: '';
+    position: absolute;
+    transition: all 0.3s;
+    bottom: 8px;
+    left: 7px;
+    width: 92%;
+    height: 68%;
+    z-index: 1;
+  }
+  .Gbtn {
+    height: 48px;
+    line-height: 44px;
+  }
+  .badge-gold {
+    padding: 8px 8px;
+    right: 15px;
+    font-size: 10px;
+  }
+  .triangle {
+    right: 57px;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .categoryContainer .categoryTitle::before {
+    border-width: 2px;
+  }
+  .categoryContainer .categoryTitle::after {
+    border-width: 2px;
+  }
+  .categoryContainer:hover .categoryTitle:before {
+    top: 3px;
+    left: 3px;
+  }
+  .categoryContainer:hover .categoryTitle:after {
+    bottom: 3px;
+    right: 3px;
+  }
+  .categoryContainer:hover .title::after {
+    border-width: 1px;
+  }
+  /*shop by brand*/
+  .brandSearchContainer .brandSearchTitle::before {
+    border-width: 2px;
+  }
+  .brandSearchContainer .brandSearchTitle::after {
+    border-width: 2px;
+  }
+  .brandSearchContainer:hover .brandSearchTitle:before {
+    top: 3px;
+    left: 3px;
+  }
+  .brandSearchContainer:hover .brandSearchTitle:after {
+    bottom: 3px;
+    right: 3px;
+  }
+  .brandSearchContainer:hover .title::after {
+    border-width: 1px;
+  }
+  .blueBtn span {
+    font-size: 12px;
+  }
+  /* ======================= */
+  .poolCardImgContainer {
+    height: 35vh;
+    left: 9vw;
+    width: 54%;
+  }
+  .poolOnHoverBtnContent {
+    letter-spacing: 1vw;
+    font-size: 2vw;
+  }
+  .starIcon {
+    font-size: 10px;
+    color: #b98b43;
+  }
+  .starRating {
+    border-radius: 16px;
+    margin: -56px auto -6px;
+    z-index: 1;
+    text-align: center;
+    width: 27vw;
+    padding: 0px 2px 3px 3px;
+  }
+  .soldContent {
+    font-size: 2vw;
+  }
+  .productBrand {
+    font-size: 2.3vw;
+  }
+  .productName {
+    font-size: 2vw;
+    letter-spacing: 1px;
+  }
+  .poolCard .poolOnHoverContent {
+    bottom: 9vh;
+  }
+  .Gbtn::before, .Gbtn::after {
+    content: '';
+    position: absolute;
+    transition: all 0.3s;
+    bottom: 9.5px;
+    left: 11px;
+    width: 90%;
+    height: 64%;
+    z-index: 1;
+  }
+  .bag {
+    margin-top: 2.5vh;
+  }
+  .Gbtn {
+    height: 54px;
+    line-height: 49px;
+  }
+  .poolCard {
+    height: 49vh;
+    max-width: 37vw;
+    margin-bottom: 31px;
+  }
+  .productPoolContainer {
+    height: auto;
+  }
+  .newsletterContent {
+    width: 65%;
+  }
+  .newsletterHeading {
+    font-size: 40px;
+  }
+  .newsletterSubHeading {
+    font-size: 14px;
+  }
+  .newsletterContainer {
+    height: 43vh;
+  }
+}
+
+/* media queries for tablets ,768 and up responsivness */
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .newsletterContainer {
+    height: 48vh;
+  }
+  .productPoolContainer {
+    height: auto;
+  }
+  .categoryContainer .categoryTitle::before {
+    border-width: 2px;
+  }
+  .categoryContainer .categoryTitle::after {
+    border-width: 2px;
+  }
+  .categoryContainer:hover .categoryTitle:before {
+    top: 5px;
+    left: 5px;
+  }
+  .categoryContainer:hover .categoryTitle:after {
+    bottom: 5px;
+    right: 5px;
+  }
+  .categoryContainer:hover .title::after {
+    border-width: 1px;
+  }
+  /*shop by brand*/
+  .brandSearchContainer .brandSearchTitle::before {
+    border-width: 2px;
+  }
+  .brandSearchContainer .brandSearchTitle::after {
+    border-width: 2px;
+  }
+  .brandSearchContainer:hover .brandSearchTitle:before {
+    top: 5px;
+    left: 5px;
+  }
+  .brandSearchContainer:hover .brandSearchTitle:after {
+    bottom: 5px;
+    right: 5px;
+  }
+  .brandSearchContainer:hover .title::after {
+    border-width: 1px;
+  }
+  .blueBtn span {
+    font-size: 12px;
+  }
+  .poolOnHoverBtnContent {
+    letter-spacing: .5vw;
+    font-size: 1.2vw;
+  }
+  .starIcon {
+    font-size: 10px;
+    color: #b98b43;
+  }
+  .starRating {
+    border-radius: 16px;
+    margin: -56px auto -6px;
+    z-index: 1;
+    text-align: center;
+    width: 14vw;
+    padding: 0px 2px 3px 3px;
+  }
+  .poolCardImgContainer {
+    height: 32vh;
+  }
+  .soldContent {
+    font-size: 1.5vw;
+  }
+  .productBrand {
+    font-size: 1.5vw;
+  }
+  .productName {
+    font-size: 1.2vw;
+    letter-spacing: 1px;
+  }
+  .poolCard .poolOnHoverContent {
+    bottom: 12vh;
+  }
+  .Gbtn::before, .Gbtn::after {
+    content: '';
+    position: absolute;
+    transition: all 0.3s;
+    bottom: 11px;
+    left: 12px;
+    width: 85%;
+    height: 64%;
+    z-index: 1;
+  }
+  .Gbtn {
+    height: 54px;
+    line-height: 44px;
+  }
+  .poolCard {
+    height: 50vh;
+    width: 98%;
+    margin-bottom: 31px;
+  }
+  /* newsletter */
+  .newsletterContent {
+    width: 65%;
+  }
+  .newsletterHeading {
+    font-size: 40px;
+  }
+  .newsletterSubHeading {
+    font-size: 14px;
+  }
+}
+
+/* media queries for large devices 992px and up responsivness */
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .newsletterContainer {
+    height: 53vh;
+  }
+  .productPoolContainer {
+    height: auto;
+  }
+  .productPoolRow {
+    margin-top: 32px;
+    padding-bottom: 32px;
+  }
+  .Gbtn {
+    position: relative;
+    color: white;
+    width: 168px;
+    height: 56px;
+    line-height: 53px;
+    transition: all 0.3s;
+  }
+  .Gbtn::before, .Gbtn::after {
+    content: '';
+    position: absolute;
+    transition: all 0.3s;
+    bottom: 8px;
+    left: 0;
+    width: 100%;
+    height: 71%;
+    z-index: 1;
+  }
+  .soldContent {
+    font-size: 1.5vw;
+  }
+  .blueBtn span {
+    font-size: 16px;
+  }
+  .poolCard {
+    width: 100%;
+    height: 54vh;
+  }
+  .poolCardImgContainer {
+    height: 38vh;
+  }
+  .poolCard .poolOnHoverContent {
+    bottom: 10vh;
+  }
+  .newsletterContent {
+    width: 50%;
+  }
+}
+
+/* media queries for larger devices, 1200px and up responsivness */
+
+@media (min-width: 1200px) and (max-width: 1400px) {
+  .productPoolRow {
+    margin-top: 32px;
+    padding-bottom: 3.125vw;
+  }
+  .productPoolContainer {
+    height: auto;
+  }
+  .Gbtn {
+    position: relative;
+    color: white;
+    width: 216px;
+    height: 56px;
+    line-height: 53px;
+    transition: all 0.3s;
+  }
+  .Gbtn::before, .Gbtn::after {
+    content: '';
+    position: absolute;
+    transition: all 0.3s;
+    bottom: 8px;
+    left: 0;
+    width: 100%;
+    height: 71%;
+    z-index: 1;
+  }
+  .btn-one::before {
+    left: 0px;
+  }
+  .poolCardImgContainer {
+    height: 36vh;
+  }
+  .poolCard {
+    width: 100%;
+    /* height: 61vh; */
+    height: 488.17px;
+  }
+  .poolCardImgContainer {
+    height: 52vh;
+  }
+  .poolCard .poolOnHoverContent {
+    bottom: 12.4vh;
+  }
+  .poolImage {
+    height: 349.655px;
+  }
+}
+
+@media (min-width:1401px) and (max-width: 1920px) {
+  .poolCardImgContainer {
+    height: 49vh;
+  }
+  .poolCard {
+    width: 100%;
+    height: 67vh;
+  }
+  .poolCard .poolOnHoverContent {
+    bottom: 11.4vh;
+  }
+  .Gbtn {
+    position: relative;
+    color: white;
+    width: 254px;
+    height: 64px;
+    line-height: 64px;
+    transition: all 0.3s;
+  }
+}
+
+@media (min-width:300px) and (max-width: 499px) {
+  .productPoolContainer {
+    height: auto;
+  }
+  .poolCardImgContainer {
+    height: 36vh;
+  }
+  .poolCard {
+    height: fit-content;
+    max-width: 2500px;
+  }
+  .poolCardImgContainer {
+    height: 43vh;
+  }
+  .poolCard .poolOnHoverContent {
+    bottom: 11.4vh;
+  }
+  .starRating {
+    width: 47vw;
+  }
+  .poolCardImgContainer {
+    left: 13vw;
+  }
+  .productBrand {
+    font-size: 5.3vw;
+  }
+  .productName {
+    font-size: 4vw;
+    letter-spacing: 1px;
+  }
+  .soldContent {
+    font-size: 3vw;
+  }
+}
+
+@media (min-width:1401px) and (max-width: 1500px) {
+  .poolImage {
+    height: 324px;
+  }
+}
+
+@media (min-width:1501px) and (max-width: 1700px) {
+  .poolImage {
+    height: 355px;
+  }
+}
+
+@media (min-width:1701px) and (max-width: 1800px) {
+  .poolImage {
+    height: 521px;
+  }
+}
+
+@media (min-width: 1000px) and (max-width: 1199px) {
+  .poolImage {
+    height: 272px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 999px) {
+  .poolImage {
+    height: 229px;
+  }
+}
+
+@media (min-width: 539px) and (max-width: 767px) {
+  .poolImage {
+    height: 229px;
+    width: 185%;
+  }
+}
+
+@media (min-width: 500px) and (max-width: 538px) {
+  .poolImage {
+    height: 208px;
+    width: 250%;
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 400px) {
+  .poolImage {
+    height: 197px;
+    width: 250%;
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
+  }
+}
+
+@media (min-width: 401px) and (max-width: 499px) {
+  .poolImage {
+    height: 197px;
+    width: 250%;
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
+  }
+  .starRating {
+    width: 25vw;
+  }
+  .productBrand {
+    font-size: 3vw;
+  }
+  .productName {
+    font-size: 3.1vw;
+  }
+  .poolCard {
+    height: 356px;
+    max-width: 141px;
+  }
+  .poolCardImgContainer {
+    height: 26vh;
+  }
+}
+
+@media (min-width: 1800px) and (max-width: 1920px) {
+  .productBrand {
+    font-size: 26px;
+  }
+  .productName {
+    font-size: 22px;
+  }
+  .poolImage {
+    height: 519px;
+  }
+}
+
+@media (min-width: 1000px) and (max-width: 1920px) {
+  .categoryRow, .brandSearchRow {
+    margin-left: 1.169vw;
+  }
+}
+
+/* checkout page */
+
+.checkoutBtn {
+  background: linear-gradient(90deg, rgba(4, 16, 44, 1) 0%, rgba(16, 32, 84, 1) 50%, rgba(4, 16, 44, 1) 100%);
+}
+
+.card:focus, .card:hover {
+  -webkit-transform: translate3d(0, -1rem, 0);
+  transform: translate3d(0, -1rem, 0);
+}
+
+.card {
+  transition: transform 330ms ease-in-out;
+}
+
+/* checkout page */
+
+body {
+  background-color: white;
+}
+
+@media (min-width: 320px) and (max-width: 767.68px) {
+  .col-mobile {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+  .cardbodypool {
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    min-height: 1px;
+    padding: 0.25rem;
+  }
+}
+
+/* .newsletterContent {
+  width: 30rem;
+  box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2);
+  border-radius: 5px;
+  position: relative;
+  z-index: 1;
+  background: inherit;
+  overflow: hidden;
+}
+
+.newsletterContent :before {
+  content: "";
+  position: absolute;
+  background: inherit;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  box-shadow: inset 0 0 2000px rgba(255, 255, 255, .5);
+  filter: blur(10px);
+  margin: -20px;
+} */
+
+.newsletterContent {
+  background-color: rgba(255, 255, 255, 0.548);
+  backdrop-filter: blur(10px);
+}
+
+@media (min-width: 310px) and (max-width: 500.68px) {
+  .productHeading, .heading, .brandHeading {
+    font-size: 30px!important;
+  }
+  .subTitle {
+    font-size: 20px!important;
+  }
+  .blueBtn {
+    border-radius: 4vw!important;
+  }
+}

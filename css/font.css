@@ -1,0 +1,43 @@
+/* @font-face {
+    font-family: garaRegular;
+    src: url(font/garaRegular.ttf);
+}
+
+.gara {
+    font-family: garaRegular;
+} */
+
+@font-face {
+    font-family: 'gara';
+    src: url('Gara.eot');
+    src: url('Gara.eot?#iefix') format('embedded-opentype'), url('Gara.woff2') format('woff2'), url('Gara.woff') format('woff'), url('Gara.svg#Gara') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+.gara {
+    font-family: 'gara';
+}
+
+/* @font-face {
+    font-family: NunitoRegular;
+    src: url(font/NunitoRegular.ttf);
+}
+
+.nunito {
+    font-family: NunitoRegular;
+} */
+
+@font-face {
+    font-family: 'Nunito';
+    src: url('Nunito-Regular.eot');
+    src: url('Nunito-Regular.eot?#iefix') format('embedded-opentype'), url('Nunito-Regular.woff2') format('woff2'), url('Nunito-Regular.woff') format('woff'), url('Nunito-Regular.svg#Nunito-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+.nunito {
+    font-family: 'Nunito';
+}
