@@ -1,0 +1,200 @@
+/* global  */
+
+body {
+    color: #04102c;
+}
+
+.container-fluid {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.text-p4lBlue {
+    color: #04102c;
+}
+
+.text-p4lGold {
+    color: #b98b43;
+}
+
+.form-control, .custom-select {
+    border: 1px solid #b98b4345;
+}
+
+.form-control:hover, .custom-select:hover {
+    border: 1px solid #b98b43;
+}
+
+.avtarImgCol {
+    height: 34px;
+}
+
+.avtarContainer {
+    position: relative;
+    top: -87px;
+}
+
+.avtar {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    background: aliceblue;
+    float: right;
+    box-shadow: 3px 15px 20px #dad4d4;
+}
+
+/* global  */
+
+/* Your order section  */
+
+.listBox {
+    /* border: 1px solid; */
+    box-shadow: 0 14px 22px 5px rgba(38, 38, 38, 0.06);
+}
+
+.list {
+    border: none;
+}
+
+.paymentIcon {
+    width: 100px;
+    height: 100px;
+}
+
+.paymentBox, .bilingBox, .orderBox, .userBox, .addressBox {
+    padding: 36px 28px;
+    box-shadow: 0 14px 22px 5px rgba(38, 38, 38, 0.06);
+}
+
+.sub {
+    width: 23px;
+    border: none;
+    background: #b98b431a;
+    color: #b98b43;
+    border-radius: 15px;
+}
+
+/* .listBox>li:hover {
+    background: #b98b431a;
+} */
+
+.quant {
+    width: 40px;
+    text-align: center;
+    color: #b98b43;
+    border: none;
+    border-bottom: 1px solid #b98b43;
+}
+
+.listBox:hover .quality {
+    background: #b98b431a;
+    color: #b98b43;
+}
+
+.listBox:hover .sub {
+    background: white;
+}
+
+.listBox:hover #quant {
+    border-bottom: 1px solid #b98b43;
+}
+
+.listBox:hover .quant {
+    border: none;
+    background: transparent;
+}
+
+.paymentInfoButton {}
+
+.updateBtn {
+    padding: 0px;
+}
+
+.updatemobileBtn {
+    padding: 0px;
+    display: none;
+}
+
+.btn-secondary:not([disabled]):not(.disabled):active, .btn-secondary:not([disabled]):not(.disabled).active, .show>.btn-secondary.dropdown-toggle {
+    background-color: #b98b43 !important;
+}
+
+.btn-secondary {
+    color: #fff;
+    background-color: #b98b43 !important;
+}
+
+.btn-secondary:hover {
+    color: #fff;
+    background-color: #b98b43;
+}
+
+input, textarea, select, a, .form-control:focus, input:focus, .form-control {
+    outline: none!important;
+    box-shadow: none!important;
+}
+
+input:focus, input:active {
+    background: #b98b431a!important;
+}
+
+/* WebKit, Blink, Edge */
+
+/* .form-control::-moz-placeholder {
+    color: #bfbfbf;
+}
+
+.form-control:-ms-input-placeholder {
+    color: #bfbfbf;
+}
+
+.form-control::-webkit-input-placeholder {
+    color: #bfbfbf;
+} 
+
+/* ============================== */
+
+/* Firefox < 19 */
+
+input:-moz-placeholder {
+    color: #646464;
+}
+
+input:focus:-moz-placeholder {
+    color: #bfbfbf;
+}
+
+/* Firefox > 19 */
+
+input::-moz-placeholder {
+    color: #646464;
+}
+
+input:focus::-moz-placeholder {
+    color: #bfbfbf;
+}
+
+/* Internet Explorer 10 */
+
+input:-ms-input-placeholder {
+    color: #646464;
+}
+
+input:focus:-ms-input-placeholder {
+    color: #bfbfbf;
+}
+
+@media (min-width:320px) and (max-width: 767px) {
+    .order-sm-2 {
+        order: 2;
+    }
+    .order-sm-1 {
+        order: 1;
+    }
+    .updateBtn {
+        display: none;
+    }
+    .updatemobileBtn {
+        display: block;
+    }
+}
