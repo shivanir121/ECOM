@@ -739,7 +739,7 @@ div[class*=background] {
 .shopBy {
   background: #f5efe2;
   margin-top: 5.729vw;
-  margin-bottom: 5.729vw;
+/*   margin-bottom: 5.729vw; */
 }
 
 .shopByContainer {
